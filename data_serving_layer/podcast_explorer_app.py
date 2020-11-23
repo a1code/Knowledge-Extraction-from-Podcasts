@@ -13,7 +13,7 @@ def get_es():
 
 
 # home page
-@app.route('/')
+@app.route('/', methods=['GET'])
 def home():
 	return app.send_static_file('UI.html')
 
@@ -154,4 +154,4 @@ def search_podcast_knowledge_graph():
 
 # execution starts here
 if __name__ == '__main__':
-	app.run(host='0.0.0.0', port=8081, debug=True)
+	app.run(host='0.0.0.0', port=8080, debug=True)
