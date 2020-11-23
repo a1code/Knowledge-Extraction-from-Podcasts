@@ -69,11 +69,13 @@ mongo
 5) Run Analytical Layer.  
 ```
 spark-submit --packages "org.mongodb.spark:mongo-spark-connector_2.12:3.0.0" analytical_layer/setup_knowledge_graph.py
+
 python3 analytical_layer/index_knowledge_graph.py
 curl -XGET "localhost:9200/_cat/indices"
 ```  
 5) Run Data Serving Layer.  
 ```
-python3 data_serving_layer/podcast_explorer_app.py
+cd data_serving_layer
+python3 podcast_explorer_app.py
 ```  
-6) Application is deployed at ```http://localhost:8081```.
+6) Application is deployed at ```http://localhost:8080```.
