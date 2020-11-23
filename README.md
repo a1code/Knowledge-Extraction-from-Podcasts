@@ -76,5 +76,4 @@ curl -XGET "localhost:9200/_cat/indices"
 ```
 python3 data_serving_layer/podcast_explorer_app.py
 ```  
-6) Application is deployed at ```http://localhost:8080```.  
-
+6) Application is deployed at ```http://localhost:8081```.
