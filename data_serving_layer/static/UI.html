@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Podcast Explorer</title>
+    <style>
+		.links line {
+		  stroke: #999;
+		  stroke-opacity: 0.6;
+		}
+
+		.nodes circle {
+		  stroke: #fff;
+		  stroke-width: 1.5px;
+		}
+
+		text {
+		  font-family: sans-serif;
+		  font-size: 10px;
+		}
+	</style>
+
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/css/bootstrap-reboot.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/bootstrap.bundle.js"></script>
+    <script src="static/js/d3.v4.min.js"></script>
+    
+    <script>
+        var lex_fridman_desc = "Lex Fridman is an AI researcher working on autonomous vehicles, human-robot interaction, and machine learning at MIT and beyond. In his podcast series (Formerly called Artificial Intelligence Podcast), he drives conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power."
+        var service_url = 'http://localhost:8080';
+        var segments = null;
+        var speakers = null;
+        var podcasts = null;
+
+        function displayknowledgegraph() {
+        	d3.selectAll("svg > *").remove();
+            document.getElementById("searchdetails").style.display="none";
+            document.getElementById("speakerdropdown").style.display="none";
+            document.getElementById("podcastdropdown").style.display="none";
+
+            document.getElementById("graphcontainer").style.display="block";
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="none";
+
+	        var svg = d3.select("#Graph"),
+			    width = "1500",
+			    height = "800";
+
+			// var color = d3.scaleOrdinal(d3.schemeCategory20);
+
+			var simulation = d3.forceSimulation()
+			    .force("link", d3.forceLink().id(function(d) { return d.id; }))
+			    .force("charge", d3.forceManyBody())
+			    .force("center", d3.forceCenter(width / 2, height / 2));
+
+			d3.json(service_url+'/'+'search_podcast_knowledge_graph?query='+speakers, function(error, data) {
+				if (error) throw error;
+
+				var graph = data.response;
+
+				var link = svg.append("g")
+			      .attr("class", "links")
+			    .selectAll("line")
+			    .data(graph.links)
+			    .enter().append("line")
+			      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+
+				  var node = svg.append("g")
+				      .attr("class", "nodes")
+				    .selectAll("g")
+				    .data(graph.nodes)
+				    .enter().append("g")
+				    
+				  var circles = node.append("circle")
+				      .attr("r", 5)
+				      .attr("fill", function(d) {
+				      	var fill_color = "#3355FF";
+				      	if(d.group == 2){
+				      		fill_color = "#FF3333";
+				      	}
+				      	return fill_color; })
+				      .call(d3.drag()
+				          .on("start", dragstarted)
+				          .on("drag", dragged)
+				          .on("end", dragended));
+
+				  var lables = node.append("text")
+				      .text(function(d) {
+				        return d.id;
+				      })
+				      .attr('x', 6)
+				      .attr('y', 3);
+
+				  node.append("title")
+				      .text(function(d) { return d.name; });
+
+				  simulation
+				      .nodes(graph.nodes)
+				      .on("tick", ticked);
+
+				  simulation.force("link")
+				      .links(graph.links);
+
+				  function ticked() {
+				    link
+				        .attr("x1", function(d) { return d.source.x; })
+				        .attr("y1", function(d) { return d.source.y; })
+				        .attr("x2", function(d) { return d.target.x; })
+				        .attr("y2", function(d) { return d.target.y; });
+
+				    node
+				        .attr("transform", function(d) {
+				          return "translate(" + d.x + "," + d.y + ")";
+				        })
+				  }
+
+				function dragstarted(d) {
+				  if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+				  d.fx = d.x;
+				  d.fy = d.y;
+				}
+
+				function dragged(d) {
+				  d.fx = d3.event.x;
+				  d.fy = d3.event.y;
+				}
+
+				function dragended(d) {
+				  if (!d3.event.active) simulation.alphaTarget(0);
+				  d.fx = null;
+				  d.fy = null;
+				}
+			});
+        }
+
+        function displayspeaker(speaker) {
+            document.getElementById('Speaker').innerHTML = '';
+            
+            document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="block";
+            document.getElementById("poddetails").style.display="none";
+
+            if(speaker != 'Lex Fridman') {
+                var client = new GetHttpClient();
+                client.get(service_url+'/'+'search_podcast_guest?query='+speaker, function(response) {
+                    setTimeout(function(){ 
+                        var guests = JSON.parse(response).response;
+                        var p0 = document.createElement("P");                       
+                        p0.appendChild(document.createTextNode('-------- Speaker Description -----------'));
+                        document.getElementById("Speaker").appendChild(p0);
+                        var p1 = document.createElement("P");                       
+                        p1.appendChild(document.createTextNode(guests[0]['guest_name']));
+                        document.getElementById("Speaker").appendChild(p1); 
+                        var p2 = document.createElement("P");
+                        p2.appendChild(document.createTextNode(guests[0]['guest_description']));
+                        document.getElementById("Speaker").appendChild(p2); 
+                    }, 100);
+                });
+            } else {
+                setTimeout(function(){ 
+                    var p0 = document.createElement("P");                       
+                    p0.appendChild(document.createTextNode('-------- Speaker Description -----------'));
+                    document.getElementById("Speaker").appendChild(p0);
+                    var p1 = document.createElement("P");                       
+                    p1.appendChild(document.createTextNode('Lex Fridman'));
+                    document.getElementById("Speaker").appendChild(p1); 
+                    var p2 = document.createElement("P");
+                    p2.appendChild(document.createTextNode(lex_fridman_desc));
+                    document.getElementById("Speaker").appendChild(p2); 
+                }, 100);
+            }
+        }
+
+        function displaypodcast(video_id) {
+            document.getElementById('poddetails').innerHTML = '';
+
+            document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="block";
+
+            var client = new GetHttpClient();
+            client.get(service_url+'/'+'search_podcast_metadata?query='+video_id, function(response) {
+                setTimeout(function(){ 
+                    var meta = JSON.parse(response).response;
+                    var p0 = document.createElement("P");                       
+                    p0.appendChild(document.createTextNode('-------- Podcast Details -----------'));
+                    document.getElementById("poddetails").appendChild(p0);
+                    var p1 = document.createElement("P");                       
+                    p1.appendChild(document.createTextNode(meta[0]['title']));
+                    document.getElementById("poddetails").appendChild(p1); 
+                    
+                    meta[0]['description'].forEach(x => {
+                        var p = document.createElement("P");
+                        p.appendChild(document.createTextNode(x));
+                        document.getElementById("poddetails").appendChild(p); 
+                      });
+                }, 100);
+            });
+        }
+
+        function displaysummary(segment) {
+            document.getElementById('Segment').innerHTML = '';
+
+            document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("Segment").style.display="block";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="none";
+            
+            var found_segment = segments.filter(obj => {
+                  return obj['subtopic_name'].concat(' ', obj['start_timestamp'], ' - ', obj['end_timestamp']) 
+                  === segment
+            });
+            setTimeout(function(){
+                var p0 = document.createElement("P");                       
+                p0.appendChild(document.createTextNode('-------- Segment Summary -----------'));
+                document.getElementById("Segment").appendChild(p0);
+                var p1 = document.createElement("P");                       
+                p1.appendChild(document.createTextNode(segment));
+                document.getElementById("Segment").appendChild(p1); 
+                var p2 = document.createElement("P");
+                p2.appendChild(document.createTextNode(found_segment[0]['segment_summary']));
+                document.getElementById("Segment").appendChild(p2); 
+            }, 100);
+        }
+
+        function displaysearch() {
+        	d3.selectAll("svg > *").remove();
+            document.getElementById('searchresults').innerHTML = '';
+            segments = null;
+            speakers = null;
+            podcasts = null;
+            document.getElementById('speakerdropdown').options.length = 1;
+            document.getElementById('podcastdropdown').options.length = 1;
+
+            document.getElementById("speakerdropdown").style.display="block";
+            document.getElementById("podcastdropdown").style.display="block";
+            document.getElementById("searchdetails").style.display="block";
+            document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="none";
+
+            var query = document.getElementById("query").value;
+            var client = new GetHttpClient();
+            client.get(service_url+'/'+'search_podcast_segment?query='+query, function(response) {
+                setTimeout(function(){ 
+                    segments = JSON.parse(response).response;
+                    document.getElementById('searchresults').appendChild(makeUL_segments(segments));
+
+                    speakers = Array.from(new Set(segments.map(x => x['speaker_name'])));
+                    var speaker_options = document.getElementById('speakerdropdown').options;
+                    var speaker_list = [];
+                    speakers.forEach(x => {
+                        var entry = new Option(x);
+                        if(!speaker_list.includes(entry)){
+                            speaker_options.add(entry);
+                            speaker_list.push(x);
+                        }
+                    });
+                        
+                    podcasts = Array.from(new Set(segments.map(x => x['title'])));
+                    var podcast_options = document.getElementById('podcastdropdown').options;
+                    var podcast_list = [];
+                    podcasts.forEach(x => {
+                        var entry = new Option(x);
+                        if(!podcast_list.includes(entry)){
+                            podcast_options.add(entry);
+                            podcast_list.push(x);
+                        }
+                    });
+                }, 100);
+            });
+        }
+
+        function filter_segments_by_speaker() {
+            selection = document.getElementById("speakerdropdown").value;
+            
+            document.getElementById("podcastdropdown").value = 'None';
+            document.getElementById('searchresults').innerHTML = '';
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="none";
+            document.getElementById("searchdetails").style.display="block";
+
+            var filtered_list = [];
+
+            if(selection == 'None') {
+                filtered_list = segments;
+            } else {
+                filtered_list = segments.filter(function (el) {
+                  return el.speaker_name == selection;
+                });
+            }
+
+            setTimeout(function(){ 
+                document.getElementById('searchresults').appendChild(makeUL_segments(filtered_list));
+            }, 100);
+        }
+
+        function filter_segments_by_podcast(selection) {
+            selection = document.getElementById("podcastdropdown").value;
+            
+            document.getElementById("speakerdropdown").value = 'None';
+            document.getElementById('searchresults').innerHTML = '';
+            document.getElementById("Segment").style.display="none";
+            document.getElementById("Speaker").style.display="none";
+            document.getElementById("poddetails").style.display="none";
+            document.getElementById("searchdetails").style.display="block";
+
+            var filtered_list = [];
+
+            if(selection == 'None') {
+                filtered_list = segments;
+            } else {
+                filtered_list = segments.filter(function (el) {
+                  return el.title == selection;
+                });
+            }
+
+            setTimeout(function(){ 
+                document.getElementById('searchresults').appendChild(makeUL_segments(filtered_list));
+            }, 100);
+        }
+
+        var GetHttpClient = function() {
+            this.get = function(aUrl, aCallback) {
+                var anHttpRequest = new XMLHttpRequest();
+                anHttpRequest.onreadystatechange = function() { 
+                    if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                        aCallback(anHttpRequest.responseText);
+                }
+
+                anHttpRequest.open( "GET", aUrl, true );            
+                anHttpRequest.send( null );
+            }
+        }
+
+        function makeUL_segments(array) {
+            var list = document.createElement('ul');
+
+            for (var i = 0; i < array.length; i++) {
+                var sublist = document.createElement('ul');
+
+                var item1 = document.createElement('li');
+                item1.onclick = function(e){displayspeaker(e.target.innerText.split(":")[1].trim())};
+                item1.appendChild(document.createTextNode('Speaker: ' + array[i]['speaker_name']));
+                sublist.appendChild(item1);
+
+                var item2 = document.createElement('li');
+                item2.appendChild(document.createTextNode('Subtopic : ' + array[i]['subtopic_name'] + '\t' +
+                    array[i]['start_timestamp'] + ' - ' + array[i]['end_timestamp']));
+                item2.onclick = function(e){displaysummary(e.target.innerText.split("Subtopic :")[1].trim())};
+                sublist.appendChild(item2);
+                
+                var item3 = document.createElement('li');
+                item3.onclick = 
+                    function(e){displaypodcast(e.target.innerText.split("video_id :")[1].slice(0,-1).trim())};
+                item3.appendChild(document.createTextNode('Podcast : ' + array[i]['title'] +
+                    ' (video_id : ' + array[i]['video_id'] + ')'));
+                sublist.appendChild(item3);
+
+                sublist.appendChild(document.createElement("br"));
+                
+                list.appendChild(sublist);
+            }
+            return list;
+        }
+    </script>
+
+</head>
+<body style="background-image: url(static/images/shutterstock_163052525-730x342.jpg);background-repeat: no-repeat;background-size: cover;">
+<div style="margin-top: 1vw;" class="row">
+    <div class="col-xl-7">
+        <div  class="row">
+            <div class="col-xl-11 offset-xl-1" >
+                <input id="query" style="background-color: #fcf8e3; height: 2.5vw; width: 53vw;" type="text" placeholder="Search" onchange="displaysearch()" />
+            </div>
+        </div>
+        <div style="margin-top: 1.3vw;" class="row">
+            <div class="col-xl-3 offset-xl-1">
+                <div style="background-color: #fcf8e3;border: none; border-radius: 0.4vw;" class="row">
+                    <button onclick="displayknowledgegraph()">View Knowledge Graph</button>
+                </div>
+            </div>
+            <div  class="col-xl-3 offset-xl-1">
+                <div class="row">
+                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: #fcf8e3;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="speakerdropdown" name="speakers" onselect="filter_segments_by_speaker()" onchange="filter_segments_by_speaker()">
+                        <option value="None">No Selection</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-xl-3 offset-xl-1">
+                 <div class="row">
+                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: #fcf8e3;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="podcastdropdown" name="podcasts" onselect="filter_segments_by_podcast()" onchange="filter_segments_by_podcast()">
+                        <option value="None">No Selection</option>
+                    </select>
+                 </div>
+            </div>
+        </div>
+        <div id="graphcontainer" style="background-color: #fcf8e3;width:1500px;height:700px;display: none;">
+        	<svg id="Graph" style="width:1500px;height:700px;"></svg>
+        </div>
+        <div class="row" id="searchdetails" style="display: none;">
+            <div style="margin-top: 1.3vw; background-color: #fcf8e3;" class="col-xl-11 offset-xl-1" id="searchresults">
+            </div>
+        </div>
+    </div>
+    <div id="Segment" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1" ></div>
+    <div id="Speaker" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1"></div>
+    <div id="poddetails" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1"></div>
+</div>
+</body>
+</html>
