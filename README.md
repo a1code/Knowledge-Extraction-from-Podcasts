@@ -1,6 +1,6 @@
 # Knowledge-Extraction-from-Podcasts
 
-**Dataset**: [Lex Fridman Podcast](https://youtu.be/S_AFc_BXht4)
+**Dataset**: [Lex Fridman Podcast](https://www.youtube.com/watch?v=S_AFc_BXht4&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
 
 **Requirements**:  
 Java (>=1.8)  
