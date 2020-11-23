@@ -11,18 +11,18 @@ Python (3+)
 PySpark (3.0.0+) 
 
 **Deployment on localhost**:  
-1) Start Elasticsearch service.  
+1) Launch Elasticsearch service.  
 ```
 python3 -m pip install elasticsearch
 sudo service elasticsearch start
 curl -XGET "localhost:9200"
 ```
-2) Start MongoDB daemon.  
+2) Launch MongoDB daemon.  
 ```
 pip3 install pymongo
 sudo service mongod start
 ```
-3) Setup the environment.  
+3) Setup the dependencies.  
 ```
 sudo apt update
 sudo apt install ffmpeg
