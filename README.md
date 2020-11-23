@@ -1,5 +1,7 @@
 # Knowledge-Extraction-from-Podcasts
 
+**Note**: Please refer Project_Description.pdf and demo_version0.1.mp4 for details.  
+
 **Implementation Summary**:  
 • Architected and developed an end-to-end data pipeline to extract, transform and index segments by speaker in Lex Fridman podcasts for creating a searchable knowledge repository, accessible through a flask application interface  
 • Implemented modules for audio download, segmentation, transcribing to text, text summarization, named entity recognition and knowledge graph visualization tasks by levraging pre-trained models and librarires like pytube, ffmpeg, pydub, CMUSphinx, deepspeech, bert-extractive-summarizer, spacy and d3.js  
