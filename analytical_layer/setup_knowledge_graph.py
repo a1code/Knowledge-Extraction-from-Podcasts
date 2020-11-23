@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
 	# get all nodes for knowledge graph
 	entities_raw = df_out.select(concat(col("speaker_name"), lit(","), col("entities")))\
-	.rdd.flatMap(lambda x: x).collect()
+	.dropDuplicates().rdd.flatMap(lambda x: x).collect()
 	entities = [entity.split(",") for entity in entities_raw]
 	nodes = [item.strip() for sublist in entities for item in sublist]
 
@@ -90,7 +90,8 @@ if __name__ == '__main__':
 
 	
 	# get all edges for knowledge graph
-	speaker_vs_entities = df_out.select("speaker_name", "entities").rdd.map(lambda x: [x[0], x[1]]).collect()
+	speaker_vs_entities = df_out.select("speaker_name", "entities")\
+	.dropDuplicates().rdd.map(lambda x: [x[0], x[1]]).collect()
 	list_all_edges = []
 	edge_count = 0
 	for entry in speaker_vs_entities:

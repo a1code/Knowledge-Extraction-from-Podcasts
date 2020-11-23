@@ -26,7 +26,7 @@
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
     <script src="static/js/bootstrap.bundle.js"></script>
-    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <script src="static/js/d3.v4.min.js"></script>
     
     <script>
         var lex_fridman_desc = "Lex Fridman is an AI researcher working on autonomous vehicles, human-robot interaction, and machine learning at MIT and beyond. In his podcast series (Formerly called Artificial Intelligence Podcast), he drives conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power."
@@ -46,15 +46,16 @@
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
 
-	        var svg = d3.select("#Graph"),
-			    width = "1500",
-			    height = "800";
+	
+		    var width = "1500";
+		    var height = "1000";
+            var svg = d3.select("#Graph").attr("width", width).attr("height", height).attr("overflow", "visible");
 
 			// var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 			var simulation = d3.forceSimulation()
 			    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-			    .force("charge", d3.forceManyBody())
+			    .force("charge", d3.forceManyBody().strength(-20))
 			    .force("center", d3.forceCenter(width / 2, height / 2));
 
 			d3.json(service_url+'/'+'search_podcast_knowledge_graph?query='+speakers, function(error, data) {
@@ -403,8 +404,8 @@
                  </div>
             </div>
         </div>
-        <div id="graphcontainer" style="background-color: #fcf8e3;width:1500px;height:700px;display: none;">
-        	<svg id="Graph" style="width:1500px;height:700px;"></svg>
+        <div id="graphcontainer" style="display: none;width:1000px;height:600px;overflow: auto">
+        	<svg id="Graph" style="background-color: #fcf8e3;"></svg>
         </div>
         <div class="row" id="searchdetails" style="display: none;">
             <div style="margin-top: 1.3vw; background-color: #fcf8e3;" class="col-xl-11 offset-xl-1" id="searchresults">
