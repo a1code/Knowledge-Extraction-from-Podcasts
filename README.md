@@ -3,8 +3,8 @@
 **Note**: Please refer Project_Description.pdf and demo_version0.1.mp4 for details.  
 
 **Implementation Summary**:  
-• Architected and developed an end-to-end data pipeline to extract, transform and index segments by speaker in Lex Fridman podcasts for creating a searchable knowledge repository, accessible through a flask application interface  
-• Implemented modules for audio download, segmentation, transcribing to text, text summarization, named entity recognition and knowledge graph visualization tasks by levraging pre-trained models and librarires like pytube, ffmpeg, pydub, CMUSphinx, deepspeech, bert-extractive-summarizer, spacy and d3.js  
+• Developed end-to-end data pipeline to extract, transform and index segments by speaker in Lex Fridman podcasts for creating a knowledge repository in Elasticsearch, accessible through a flask application interface  
+• Implemented modules for audio segmentation, speech-to-text, text summarization, NER and knowledge graph visualization tasks by leveraging libraries such as pydub, CMUSphinx, deepspeech, spacy, PySpark and d3.js  
 • Setup the data model for raw and processed data to answer user queries, and visualize the knowledge graph  
 
 **Dataset**: [Lex Fridman Podcast](https://www.youtube.com/watch?v=S_AFc_BXht4&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
