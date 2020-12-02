@@ -56,7 +56,8 @@ python3 data_ingestion_layer/transform/data_segmentation_by_subtopics.py
 cd data_ingestion_layer/transform/speaker-diarisation
 mvn clean install
 cd ../../..
-java -jar data_ingestion_layer/transform/speaker-diarisation/target/speaker-diarisation-0.0.1-jar-with-dependencies.jar "./"
+echo $PWD
+java -jar data_ingestion_layer/transform/speaker-diarisation/target/speaker-diarisation-0.0.1-jar-with-dependencies.jar "<Path from previous command>"
 
 python3 data_ingestion_layer/transform/data_segmentation_by_speakers.py
 
