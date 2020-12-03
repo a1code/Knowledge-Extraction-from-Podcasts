@@ -48,7 +48,7 @@ def main():
 			continue
 
 		# download no more than these many podcasts at a time, may be removed later
-		if(limit == 3):
+		if(limit == 7):
 			break
 
 		# extract metadata for this podcast

@@ -1,28 +1,7 @@
 from pydub import AudioSegment
-from pydub.utils import db_to_float
-from functools import reduce
 import ast
 import os
 import datetime as dt
-from itertools import cycle
-
-
-def remove_silence(audio):
-	# consider anything that is 30 decibels quieter than
-	# the average volume of the podcast to be silence
-	average_loudness = audio.rms
-	silence_threshold = average_loudness * db_to_float(-30)
-
-	# filter out the silence
-	audio_parts = (ms for ms in audio if ms.rms > silence_threshold)
-
-	# combine all the chunks back together
-	try:
-		audio_without_silence = reduce(lambda a, b: a + b, audio_parts)
-	except:
-		audio_without_silence = audio
-
-	return audio_without_silence
 
 
 def get_total_seconds(time_str):
@@ -65,7 +44,7 @@ def main():
 			if file.endswith("speakerSplits.txt")],\
 			key=lambda x:\
 			int(x.split("#")[1][x.split("#")[1].find("(")+1 : x.split("#")[1].find(")")].split(" ")[0]))
-
+		
 	# iterate over each podcast
 	for key, value in metadata_files.items():
 		# os.makedirs(key+'/temp', exist_ok=True) # only for debugging, to be removed
@@ -76,14 +55,13 @@ def main():
 			host = 'Lex Fridman'
 			guest = dict_metadata['title'].split("_")[0].strip()
 
-		speaker_iterator = cycle([guest, host])
-		prev_speaker_code = -1
-		prev_speaker_name = host
+		speaker_iterator = [host, guest]
 		
 		speaker_segments = speaker_split_files[key]
 		# iterate over each speaker segment for this podcast
 		for file in speaker_segments:
 			print('Processing file : ', file)
+			min_speaker_code = -1
 			video_id = file.split("#")[0]
 			subtopic = file.split("#")[1]				
 			start_timestamp = file.split("#")[2]
@@ -102,40 +80,27 @@ def main():
 						get_total_seconds(x[0]) + get_total_seconds(x[1]), \
 						x[2]) \
 					for x in subtopic_by_speakers]
-				all_speaker_segments_sorted = sorted(all_speaker_segments, key=lambda x: x[0])
 
 				# split wav file by speaker segments
 				snippet_count = 0
-				for speaker_segment in all_speaker_segments_sorted:
+				for speaker_segment in all_speaker_segments:
 					snippet_count = snippet_count + 1
-					snippet = "(" + str(snippet_count) + " of " + str(len(all_speaker_segments_sorted)) + ")"
+					snippet = "(" + str(snippet_count) + " of " + str(len(all_speaker_segments)) + ")"
 					# print(speaker_segment)
 
 					audio_chunk=audio[speaker_segment[0]*1000:speaker_segment[1]*1000] #pydub works in millisec
 					
 					# get speaker for this segment; tricky part, not too accurate currently, improve this later
-					if (prev_speaker_code == -1):
-						prev_speaker_code = speaker_segment[2]
-						speaker = prev_speaker_name
-					elif (prev_speaker_code - speaker_segment[2]) == 0:
-						speaker = prev_speaker_name
+					if (min_speaker_code == -1) or (speaker_segment[2] < min_speaker_code):
+						min_speaker_code = speaker_segment[2]
+						speaker = speaker_iterator[0]
+					elif (min_speaker_code - speaker_segment[2]) == 0:
+						speaker = speaker_iterator[0]
 					else:
-						if (speaker_segment[2] > 2) and (speaker_segment[2]%2 == 0):
-							speaker = prev_speaker_name
-						else:
-							speaker = next(speaker_iterator)
-					# print(\
-					# subtopic, \
-					# str(speaker_segment[2]), \
-					# speaker, snippet, \
-					# str(speaker_segment[0]), \
-					# str(speaker_segment[1]))
-					
-					# remove silence from the audio of this speaker segment
-					audio_out = remove_silence(audio_chunk)
+						speaker = speaker_iterator[1]
 
 					# write each split to the directory for this podcast
-					audio_out.export(\
+					audio_chunk.export(\
 						key+'/'\
 						+video_id+"#"\
 						+subtopic+"#"\
