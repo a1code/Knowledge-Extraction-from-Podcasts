@@ -5,6 +5,9 @@ import numpy as np
 import ast
 from pymongo import MongoClient
 import datetime
+import requests
+import string
+from spellchecker import SpellChecker
 
 
 def get_db():
@@ -42,6 +45,28 @@ def transcribe_audio_to_text(audio, pretrained_model):
 	return text
 
 
+def punctuate_text(text):
+	data = {
+	'text': text
+	}
+	response = requests.post('http://bark.phon.ioc.ee/punctuator', data=data)
+	return response.text
+
+
+def correct_text(text, spell):
+	corrected_text = ''
+	words = text.split(' ')
+	words_raw = [x.strip().translate(str.maketrans('', '', string.punctuation)) for x in words]
+	misspelled = spell.unknown([x for x in words_raw if x]) # find those words that may be misspelled
+	if len(misspelled) > 0:
+		for word in misspelled:
+			corrected_text = text.replace(word, spell.correction(word))
+	if corrected_text:
+		return corrected_text
+	else:
+		return text
+
+
 def delete_file_from_path(path):
 	try:
 		os.remove(path)
@@ -52,6 +77,7 @@ def delete_file_from_path(path):
 
 # Main function 
 def main():
+	spell = SpellChecker()
 	# setup pre trained model for audio to text transcribing
 	model_file_path = 'deepspeech-0.6.0-models/output_graph.pbmm'
 	beam_width = 500
@@ -88,10 +114,12 @@ def main():
 
 			# read wav audio file for this segment
 			wav_audio = wave.open(podcast+'/'+segment, 'r')
-			
+
 			# transcribe this audio segment to text
 			raw_text = transcribe_audio_to_text(wav_audio, model)
-
+			punctuated_text = punctuate_text(raw_text)
+			corrected_text = correct_text(punctuated_text, spell)
+			
 			# read metadata for this podcast
 			with open(podcast+'/'+metadata_filename, "r") as metadata:
 				dict_metadata = ast.literal_eval(metadata.read())
@@ -107,7 +135,7 @@ def main():
 			record['speaker_order'] = segment_properties[2].split("(")[1].replace(')','')
 			record['start_timestamp'] = str(datetime.timedelta(seconds=int(segment_properties[3])))
 			record['end_timestamp'] = str(datetime.timedelta(seconds=int(segment_properties[4])))
-			record['raw_text'] = raw_text
+			record['raw_text'] = corrected_text
 			
 			# insert MongoDb record into the collection
 			insert_record(podcast_db, record)
