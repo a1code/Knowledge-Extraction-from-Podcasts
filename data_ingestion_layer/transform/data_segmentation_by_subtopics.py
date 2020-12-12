@@ -1,6 +1,5 @@
 from pydub import AudioSegment
 import ast
-import datetime as dt
 import os
 
 
@@ -46,11 +45,11 @@ def main():
 				with open(podcast+'/'+filename+".txt", "r") as metadata:
 					dict_metadata = ast.literal_eval(metadata.read())
 					desc_start_idx = dict_metadata['description'].find("OUTLINE:")
-					desc_end_idx = dict_metadata['description'].find("CONNECT:")
-					
+					desc_end_idx = dict_metadata['description'][desc_start_idx+8:].find("\n\n")
 					video_id = dict_metadata['video_id']
-					segments = dict_metadata['description'][desc_start_idx+8:desc_end_idx-1].strip().split('\n')[1:]
-
+					segments = dict_metadata['description'][desc_start_idx+8:desc_start_idx+8+desc_end_idx]\
+						.strip().split('\n')[1:]
+						
 					# parse timestamp segmentation of subtopics from podcast description
 					seg_start = [get_total_seconds(x.split('-')[0].strip()) for x in segments]
 					seg_end = seg_start[1:]

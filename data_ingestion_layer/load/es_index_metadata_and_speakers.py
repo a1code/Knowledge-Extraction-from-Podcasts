@@ -11,9 +11,9 @@ def get_es():
 
 def delete_directory(path):
 	try:
-	    shutil.rmtree(path)
+		shutil.rmtree(path)
 	except OSError as e:
-	    print("Error: %s : %s" % (path, e.strerror))
+		print("Error: %s : %s" % (path, e.strerror))
 
 
 

@@ -1,13 +1,9 @@
-import deepspeech
 import os
 import wave
-import numpy as np
 import ast
 from pymongo import MongoClient
+import gridfs
 import datetime
-import requests
-import string
-from spellchecker import SpellChecker
 
 
 def get_db():
@@ -16,55 +12,19 @@ def get_db():
 	return db
 
 
+def get_fs(db):
+	fs = gridfs.GridFS(db)
+	return fs
+
+
 def insert_record(db, insert_dict):
 	db.segment.insert(insert_dict)
 
 
-def transcribe_audio_to_text(audio, pretrained_model):
-	# rate = audio.getframerate()
-	frames = audio.getnframes()
-	buffer = audio.readframes(frames)
-	# print(rate)
-	# print(pretrained_model.sampleRate())
-	# print(type(buffer))
-	data16 = np.frombuffer(buffer, dtype=np.int16)
-	# print(type(data16))
-
-	context = pretrained_model.createStream()
-	buffer_len = len(buffer)
-	offset = 0
-	batch_size = 16384
-	text = ''
-	while offset < buffer_len:
-		end_offset = offset + batch_size
-		chunk = buffer[offset:end_offset]
-		data16 = np.frombuffer(chunk, dtype=np.int16)
-		pretrained_model.feedAudioContent(context, data16)
-		text = pretrained_model.intermediateDecode(context)
-		offset = end_offset
-	return text
-
-
-def punctuate_text(text):
-	data = {
-	'text': text
-	}
-	response = requests.post('http://bark.phon.ioc.ee/punctuator', data=data)
-	return response.text
-
-
-def correct_text(text, spell):
-	corrected_text = ''
-	words = text.split(' ')
-	words_raw = [x.strip().translate(str.maketrans('', '', string.punctuation)) for x in words]
-	misspelled = spell.unknown([x for x in words_raw if x]) # find those words that may be misspelled
-	if len(misspelled) > 0:
-		for word in misspelled:
-			corrected_text = text.replace(word, spell.correction(word))
-	if corrected_text:
-		return corrected_text
-	else:
-		return text
+def save_to_fs(fs, file):
+	with open(file, "rb") as f:
+		data = f.read()
+	return fs.put(data, encoding='utf-8', content_type="audio/wav")
 
 
 def delete_file_from_path(path):
@@ -77,19 +37,9 @@ def delete_file_from_path(path):
 
 # Main function 
 def main():
-	spell = SpellChecker()
-	# setup pre trained model for audio to text transcribing
-	model_file_path = 'deepspeech-0.6.0-models/output_graph.pbmm'
-	beam_width = 500
-	model = deepspeech.Model(model_file_path, beam_width)
-	lm_file_path = 'deepspeech-0.6.0-models/lm.binary'
-	trie_file_path = 'deepspeech-0.6.0-models/trie'
-	lm_alpha = 0.75
-	lm_beta = 1.85
-	model.enableDecoderWithLM(lm_file_path, trie_file_path, lm_alpha, lm_beta)
-
 	# get MongoDb client
 	podcast_db = get_db()
+	podcast_fs = get_fs(podcast_db)
 
 	# find all podcast directories
 	podcasts = [x[0] for x in os.walk(".") if "podcast_" in x[0]]
@@ -106,36 +56,49 @@ def main():
 		# find all wav audio files for this podcast
 		audio_segments = [file for file in all_files if file.endswith(".wav")]
 
+		# read metadata for this podcast
+		with open(podcast+'/'+metadata_filename, "r") as metadata:
+			dict_metadata = ast.literal_eval(metadata.read())
+			title = dict_metadata['title']
+			
 		# iterate over each audio segment for this podcast
 		for segment in audio_segments:
 			print("Processing file : ", segment)
 			segment_name = segment.split(".")[0]
 			segment_properties = segment_name.split("#")
 
-			# read wav audio file for this segment
+			# read audio properties
 			wav_audio = wave.open(podcast+'/'+segment, 'r')
+			wav_params = wav_audio.getparams()
+			nchannels = wav_params[0]
+			sampwidth = wav_params[1]
+			framerate = wav_params[2]
+			nframes = wav_params[3]
+			comptype = wav_params[4]
+			compname = wav_params[5]
+			wav_audio.close()
 
-			# transcribe this audio segment to text
-			raw_text = transcribe_audio_to_text(wav_audio, model)
-			punctuated_text = punctuate_text(raw_text)
-			corrected_text = correct_text(punctuated_text, spell)
+			# save wav file to gridfs
+			gridfs_key = save_to_fs(podcast_fs, podcast+'/'+segment)
 			
-			# read metadata for this podcast
-			with open(podcast+'/'+metadata_filename, "r") as metadata:
-				dict_metadata = ast.literal_eval(metadata.read())
-				title = dict_metadata['title']
-
 			# create MongoDb record corresponding to this audio segment
 			record = {}
 			record['video_id'] = segment_properties[0]
 			record['title'] = title
-			record['subtopic_name'] = segment_properties[1].split("(")[0]
-			record['subtopic_order'] = segment_properties[1].split("(")[1].replace(')','')
-			record['speaker_name'] = segment_properties[2].split("(")[0]
-			record['speaker_order'] = segment_properties[2].split("(")[1].replace(')','')
+			record['subtopic_name'] = segment_properties[1].split('(')[0]
+			record['subtopic_order'] = segment_properties[1].split('(')[1].replace(')','')
+			record['speaker_name'] = segment_properties[2].split('(')[0]
+			record['speaker_order'] = segment_properties[2].split('(')[1].replace(')','')
 			record['start_timestamp'] = str(datetime.timedelta(seconds=int(segment_properties[3])))
 			record['end_timestamp'] = str(datetime.timedelta(seconds=int(segment_properties[4])))
-			record['raw_text'] = corrected_text
+			record['gridfs_key'] = gridfs_key
+			record['nchannels'] = nchannels
+			record['sampwidth'] = sampwidth
+			record['framerate'] = framerate
+			record['nframes'] = nframes
+			record['comptype'] = comptype
+			record['compname'] = compname
+			record['segment_transcript'] = None
 			
 			# insert MongoDb record into the collection
 			insert_record(podcast_db, record)

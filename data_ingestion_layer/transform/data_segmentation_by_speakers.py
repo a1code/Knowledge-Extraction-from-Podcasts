@@ -1,7 +1,8 @@
 from pydub import AudioSegment
+from pydub.utils import db_to_float
+from functools import reduce
 import ast
 import os
-import datetime as dt
 
 
 def get_total_seconds(time_str):
@@ -17,6 +18,24 @@ def get_total_seconds(time_str):
 	if len(hms_str)==1:
 		s = hms_str[0]
 	return int(h) * 3600 + int(m) * 60 + int(s)
+
+
+def remove_silence(audio):
+	# consider anything that is 30 decibels quieter than
+	# the average volume of the podcast to be silence
+	average_loudness = audio.rms
+	silence_threshold = average_loudness * db_to_float(-30)
+
+	# filter out the silence
+	audio_parts = (ms for ms in audio if ms.rms > silence_threshold)
+
+	# combine all the chunks back together
+	try:
+		audio_without_silence = reduce(lambda a, b: a + b, audio_parts)
+	except:
+		audio_without_silence = audio
+
+	return audio_without_silence
 
 
 def delete_file_from_path(path):
@@ -106,7 +125,7 @@ def main():
 						+subtopic+"#"\
 						+speaker+snippet+"#"\
 						+str(int(start_timestamp) + speaker_segment[0])+"#"\
-						+str(int(start_timestamp) + speaker_segment[1])+"#"\
+						+str(int(start_timestamp) + speaker_segment[1])\
 						+".wav", format="wav")
 			
 			# delete speaker split info txt file and input wav file
