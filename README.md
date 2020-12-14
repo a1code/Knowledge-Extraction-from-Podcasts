@@ -33,7 +33,7 @@ sudo service mongod start
 ```
 sudo apt update
 sudo apt install ffmpeg
-pip3 install pytube
+python3 -m pip install git+https://github.com/nficano/pytube
 pip3 install pydub
 pip3 install deepspeech
 curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/deepspeech-0.6.0-models.tar.gz
