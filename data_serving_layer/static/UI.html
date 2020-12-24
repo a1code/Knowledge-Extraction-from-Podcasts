@@ -18,11 +18,15 @@
 		  font-family: sans-serif;
 		  font-size: 10px;
 		}
+
 	</style>
 
     <link rel="stylesheet" href="static/css/bootstrap.css">
     <link rel="stylesheet" href="static/css/bootstrap-grid.css">
     <link rel="stylesheet" href="static/css/bootstrap-reboot.css">
+    <link href="static/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <script src="static/js/jquery.min.js"></script>
     <script src="static/js/bootstrap.js"></script>
     <script src="static/js/bootstrap.bundle.js"></script>
@@ -30,18 +34,22 @@
     
     <script>
         var lex_fridman_desc = "Lex Fridman is an AI researcher working on autonomous vehicles, human-robot interaction, and machine learning at MIT and beyond. In his podcast series (Formerly called Artificial Intelligence Podcast), he drives conversations about science, technology, history, philosophy and the nature of intelligence, consciousness, love, and power."
-        var service_url = 'http://localhost:8080';
+        var service_url = 'http://localhost:5000';
         var segments = null;
         var speakers = null;
         var podcasts = null;
+        var current_podcast = null;
 
-        function displayknowledgegraph() {
+        function displayentitiesgraph() {
         	d3.selectAll("svg > *").remove();
             document.getElementById("searchdetails").style.display="none";
             document.getElementById("speakerdropdown").style.display="none";
             document.getElementById("podcastdropdown").style.display="none";
+            document.getElementById("showentitiesgraph").style.display="none";
 
             document.getElementById("graphcontainer").style.display="block";
+            document.getElementById('audiofile').src = '';
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Segment").style.display="none";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
@@ -55,10 +63,12 @@
 
 			var simulation = d3.forceSimulation()
 			    .force("link", d3.forceLink().id(function(d) { return d.id; }))
-			    .force("charge", d3.forceManyBody().strength(-20))
+			    .force("charge", d3.forceManyBody().strength(-500))
 			    .force("center", d3.forceCenter(width / 2, height / 2));
 
-			d3.json(service_url+'/'+'search_podcast_knowledge_graph?query='+speakers, function(error, data) {
+            var podcaststring = current_podcast.replace(/\s/g, '').replace(/_/g, '').toLowerCase();
+            var podcast = podcaststring.substr(0, podcaststring.indexOf('lexfridmanpodcast'));
+			d3.json(service_url+'/'+'search_podcast_entities_graph?query='+podcast, function(error, data) {
 				if (error) throw error;
 
 				var graph = data.response;
@@ -68,7 +78,9 @@
 			    .selectAll("line")
 			    .data(graph.links)
 			    .enter().append("line")
-			      .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
+                .attr("stroke-width", 2)
+                .style("stroke", function(d) { return "#FFFF00"; });;
+			      // .attr("stroke-width", function(d) { return Math.sqrt(d.value); });
 
 				  var node = svg.append("g")
 				      .attr("class", "nodes")
@@ -77,7 +89,7 @@
 				    .enter().append("g")
 				    
 				  var circles = node.append("circle")
-				      .attr("r", 5)
+				      .attr("r", 3)
 				      .attr("fill", function(d) {
 				      	var fill_color = "#3355FF";
 				      	if(d.group == 2){
@@ -91,8 +103,8 @@
 
 				  var lables = node.append("text")
 				      .text(function(d) {
-				        return d.id;
-				      })
+				        return d.name;
+				      }).style("font-size", function (d) { return '10px'; })
 				      .attr('x', 6)
 				      .attr('y', 3);
 
@@ -139,48 +151,89 @@
         }
 
         function displayspeaker(speaker) {
+            current_speaker = speaker;
             document.getElementById('Speaker').innerHTML = '';
-            
+            document.getElementById('audiofile').src = '';
+
+            document.getElementById("showentitiesgraph").style.display="none";
             document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Segment").style.display="none";
             document.getElementById("Speaker").style.display="block";
             document.getElementById("poddetails").style.display="none";
 
             if(speaker != 'Lex Fridman') {
+                document.getElementById("showentitiesgraph").style.display="block";
                 var client = new GetHttpClient();
                 client.get(service_url+'/'+'search_podcast_guest?query='+speaker, function(response) {
                     setTimeout(function(){ 
                         var guests = JSON.parse(response).response;
-                        var p0 = document.createElement("P");                       
-                        p0.appendChild(document.createTextNode('-------- Speaker Description -----------'));
-                        document.getElementById("Speaker").appendChild(p0);
-                        var p1 = document.createElement("P");                       
+                        // var p0 = document.createElement("P");
+                        // p0.appendChild(document.createTextNode('-------- Speaker Bio -----------'));
+                        // document.getElementById("Speaker").appendChild(p0);
+                        // var p1 = document.createElement("P");
+                        // p1.appendChild(document.createTextNode(guests[0]['guest_name']));
+                        // document.getElementById("Speaker").appendChild(p1);
+                        // var p2 = document.createElement("P");
+                        // p2.appendChild(document.createTextNode(guests[0]['guest_description']));
+                        // document.getElementById("Speaker").appendChild(p2);
+                        var card = document.createElement("div");
+                        card.className='card';
+                        var head = document.createElement("div");
+                        head.className='card-header'
+                        head.style.textAlign= 'center';
+                        head.style.fontSize= 'larger';
+                        head.style.fontWeight= '500';
+                        var headseg= document.createElement("div");
+                        headseg.innerText='Speaker Bio'
+                        head.appendChild(headseg);
+                        var body= document.createElement("div");
+                        body.className='card-body';
+                        var p1 = document.createElement("P");
                         p1.appendChild(document.createTextNode(guests[0]['guest_name']));
-                        document.getElementById("Speaker").appendChild(p1); 
+                        body.appendChild(p1);
                         var p2 = document.createElement("P");
                         p2.appendChild(document.createTextNode(guests[0]['guest_description']));
-                        document.getElementById("Speaker").appendChild(p2); 
-                    }, 100);
-                });
+                        body.appendChild(p2);
+                        card.appendChild(head);
+                        card.appendChild(body);
+                        document.getElementById("Speaker").appendChild(card);
+                            }, 100);
+                        });
             } else {
-                setTimeout(function(){ 
-                    var p0 = document.createElement("P");                       
-                    p0.appendChild(document.createTextNode('-------- Speaker Description -----------'));
-                    document.getElementById("Speaker").appendChild(p0);
-                    var p1 = document.createElement("P");                       
+                setTimeout(function(){
+                    var card = document.createElement("div");
+                    card.className='card';
+                    var head = document.createElement("div");
+                    head.className='card-header';
+                    head.style.textAlign= 'center';
+                        head.style.fontSize= 'larger';
+                        head.style.fontWeight= '500';
+                    var headseg= document.createElement("div");
+                    headseg.innerText='Speaker Bio';
+                    head.appendChild(headseg);
+                    var body= document.createElement("div");
+                    body.className='card-body';
+                    // document.getElementById("Speaker").appendChild(p0);
+                    var p1 = document.createElement("P");
                     p1.appendChild(document.createTextNode('Lex Fridman'));
-                    document.getElementById("Speaker").appendChild(p1); 
+                    body.appendChild(p1);
                     var p2 = document.createElement("P");
                     p2.appendChild(document.createTextNode(lex_fridman_desc));
-                    document.getElementById("Speaker").appendChild(p2); 
+                    body.appendChild(p2);
+                    card.appendChild(head);
+                    card.appendChild(body);
+                     document.getElementById("Speaker").appendChild(card);
                 }, 100);
             }
         }
 
         function displaypodcast(video_id) {
             document.getElementById('poddetails').innerHTML = '';
-
+            document.getElementById('audiofile').src = '';
+            document.getElementById("showentitiesgraph").style.display="block";
             document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Segment").style.display="none";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="block";
@@ -189,61 +242,115 @@
             client.get(service_url+'/'+'search_podcast_metadata?query='+video_id, function(response) {
                 setTimeout(function(){ 
                     var meta = JSON.parse(response).response;
-                    var p0 = document.createElement("P");                       
-                    p0.appendChild(document.createTextNode('-------- Podcast Details -----------'));
-                    document.getElementById("poddetails").appendChild(p0);
-                    var p1 = document.createElement("P");                       
+                    var card = document.createElement("div");
+                    card.className='card';
+                    var head = document.createElement("div");
+                    head.className='card-header'
+                    head.style.textAlign= 'center';
+                        head.style.fontSize= 'larger';
+                        head.style.fontWeight= '500';
+                    var headseg= document.createElement("div");
+                    headseg.innerText='Podcast Details'
+                    head.appendChild(headseg);
+                    var body= document.createElement("div");
+                    body.className='card-body';
+                    var p1 = document.createElement("P");
                     p1.appendChild(document.createTextNode(meta[0]['title']));
-                    document.getElementById("poddetails").appendChild(p1); 
+                    body.appendChild(p1);
+                    current_podcast = meta[0]['title'];
+
                     
                     meta[0]['description'].forEach(x => {
                         var p = document.createElement("P");
                         p.appendChild(document.createTextNode(x));
-                        document.getElementById("poddetails").appendChild(p); 
+                        body.appendChild(p);
                       });
+                    card.appendChild(head);
+                    card.appendChild(body);
+                    document.getElementById("poddetails").appendChild(card);
                 }, 100);
             });
         }
 
-        function displaysummary(segment) {
+        function displaysegment(segment) {
             document.getElementById('Segment').innerHTML = '';
-
+            document.getElementById('audiofile').pause();
+            document.getElementById('audiofile').src = '';
+            document.getElementById("showentitiesgraph").style.display="none";
             document.getElementById("graphcontainer").style.display="none";
+            document.getElementById("segmentaudio").style.display="block";
             document.getElementById("Segment").style.display="block";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
+
             
             var found_segment = segments.filter(obj => {
                   return obj['subtopic_name'].concat(' ', obj['start_timestamp'], ' - ', obj['end_timestamp']) 
                   === segment
             });
             setTimeout(function(){
-                var p0 = document.createElement("P");                       
-                p0.appendChild(document.createTextNode('-------- Segment Summary -----------'));
-                document.getElementById("Segment").appendChild(p0);
-                var p1 = document.createElement("P");                       
-                p1.appendChild(document.createTextNode(segment));
-                document.getElementById("Segment").appendChild(p1); 
+
+                var card = document.createElement("div");
+                card.className='card';
+                var head = document.createElement("div");
+                head.className='card-header';
+                head.style.textAlign= 'center';
+                        head.style.fontSize= 'larger';
+                        head.style.fontWeight= '500';
+                var headseg= document.createElement("div");
+                headseg.innerText='Segment';
+                head.appendChild(headseg);
+                //p0.appendChild(document.createTextNode('-------- Segment -----------'));
+
+                var body= document.createElement("div");
+                body.className='card-body';
+                var p1 = document.createElement("P");
+                p1.appendChild(document.createTextNode(found_segment[0]['title']));
+                body.appendChild(p1);
                 var p2 = document.createElement("P");
-                p2.appendChild(document.createTextNode(found_segment[0]['segment_summary']));
-                document.getElementById("Segment").appendChild(p2); 
-            }, 100);
+                p2.appendChild(document.createTextNode(segment));
+                body.appendChild(p2);
+                var p3 = document.createElement("P");
+                p3.appendChild(document.createTextNode(found_segment[0]['segment_transcript']));
+                body.appendChild(p3);
+                card.appendChild(head);
+                card.appendChild(body);
+                document.getElementById("Segment").appendChild(card);
+
+                var client = new PostHttpClient();
+                document.getElementById('play').style.display="none"
+                client.post(service_url+'/'+'stream_audio?query='+JSON.stringify(found_segment), function(response) {
+                    resp_obj = JSON.parse(response);
+                    if((resp_obj['status']).toLowerCase() == 'success') {
+                        document.getElementById('audiofile').name = resp_obj['filename'];
+                        document.getElementById('play').style.display="block"
+                    }
+                });
+
+                //var playBtn = document.getElementById('play');
+                var stopBtn = document.getElementById('stop');
+                //playBtn.addEventListener('click', function(){document.getElementById('audiofile').play()}, false);
+                stopBtn.addEventListener('click', function(){document.getElementById('audiofile').pause()}, false);
+            }, 200); 
         }
 
         function displaysearch() {
         	d3.selectAll("svg > *").remove();
             document.getElementById('searchresults').innerHTML = '';
+            document.getElementById('audiofile').src = '';
             segments = null;
             speakers = null;
             podcasts = null;
+            current_podcast = null;
             document.getElementById('speakerdropdown').options.length = 1;
             document.getElementById('podcastdropdown').options.length = 1;
-
+            document.getElementById("showentitiesgraph").style.display="none";
             document.getElementById("speakerdropdown").style.display="block";
             document.getElementById("podcastdropdown").style.display="block";
             document.getElementById("searchdetails").style.display="block";
             document.getElementById("graphcontainer").style.display="none";
             document.getElementById("Segment").style.display="none";
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
 
@@ -281,10 +388,12 @@
 
         function filter_segments_by_speaker() {
             selection = document.getElementById("speakerdropdown").value;
-            
+            document.getElementById("showentitiesgraph").style.display="none";
             document.getElementById("podcastdropdown").value = 'None';
             document.getElementById('searchresults').innerHTML = '';
+            document.getElementById('audiofile').src = '';
             document.getElementById("Segment").style.display="none";
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
             document.getElementById("searchdetails").style.display="block";
@@ -306,10 +415,12 @@
 
         function filter_segments_by_podcast(selection) {
             selection = document.getElementById("podcastdropdown").value;
-            
+            document.getElementById("showentitiesgraph").style.display="none";
             document.getElementById("speakerdropdown").value = 'None';
             document.getElementById('searchresults').innerHTML = '';
+            document.getElementById('audiofile').src = '';
             document.getElementById("Segment").style.display="none";
+            document.getElementById("segmentaudio").style.display="none";
             document.getElementById("Speaker").style.display="none";
             document.getElementById("poddetails").style.display="none";
             document.getElementById("searchdetails").style.display="block";
@@ -342,11 +453,34 @@
             }
         }
 
+        var PostHttpClient = function() {
+            this.post = function(aUrl, aCallback) {
+                var anHttpRequest = new XMLHttpRequest();
+                anHttpRequest.onreadystatechange = function() { 
+                    if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
+                        aCallback(anHttpRequest.responseText);
+                }
+
+                anHttpRequest.open( "POST", aUrl, true );            
+                anHttpRequest.send( null );
+            }
+        }
+
         function makeUL_segments(array) {
-            var list = document.createElement('ul');
+
+            var maindiv = document.createElement('div');
+            maindiv.style.width= '54.5vw';
+            maindiv.style.marginLeft= '-1vw';
+            maindiv.style.marginTop='2vw';
 
             for (var i = 0; i < array.length; i++) {
-                var sublist = document.createElement('ul');
+                var list = document.createElement('div');
+                list.className='card';
+                list.style.marginTop='1vw';
+
+                var sublist = document.createElement('div');
+                sublist.className='card-body';
+                sublist.style.border='2px';
 
                 var item1 = document.createElement('li');
                 item1.onclick = function(e){displayspeaker(e.target.innerText.split(":")[1].trim())};
@@ -354,9 +488,9 @@
                 sublist.appendChild(item1);
 
                 var item2 = document.createElement('li');
-                item2.appendChild(document.createTextNode('Subtopic : ' + array[i]['subtopic_name'] + '\t' +
+                item2.appendChild(document.createTextNode('Segment : ' + array[i]['subtopic_name'] + '\t' +
                     array[i]['start_timestamp'] + ' - ' + array[i]['end_timestamp']));
-                item2.onclick = function(e){displaysummary(e.target.innerText.split("Subtopic :")[1].trim())};
+                item2.onclick = function(e){displaysegment(e.target.innerText.split("Segment :")[1].trim())};
                 sublist.appendChild(item2);
                 
                 var item3 = document.createElement('li');
@@ -369,52 +503,101 @@
                 sublist.appendChild(document.createElement("br"));
                 
                 list.appendChild(sublist);
+
+                maindiv.append(list);
             }
-            return list;
+            return maindiv;
+        }
+
+        function play(){
+
+            var audiofile=document.getElementById('audiofile').name
+
+             var client = new PostHttpClient();
+                client.post(service_url+'/'+'playaudio?query='+JSON.stringify(audiofile), function(response) {
+                    resp_obj = JSON.parse(response);
+                    if((resp_obj['status']).toLowerCase() == 'success') {
+                        document.getElementById('audiofile').name = resp_obj['filename'];
+                    }
+                });
+
+        }
+
+        function stop(){
+             var client = new PostHttpClient();
+                client.post(service_url+'/'+'stopaudio', function(response) {
+                    resp_obj = JSON.parse(response);
+
+                });
+
         }
     </script>
 
 </head>
-<body style="background-image: url(static/images/shutterstock_163052525-730x342.jpg);background-repeat: no-repeat;background-size: cover;">
-<div style="margin-top: 1vw;" class="row">
+<body style="background-image: url(static/images/headphones-book-white-background_73763-261.jpg);background-attachment: fixed;background-repeat: no-repeat;background-size: cover;">
+<div style="margin-top: 1vw;margin-left: 2vw;" class="row ">
     <div class="col-xl-7">
-        <div  class="row">
-            <div class="col-xl-11 offset-xl-1" >
-                <input id="query" style="background-color: #fcf8e3; height: 2.5vw; width: 53vw;" type="text" placeholder="Search" onchange="displaysearch()" />
+        <input id="query" style="background-color:white; height: 2.5vw; width: 54.5vw;border: none; border-radius: 0.4vw;margin-left: 1vw;text-align: center;font-size: larger; " type="text" placeholder="Search" onchange="displaysearch()" />
+    </div>
+    <div class="col-xl-5">
+        <div class="row">
+            <div  id="segmentaudio" style="display: none;" class="col-xl-5 offset-xl-1">
+                <audio id="audiofile" type="audio/x-wav;codec=pcm"></audio>
+                <button style="background-color: white;   width: 15vw;   height: 2.5vw;border: none; border-radius: 0.4vw; " id="play" onclick="play()">
+                    <i class="fa fa-play-circle fa-align-justify" style="font-size: 22px;"></i>   Play Segment Audio</button>
+
+                    <button style="background-color: white;width: 15vw;height: 2.5vw;border: none; border-radius: 0.4vw; " id="stop" onclick="stop()">
+                    <i class="fa fa-stop fa-align-justify" style="font-size: 22px;"></i> Stop Segment Audio</button>
+            </div>
+
+            <div class="col-xl-5">
+                
             </div>
         </div>
+    </div>
+
+</div>
+
+<div style="margin-top: 1vw;" class="row">
+    <div class="col-xl-7">
         <div style="margin-top: 1.3vw;" class="row">
             <div class="col-xl-3 offset-xl-1">
-                <div style="background-color: #fcf8e3;border: none; border-radius: 0.4vw;" class="row">
-                    <button onclick="displayknowledgegraph()">View Knowledge Graph</button>
+                <div id="showentitiesgraph" style="display: none;" class="row">
+                    <button style="background-color: white;border: none; border-radius: 0.4vw;height: 2.2vw;  width: -webkit-fill-available;" onclick="displayentitiesgraph()">Entities Graph</button>
                 </div>
             </div>
             <div  class="col-xl-3 offset-xl-1">
                 <div class="row">
-                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: #fcf8e3;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="speakerdropdown" name="speakers" onselect="filter_segments_by_speaker()" onchange="filter_segments_by_speaker()">
+                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: white;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="speakerdropdown" name="speakers" onselect="filter_segments_by_speaker()" onchange="filter_segments_by_speaker()">
                         <option value="None">No Selection</option>
                     </select>
                 </div>
             </div>
             <div class="col-xl-3 offset-xl-1">
                  <div class="row">
-                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: #fcf8e3;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="podcastdropdown" name="podcasts" onselect="filter_segments_by_podcast()" onchange="filter_segments_by_podcast()">
+                    <select style="overflow: hidden;text-overflow: ellipsis;background-color: white;border: none;border-radius: 0.4vw; height: 2.2vw; width:-webkit-fill-available;" id="podcastdropdown" name="podcasts" onselect="filter_segments_by_podcast()" onchange="filter_segments_by_podcast()">
                         <option value="None">No Selection</option>
                     </select>
                  </div>
             </div>
         </div>
-        <div id="graphcontainer" style="display: none;width:1000px;height:600px;overflow: auto">
-        	<svg id="Graph" style="background-color: #fcf8e3;"></svg>
+
+        <div id="graphcontainer" style="display: none;width:1000px;height:600px;overflow: auto;">
+        	<svg id="Graph" style="background-color: #FFFFFF;"></svg>
         </div>
         <div class="row" id="searchdetails" style="display: none;">
-            <div style="margin-top: 1.3vw; background-color: #fcf8e3;" class="col-xl-11 offset-xl-1" id="searchresults">
+            <div style="margin-top: 1.3vw;" class="col-xl-11 offset-xl-1" id="searchresults">
             </div>
         </div>
     </div>
-    <div id="Segment" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1" ></div>
-    <div id="Speaker" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1"></div>
-    <div id="poddetails" style="background-color: #fcf8e3;display: none;" class="col-xl-3 offset-xl-1"></div>
+    <div class="col-xl-4">
+        <div class="col-xl-8 offset-xl-1">
+            <div id="Segment" style="display: none;background-color: white;width: 33vw; margin-top: 5.5vw;" ></div>
+            <div id="Speaker" style="display: none;background-color: white;width: 33vw;margin-top: 5.5vw;" ></div>
+            <div id="poddetails" style="display: none;background-color: white;width: 33vw;margin-top: 5.5vw;" ></div>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

@@ -1,0 +1,470 @@
+The following is a conversation with Ianna Howard. he is a roboticist, professor, Georgia Tech and director of the Human Automation Systems Lab with research interests and human robot interaction, assistive robots in the home, therapy, gaming apps and remote robotic exploration of extreme environments like me in her work, she cares a lot about both robots and human beings. And so I really enjoyed this conversation. This is the Artificial Intelligence Podcast. If you enjoy it, subscribe on YouTube, give it Five Stars and Apple, a podcast follow on Spotify, supported on Patreon or simply connect with me on Twitter.
+Allex Friedman spelled F.R. IDM man. I recently started doing ads at the end of the introduction. I will do one or two minutes after introducing the episode and never any ads in the middle that can break the flow of the conversation. I hope that works for you. It does not hurt the listening experience. This show was presented by Kashyap, the number one finance app in the App Store. I personally use cash to send money to friends, but you can also use it to buy, sell and deposit Bitcoin in just seconds.
+Cash also has a new investing feature. You can buy fractions of a stock, say one dollar's worth no matter what the stock price is. Broker's services are provided by cash up investing, a subsidiary of Square and member SIPC. I am excited to be working with cash out to support one of my favorite organizations called First Best known for their first robotics and Lego competitions. They educate and inspire hundreds of thousands of students and over one hundred and ten countries and have a perfect rating.
+And Charity Navigator, which means that donated money is used to maximum effectiveness. When you get cash out from the App Store or Google Play and you Scolex podcast, you will get ten dollars in cash. I will also donate ten dollars. The first, which again is an organization that I have personally seen, inspire girls and boys to dream of engineering a better world. And now here is my conversation with Alana Howard. What or who is the most amazing robot you have ever met or perhaps had the biggest impact on your career?
+I have not met her, but I grew up with her. But, of course, Rosie.
+So and I think it is because also who is Rosie? Rosie from the Jetsons. She is all things to all people. Right? Think about it like anything you wanted. It was like magic. It happened.
+So people not only anthropomorphize, but project whatever they wish for the robot to be onto other Rosie.
+But also, I mean, think about it. She was socially engaging. She every so often had an attitude. Right. She kept us honest. She she would push back sometimes when, you know, George was doing some weird stuff, but she cared about people, especially the kids.
+She she was like the perfect robot.
+And you have said that people do not want the robots to be perfect. Can you elaborate that? What do you think that is? Just like you said, Rosie pushed back a little bit every once in a while. Yeah. So I think it is that. So you think about robotics in general. We want them because they enhance our quality of life. And usually that is linked to something that is functional. Right. Even if you think of self-driving cars, why is there a fascination?
+Because people really do hate to drive like there is the like Saturday driving where I can just speed.
+But then there was the I have to go to work every day and I am in traffic for an hour. I mean, people really hate that. And so robots are designed to basically enhance our ability to increase our quality of life.
+And so the perfection comes from this aspect of interaction.
+If I think about how we drive, if we drove perfectly, we would never get anywhere. Right. So think about how many times you had to run past the light because you see the car behind you is about to crash into you or that little kid kind of runs into the the street. And so you have to cross on the other side because there is no cars. Right. Like, if you think about it, we are not perfect drivers. Some of it is because it is our world.
+And so if you have a robot that is perfect in that sense of the word, they they would not really be able to function with us.
+Can you linger a little bit on the word perfection? So from the robotics perspective, what does that word mean and how is sort of the optimal behaviors you are describing different than what we think is perfection yet?
+So perfection, if you think about it in the more theoretical point of view, it is really tied to accuracy. Right? So if I have a function, can I completed at 100 percent accuracy with zero errors? And so that is kind of everything about perfection in the sense of the word.
+And in a self-driving car realm, do you think from a robotics perspective, we kind of think that perfection means following the rules perfectly, sort of defining staying in the lane, changing lanes. When there is a green light, you go on, there is a red light stop. And that that is the of and be able to perfectly see all the entities in the scene. that is the limit of what we think of as perfection.
+And I think that is where the problem comes, is that when people think about perfection for robotics, the ones that are the most successful are the ones that are quote unquote perfect. Like said, Rosy is perfect, but she actually was not perfect in terms of accuracy, but she was perfect in terms of how she interacted and how she adapted.
+And I think that is some of the disconnect, is that we really want perfection with respect to its ability to adapt to us. We do not really want perfection with respect to 100 percent accuracy, with respect to the rules that we just made up anyway. Right. And so I think there was this disconnect sometimes between what we really want and what happens. And we see this all the time, like in my research. Right. Like the the optimal quote unquote optimal interactions are when the robot is adapting based on the person, not a hundred percent following what is optimal based on the rules.
+Just to linger on autonomous vehicles for second. Just your thoughts, maybe off the top of head is how hard is that problem, do you think?
+Based on what we just talked about? You know, there is a lot of folks in the automotive industry, they are very confident from Elon Musk to way much to all these companies.
+How hard is it to solve that last piece, last mile, the gap between the perfection and the human definition of how you actually function in this world?
+And so this is a moving target. So I remember when all the big companies started to heavily invest in this and there was a number of even roboticists as well as, you know, folks who were putting in the VCs and corporations, Elon Musk being one of them that said, you know, self-driving cars on the road with people, you know, within five years. That was a little while ago. And now people are saying five years, 10 years, 20 years.
+Some are saying never. Right. I think if you look at some of the things that are being successful is these basically fixed environments where you still have some anomalies, you still have people walking, you still have stores, but you do not have other drivers.
+Right. Like other human drivers are is a dedicated space for the for the cars.
+Because if you think about robotics in general, there is always been successful is I mean, you can say manufacturing like way back in the day.
+Right. It was a fixed environment. Humans were not part of the equation. we are a lot better than that. But like when we. Can carve out scenarios that are closer to that space, then I think that it is where we are, so a closed campus where you do not have self-driving cars and maybe some protection so that the students do not get in front just because they want to see what happens, like having a little bit.
+I think that is where we are going to see the most success in the near future and be slow moving.
+Right.
+Not not, you know, 55, 60, 70 miles an hour, but the the speed of a golf cart. Right.
+So that said, the most successful in the automotive industry, robots operating today in the hands of real people are ones that are traveling over 55 miles an hour and in unconstrained environment, which is Tesla vehicles or Tesla autopilot.
+So I just I would love to hear some of your just thoughts of two things. So, one, I do not know if you have gotten to see you have heard about something called Smart Somin where Tesla system autopilot system, where the car drives zero occupancy, no driver in the parking lot slowly sort of tries to navigate the parking lot to find itself to you. And there is some incredible amounts of videos and just hilarity that happens as it awkwardly tries to navigate this environment.
+But it is it is a beautiful non-verbal communication with machine and human that I think is a it is like it is some of the work that you do in this kind of interesting human robot interaction space. What are your thoughts in general about it?
+So I do have that feature of the gravitas. I do mainly because I am a gadget freak.
+Right. So I think it is a gadget that happens to have some wheels. And yeah, I have seen some of the videos. But what is your experience like?
+I mean, you are you are a human robot interaction, roboticists, your legit sort of expert in the field. So what does it feel for a machine to come to you?
+it is one of these very fascinating things. But also, I am hyper hyper alert, right? Like I am hyper alert, like my butt. My thumb is like, OK, I am ready to take over.
+Even when I am in my car, I am doing things like automated backing into.
+So there is like a feature where you can do this automated backing into a parking space or bring the car out of your garage or even, you know, pseudo autopilot on the freeway. Right.
+I am hypersensitive. I can feel like as I am navigating like, yeah, that is an area right there. Like, I am very aware of it, but I am also fascinated by it. And it does get better. Like, I look and see it is learning from all of these people who are cutting it on like.
+Every time I come on, it is getting better, right, and so I think that is what is amazing about it, is that this nice dance of you are still hyper vigilant, so you are still not trusting it at all. Yeah. And yet you are using it on the highway.
+If I were to like, what, as a roboticist. Talk about trust a little bit.
+How do you explain that you still use it.
+Is it the gadget freak part like where you just enjoy exploring technology or is that the right actually balance between robotics and humans where you use it but do not trust it? And somehow there is this dance that ultimately is a positive.
+Yeah. So I think I am I just do not necessarily trust technology, but I am an early adopter. Right.
+So when it first comes out, I will use everything, but I will be very, very conscious of how I use it.
+Do you read about or do you explore but just try to do like crudely, to put a crudely, do you read the manual or do you learn through exploration?
+I am an explorer. If I have to read the manual, then you know, I do design, then it is a bad user interface. it is a failure. Elon Musk is very confident that you kind of take it from where it is now to full autonomy, so from this human robot interaction, we do not really trust and then you try and then you catch it when it fails to it is going to incrementally improve itself into full or full. Well, you do not need to participate.
+what is your sense of that trajectory? Is it feasible? So the promise there is by the end of next year, by the end of 2020, the current balance.
+what is your sense about that journey that Tesla's on so that those kind of three, three things going on now?
+I think. In terms of will people go like as a user, as a adopter, will you trust going to that point?
+I think so. Right.
+Like there are some users and it is because what happens is when technol when you are hypersensitive at the beginning and then the technology tends to work, your apprehension slowly, slowly goes away.
+And as people, we tend to swing to the other extreme right because it is like, oh, I was like hyper, hyper fearful or hypersensitive and it was awesome.
+And we just tend to swing. that is just human nature.
+And so you will have I mean, it is a scary notion because most people are now extremely untrusting of autopilot. They use it, but they do not trust it. And it is a scary notion that there is a certain point where you allow yourself to look at the smartphone for like 20 seconds. And then there will be this phase shift where it will be like 20 seconds, 30 seconds, one minute, two minutes.
+it is a scary proposition, but that is people, right? that is human. that is humans.
+I mean, I think of even our use of I mean, just everything on the Internet, right.
+Like think about how reliant we are on certain apps and certain engines.
+Right. Twenty years ago, people have been like, oh, yeah, that is stupid. Like, that makes no sense. Like, of course that is false. Like now it is just like, oh of course I have been using it. it is been correct all this time. Of course, aliens. I did not think they existed, but now it says they do. Obviously percent earth is flat.
+So OK, but you said three things.
+So one is OK, so one is the human. And I think there will be a group of individuals that will swing. Right. I just teenagers.
+I mean, it will be Tina, it will be adults. there is actually an age demographic that is optimal for technology adoption and you can actually find them and they are actually pretty easy to find.
+I just based on their habits, based on. So someone like me who would not would not know roboticists would probably be the optimal kind of person. Right. Early adopter. OK, with technology very comfortable and not hypersensitive. Right.
+I am just hypersensitive because I designed this stuff.
+Yeah. So there is a target demographic that will swing.
+The other one though is you still have these humans that are on the road. That one is a harder, harder thing to do. And as long as we have people that are on the same streets, that is going to be the big issue.
+And it is just because you can not possibly you can not possibly map the some of the silliness of human drivers. Right. Like as an example. When you are next to that car that has that big sticker called Student Driver, right, like you are like, oh, either I am going to like go around like we are. We know that that person is just going to make mistakes that make no sense. Right. How do you map that information?
+Or if I am in a car and I look over and I see, you know, two fairly young looking individuals and there is no student driver bumper and I see them chit chatting to each other, I am like, oh, yeah, that is an issue. Right. So how do you get that kind of information and that experience? Into a basically an autopilot. Yeah, and there is millions of cases like that where we take little hints to establish context. I mean, you said kind of beautifully poetic human things, but there is probably subtle things about the environment, about is about it being maybe time for commuters to start going home from work.
+And therefore, you can make some kind of judgment about the good behavior of pedestrians or robots on time or even cities.
+Right. Like if you are in Boston, how people cross the street like lights are not an issue versus other places where people will will actually wait for the crosswalk, Seattle or somewhere peaceful.
+And but we would have also seen sort of just even in Boston, that intersection intersection is different so that every intersection has a personality of its own. So certain neighborhoods of Boston are different. So we kind of and based on different timing of day at night, it is also there is a there is a dynamic to human behavior that we kind of figure out ourselves. we are not be able to we are not able to introspect and figure it out. But somehow we our brain learns that we do.
+And so you are you are saying is there. So that is the shortcut.
+that is their shortcut for everybody. Is there something that could be done? You think that? You know, that is what we humans do. it is just like bird flight, right? that is this example they give for flight. Do you necessarily need to build a bird that flies or can you do an airplane? Is there a shortcut?
+So I think the shortcut is and I kind of I talk about it as a fixed space where so imagine that there is a neighborhood that is a new smart city or a new neighborhood that says, you know what, we are going to design this new city based on supporting self-driving cars and then doing things, knowing that those anomalies, knowing that people are like this. Right. And designing it based on that assumption that, like we are going to have this, that would be an example of a shortcut.
+So you still have people, but you do very specific things to try to minimize the noise a little bit as an example.
+And the people themselves become accepting of the notion that there is autonomous cars. Right.
+Right. Like they they they move into. So right now you have like a you will have a self selection bias. Right. Like individuals will move in to this neighborhood knowing like this is part of like the real estate pitch.
+Right.
+And so I think that is a way to do a shortcut when it allows you to deploy, it allows you to collect then data with these variances and anomalies because people are still people.
+But it is it is a safer space and it is more of an accepting space, i.e. when something in that space might happen because things do because you already have the self selection, like people would be, I think, a little more forgiving than other places.
+And you said three things that recover cover all of them. The third is the legal liability, which I do not really want to touch.
+But it is still it is it is still of concern. And the mishmash of like with policy as well, sort of government all all that that whole that big ball of mess.
+Yeah. Gotcha. So that is so we are out of time now. What do you think from a robotics perspective?
+You know, if you are kind of honest of what cars do, they kind of kind of threaten each other's life all the time?
+So cars are very I mean, in order to navigate intersections, there is assertiveness, there is a risk taking, and if you were to reduce it to an objective function, there is a probability of murder in that function, meaning you killing another human being. And you are using that, first of all, has to be low enough. To be acceptable to you on an ethical level, as an individual human being, but it has to be high enough for people to respect you, to not sort of take advantage you completely and jaywalk in front of you and so on.
+So, I mean, I do not think there is a right answer here, but what is how do we solve that? How do we solve that? From a robotics perspective? One danger and human life is at stake. As they say, cars do not kill people.
+People kill people. People. Oh, right.
+So I think now robotic algorithms would be killing.
+Right. So it will be robotics algorithms that are know. It will be robotic algorithms do not kill people. Developers of robotic algorithms kill people. Right.
+I mean, one of the things is people are still in the loop. And at least in the near and mid-term, I think people will still be in the loop at some point, even if it is a developer.
+Like we are not necessarily at the stage where, you know, robots are programming autonomous robots with different behaviors quite yet.
+Not a scary notion.
+Sorry to interrupt that a developer is has some responsibility in in the death of a human being.
+that is I mean, I think that is why the whole aspect of ethics in our community is so, so important.
+Right. Like because it is true if if if you think about it, you can basically say, I am not going to work on weaponized A.I.. Right. Like people can say, that is not what I am going to do.
+But yet you are programming algorithms that might be used in health care, algorithms that might decide whether this person should get this medication or not. And they do not and they die.
+You OK? So that is your responsibility. Right? And if you are not conscious and aware that you do have that power when you are coding and things like that, I think that is that is that is just not a good thing. Like, we need to think about this responsibility as we programmed robots and and computing devices much more than we are.
+Yes. So it is not an option to not think about it, because I think it is a majority, I would say, of computer science sort of there. it is kind of a hot topic now. I think about bias and so on. But it is and we will talk about it.
+But usually it is kind of it is like a very particular group of people that work on that.
+And then people who do like robotics are like, well, I do not have to think about that. there is other smart people thinking about it. It seems that everybody has to think about it. it is not you can not escape the ethics, whether it is bias or just every aspect of ethics that has to do with human beings.
+Everyone. So think about I am going to age myself, but I remember when we did not have, like, testers. Right.
+And so what did you do as a developer? You had to test your own code, right?
+Like you had to go through all the cases and figure it out and, you know, and then they realized that, you know, like, we probably need to have testing because we are not getting all the things. And so from there, what happens is, like most developers, they do, you know, a little bit of testing, but it is usually like, OK, to my compiler bug out and you look at the warnings, OK, is that acceptable or not?
+Right. Like, that is how you typically think about as a developer and you just assume that is going to go through another process and they are going to test it out. But I think we need to go back to those early days when, you know, you are a developer, you are developing.
+There should be like this a you know, OK, let me look at the ethical outcomes of this, because there is not a second, like, testing ethical testers.
+Right? it is you know, we did it back in the early coding days.
+I think that is where we are with respect to ethics. Like, let us go back to what was good practices only because we were just developing the field.
+Yeah. And it is and it is a really heavy burden. I have had to feel it recently in the last few months. But I think it is a good one to feel like I have gotten the message more than one from people. You know, I have unfortunately gotten some attention recently and I have gotten messages that say that I have blood on my hands because of working on semi-autonomous vehicles.
+The idea that you have semi-autonomous means people would become would lose vigilance and so on, as should be humans, as we described. And because of that, because of this idea that we are creating automation, there would be people be hurt because of it.
+And I think it is a beautiful thing. I mean, it is you know, there is many nights where I was not able to sleep because of this notion.
+You know, you really do think about people that might die because of this technology.
+Of course, you can then start rationalizing, saying, well, you know what, 40 thousand people die in the United States every year and we are trying to ultimately try to save lives. But the reality is your code you have written might kill somebody. And that is an important burden to carry with you as you design the code.
+I do not even think of it as a burden if we train this concept correctly from the beginning.
+And I use and not to say that coding is like being a medical doctor, but think about it.
+Medical doctors, if they have been in situations where their patient did not survive, right. Do they give up and go away? No. Every time they come in, they know that there might be a possibility that this patient might not survive. And so when they approach every decision like that is in their back of their head. And so why is not that? We are not teaching.
+And those are tools, though, right?
+They are given some of the tools to address that so that they do not go crazy. But we do not give those tools so that it does feel like a burden versus something of I have a great gift and I can do great, awesome, good. But with it comes great responsibility. I mean, that is what we teach in terms of you think about the medical schools, right? Great gift. Great responsibility.
+I think if we just change the messaging a little great gift being a developer, great responsibility. And this is how you combine those.
+But do you think and this is really interesting. it is outside. I actually have no friends who are sort of surgeons or doctors.
+And what does it feel like to make a mistake in a surgery and somebody to die because of that?
+Like it is just something you could be taught in medical school, sort of how to be accepting of that risk.
+So because I do a lot of work with health care robotics, I have not lost a patient, for example. The first one's always the hardest.
+Right. But they really teach the value. Right. So they teach responsibility, but they also teach the value like. you are saving 40000, but in order to really feel good about that, when you come to a decision, you have to be able to say at the end, I did all that I could possibly do. Right, versus a well, I just picked the first widget and. Right. Like, so every decision is actually thought through is not a habit, is not a let me just take the best algorithm that my friend gave me.
+Write it, say is this it. This is the best. Have I done my best to do good. Right.
+And so you are right. And I think burden is the wrong word if it is it is a gift. But you have to treat it extremely seriously. Correct. So on a slightly related note in a recent paper, The Ugly Truth about ourselves and our robot creations, you discuss you highlight some biases that may affect the function of various robotic systems. Can you talk to, if you remember, examples of some?
+there is a lot of examples I use. What is bias, first of all? So bias is this Inso bias, which is a definite prejudice.
+So biases that we all have these preconceived notions about particular everything from particular groups to habits to identity.
+Right. So we have these predispositions. And so when we address a problem, when we look at a problem, we make a decision. Those preconceived notions might affect our our outputs or outcomes.
+So there the bias could be positive and negative. And then it is prejudice, the negative prejudices, the negative.
+Right.
+So prejudice that not only are you aware of your bias, but you are then take it and have a negative outcome, even though you are aware and there could be grey areas to all these grey areas.
+that is the challenging aspect of all these questions.
+So I always like so there is there is a funny one. And in fact, I think it might be in the paper because I think I talk about self-driving cars.
+But think about this. We for teenagers, right.
+Typically we insurance companies charge quite a bit of money if you have a teenage driver.
+So you could say that is an age bias. Right. But no one will claim I mean, parents will be grumpy, but no one really says that that is not fair.
+that is interesting.
+We do not. that is right. that is right. it is everybody in human factors and safety research almost. I mean, it is quite ruthlessly critical of teenagers. And we do not question is that OK? Is that OK to be ageist in this kind of way?
+It is. And it is age, right? it is definitely age. there is no question about it. And so so these are these this is a gray area, right?
+Because you you know that, you know, teenagers are more likely to be in accidents.
+And so there is actually some data to it.
+But then if you take that same example and you say, well, I am going to make the insurance higher for an area of Boston because there is a lot of accidents, and then they find out that that is correlated with socioeconomics, well, then it becomes a problem, right? Like that is not acceptable.
+But yet the teenager, which is age. it is against age is right, so we figure that our society, by having conversations, by discourse throughout history, the definition of what is ethical or not has changed and hopefully always for the better. Correct. Correct. So in terms of bias or prejudice in robotic in algorithms, what what examples do you sometimes think about?
+So I think about quite a bit the medical domain just because historically. Right. The health care domain has had these biases typically based on gender and ethnicity, primarily a little an age, but not so much.
+You know, historically, if you think about FDA and drug trials, it is, you know, harder to find women that are not childbearing. And so you may not test on drugs at the same level.
+Right. So there is these things. And so if you think about robotics, right. Something as simple as I like to design and exoskeleton.
+Right. What should the material be? What should the weight be? What should the form factor be? Are you who are you going to design it around?
+I will say that in the you.S., you know, women average height and weight is slightly different than guys.
+So who are you going to choose? Like if you are not thinking about it from the beginning, as you know?
+OK, I when I design this and I look at the algorithms and I design the control system and the forces and the talks, if you are not thinking about, well, you have different types of body structure, you are going to design to, you know, what you are used to.
+Oh, this fits in my all the folks in my lab.
+Right. So think about it from the very beginning. it is important. What about sort of algorithms that train on data kind of thing?
+Sadly, our society already has a lot of negative bias and so we collect a lot of data. Even if it is a balanced way, there is going to contain the same bias that a society contains.
+And so, yeah, was is there is there things there that bother you? Yeah.
+So you actually said something. You had said how we have biases, but hopefully we learn from them and we become better. Right. And so that is where we are now. Right. So the data that we are collecting is historic. it is so it is based on these things when we knew it was bad to discriminate. But that is the data we have and we are trying to fix it now, but we are fixing it based on the data that was used in the first place.
+Right.
+And so and so the decisions and you can look at everything from the the whole aspect of predictive policing, criminal recidivism. There was a recent paper that had the health care algorithms which had a kind of a sensational titles. I am not pro sensationalism and titles, but. But did you read it right?
+So, yeah, it makes you read it.
+But I am like, really like you could have.
+what is the topic of the sensationalism? I mean, what is underneath it? What if you could sort of educate me? And what kind of bias creeps into the health care space? Yeah. So I mean, you already kind of.
+So this one was the headline was racist. I algorithm's OK.
+Like, OK, that is totally a click bait title. Yeah.
+And so you looked at it and so there was data that these researchers had collected I believe I want to say was either science or nature, it just was just published. But they did not have the sensational title.
+It was like the media. And so they had looked at demographics, I believe, between black and white women.
+Right. And they showed that there was a discrepancy in the outcomes. Right. And so and it was tied to ethnicity, tied to race.
+The piece that the researchers did actually went through the whole analysis.
+But of course, I mean, the journals, they are problematic across the board, right. Say.
+And so this is a problem. Right. And so there is this thing about, oh, I it has all these problems were doing it on historical data. And the outcomes are not even based on gender or ethnicity or age.
+But I am always saying is like, yes, we need to do better. Right. We need to do better. It is our duty to do better.
+But the worst A.I. is still better than us, like. Like you take the best of us and we are still worse than the worst A.I., at least in terms of these things. And that is actually not discussed. Right. And so I think and that is why the sensational title. Right. And it is so it is like so then you can have individuals go like, oh, we do not need to use this. I am like, oh, no, no, no, no.
+I want the A.I. instead of the the the doctors that provided that data because it is still better than that.
+Yes, right. I think it is really important to linger on the idea that this A.I. is racist. it is like.
+Well, compared to what sort of the the I think we set unfortunately way too high of a bar for AI algorithms. And in the ethical space where perfect is, I would argue, probably impossible then if we set the bar of perfection essentially of a has to be perfectly fair, whatever that means is it means we are setting it up for failure. But that is really important to say what you just said, which is, well, it is still better.
+And one of the things I, I think that we do not get enough credit for just in terms of as developers, is that you can now poke at it. Right. So it is harder to say, you know, is this hospital is the city doing something right until someone brings in a civil case? Right.
+Well, were they I can process through all this data and say, hey, yes, there there is an issue here, but here it is. we have identified it. And then the next step is to fix it. I mean, that is a nice feedback loop versus like waiting for someone to sue someone else before it is fixed. Right.
+And so I think that power we need to capitalize on a little bit more.
+Right. Instead of having the sensational titles have the OK, this is a problem and this is how we are fixing it and people are putting money to fix it because we can make it better. I look at like facial recognition, how joy. She basically called out a couple of companies and said, hey, and most of them were like, oh, embarrassment.
+And the next time it had been fixed.
+Right. It had been fixed better. Right. And then it was like, oh, here is some more issues. And I think that conversation then moves that needle to having much more fair and unbiased and ethical aspects. As long as both sides, the developers are willing to say, OK, I hear you, yes, we are going to improve. And you have other developers like, you know, hey, I it is wrong, but I love it, right?
+Yes. So speaking of the really nice notion that I is maybe flawed but better than humans, so it is made me think of it. One example of flawed humans is our political system. Do you think or you said judicial as well?
+Do you have a hope for a sort of. Being elected for president or running our Congress or being able to be a powerful representative of the people, so I mentioned and I truly believe that this whole world of A.I. is in partnerships with people.
+And so what does that mean?
+I do not believe or maybe I just do not I do not believe that we should have an eye for president. But I do believe that a president should use AI as an adviser. Right. Like, if you think about it, every president has a cabinet of individuals that have different expertise that they should listen to.
+Right. Like, that is kind of what we do. And you put smart people with smart expertise around certain issues. And you listen, I do not see why I can not function as one of those smart individuals giving input. So maybe there is an eye on health care, maybe there is an eye on education and. Right. Like all these things that a human is processing. Right.
+Because at the end of the day, there is people that are human that are going to be at the end of the decision. And I do not think as a world, as a culture, as a society, that we would totally and this is us like this is some fallacy about us, but we need to see that leader, that person as human.
+And most people do not realize that, like leaders have a whole lot of advice. Right. Like when they say something is not that they woke up.
+Well, usually they do not wake up in the morning and be like, I have a brilliant idea. Right. it is usually a OK, let me listen. I have a brilliant idea, but let me get a little bit of feedback on this. Like, OK, and then it is a yeah, that was an awesome idea or was like, yeah, let me go back where he talked to a bunch of them.
+But are there some possible solutions to the bias that is present in our algorithms piano we just talked about?
+So I think there is two paths. One is to figure out how to systematically do the feedback and corrections.
+So right now, it is ad hoc, right? it is a researcher. Identify some outcomes that are not do not seem to be fair.
+Right. They publish it, they write about it. And they either the developer or the companies that have adopted the algorithms may try to fix it. Right. And so it is really ad hoc and it is not systematic. there is it is just it is kind of like I am a researcher. That seems like an interesting problem, which means that there is a whole lot out there that is not being looked at.
+Right. Because it is kind of researcher driven. I and I do not necessarily have a solution, but that process, I think, could be done a little bit better. One way is I am going to poke a little bit at some of the corporations.
+Right. Like maybe the corporations when they think about a product they should instead of in addition to hiring these, you know, bug, they give these.
+Oh, yeah, yeah, yeah. Well, you like awards when you find a bug. Yeah. Yes. Bug.
+Yeah. You know, let us let us put it like we will give the whatever the award is that we give for the people who find these security holes, find an ethics hole.
+Right. Like finding unfairness and we will pay you X for each one you find. I mean, why can not they do that one? it is a win win.
+They show that they are concerned about it, that this is important and they do not have to necessarily dedicated their own, like internal resources. And it also means that everyone who has like their own bias lens, like I am interested in age. And so I will find the ones based on age and I am interested in gender and. Right. Which means that you get like all of these different perspectives, but you think of it in a data driven way.
+So like sort of if we look at a company like Twitter, it gets it is under a lot of fire for discriminating against certain political beliefs. Correct. And sort of there is a lot of people this is the sad thing, because I know how hard the problem is and I know the Twitter folks are working really hard at it. Even Facebook that everyone seems to hate are working really hard at this.
+You know, the kind of evidence that people bring is basically anecdotal evidence or me or my friend always said is X. And for that we got banned. And and that is kind of a discussion of saying, well, look, that is usually first of all, the whole thing is taken out of context. So they are they present sort of anecdotal evidence. And how are you supposed to, as a company in a healthy way, have a discourse about what is and is not ethical?
+What how do we make algorithms ethical when people are just blowing everything like they are outraged about?
+Particular anecdotal evidence, piece of evidence that is very difficult to sort of contextualize and the big data driven way to give a hope for companies like Twitter and Facebook.
+So I think there is a couple of things going on right. First off, the remember this whole aspect of we are becoming reliant on technology. we are also becoming reliant on a lot of these the apps and the resources that are provided.
+So some of it is kind of anger like I need you right now and you are not working for me.
+Right. But I think is.
+And so some of it and I wish that there was a little bit of change of rethinking. So some of it is like, oh, we will fix it in house.
+No, that is like, OK, I am a fox and I am going to watch these hands because I think it is a problem that foxes eat hens, you know.
+Right. Like use like be good citizens and say, look, we have a problem and we are willing to open ourselves up for others to come in and look at it and not try to fix it in house, because if you fix it in house, there is conflict of interest. If I find something, I am probably going to want to fix it and hopefully the media will not pick it up. Right.
+And that then caused this distrust because someone inside is going to be mad at you and go out and talk about how, yeah, they can resume a survey because it let us people just say, look, we have this issue community, help us fix it and we will give you, like, you know, the bug finder fee.
+If you do, you have a hope that the community, us as a human civilization on the whole, is good and can be trusted to guide the future of our civilization into a positive direction?
+I think so. So I am an optimist, right. And, you know, there were some dark times in history always. I think now we are in one of those dark times.
+I truly do. In which aspect?
+The polarization. And it is not just us. Right. So if it was just us, I would be like a.. A you.S. thing. But we are seeing it like worldwide, this polarization.
+And so I worry about that. But I do fundamentally believe that at the end of the day, people are good, right? And why do I say that? Because any time there is a scenario where people are in danger and I will use so Atlanta, we had Snowmageddon and people can laugh about that people at the time.
+So the city closed for, you know, little snow, but it was ice and the city closed down. But you had people opening up their homes and saying, hey, you have no where to go. Come to my house.
+Right. Hotels were just saying, like sleep on the floor, like places like, you know, the grocery stores were like, hey, here is food. There was no like, oh, how much are you going to pay me? It was like this such a community. And like people who did not know each other, strangers were just like, can I give you a ride home? And that was the point. I was like, you know what?
+Like that that that reveals that the deeper thing is, is there is a compassion and love that we all have within us. it is just that when all that is taken care of and Guibord, we love drama.
+Yeah. And that is, I think almost like the division is a sign of the times being good is that it is just entertaining and some unpleasant mammalian level to watch, to disagree with others.
+And Twitter and Facebook are actually taking advantage of that in a sense, because it brings you back to the platform and their advertiser driven. So they make a lot of money.
+So you go back and it is like love does not sell quite as well. In terms of advertisement, uh, it does not.
+So you have started your career at NASA's Jet Propulsion Laboratory. But before I ask a few questions there, have you happen to have ever seen Space Odyssey 2001, A Space Odyssey?
+Yes. OK, do you think do you think HAL 9000.
+So we are talking about ethics.
+Do you think how did the right thing by taking the priority of the mission over the lives of the astronauts.
+Do you think Hal is good or evil? Easy questions. Yeah. How was misguided? you are one of the people that would be in charge of it now like hell yes.
+So how would you do better if you think about what happened was there was no failsafe, right? So we perfection, right?
+Like, what is that? I am going to make something that I think is perfect. But if my assumptions are wrong, it will be perfect based on the wrong assumptions. Right. that is something that you do not know until you deploy. And then you are like, oh, yeah, I messed up.
+But what that means is that when we design software such as in Space Odyssey, when we put things out, that there has to be a failsafe. There has to be the ability that once it is out there, you know, we can grade it as an F. And it fails and it does not continue.
+Right. there is some way that it can be brought in and removed.
+And that is aspect because that is what happened with what, Hal? It was like assumptions were wrong. It was perfectly correct based on those assumptions. And there was no way to change change. It changed the assumptions at all and the change the fallback would be to human.
+So you ultimately think like humans should be.
+You know, it is not turtles or A.I. all the way down. it is at some point there is a human that actually still think that.
+And again, because I would human robot interaction, I still think the human needs to be part of the equation at some point. So what?
+Just looking back, what are some fascinating things in robotics space that NASA was working at the time or just in general, what what have you gotten to play with and what are your memories from working at NASA?
+Yeah, so one of my first memories. Was they were working on a surgical robot system that could do eye surgery. Right. And this was back in oh my gosh, it must have been, oh, maybe 92, 93, 94.
+So it is almost like a remote operation. Yeah, it was it was a remote operation.
+In fact, you can even find some old tech reports on it. So think of it. You know, like now we have DaVinci, right? Like think of it. But these were like the late 90s. Right. And I remember going into the lab one day and I was like, what is that? Right.
+And of course, it was not pretty right because the technology but it was like functional. And you had this this individual that could use a version of Haptics to actually do the surgery. And they had this mock up of a human face and like the eyeballs and you can see this little drill.
+And I was like, oh, that is so that one I vividly remember because it was so outside of my, like, possible thoughts of what could be done, the kind of precision and I mean, what was the most amazing of a thing like that?
+I think it was the precision.
+It was kind of first time that I had physically seen this robot machine human interface. Right. Versus because you manufacturing it have been you saw those kind of big robots. Right.
+But this was like, oh, this is. And a person there is a person and a robot like in the same space, the meeting them in person. Like for me it was a magical moment that I can not as life transforming that I recently met Spot many from Boston Dynamics. Oh, I do not know why, but on the human robot interaction, for some reason I realized how easy it is to anthropomorphize. And it was I do not know, it was it was almost like falling in love, this feeling of meeting.
+And I have obviously seen these robots a lot and video ensemble meeting in person. Just having that one on one time it is different is different. So have you had a robot like that in your life that was made you maybe fall in love with robotics? Sort of like meeting in person? I mean, I mean, I I loved robotics from the beginning, yeah, so I was a 12 year old, like I am a be a roboticist actually was I called it cybernetics.
+But so my my motivation was Bionic Woman. I do not know if you know that. And so, I mean, that was like a seminal moment. But I did meet like that was TV, right.
+Like it was not like I was in the same space and I man, I was like, oh my gosh, you are like real just lingering on Bionic Woman, which by the way, because I read that about you, I watched a bit of it. And it is just so it is terrible. it is cheesy.
+she is got it now. I have seen a couple of reruns lately, but it is, uh.
+But of course, at the time, it is probably captured the imagination, especially when you are younger. Just catch your breath. Which aspect did you think of it? You mentioned cybernetics. Did you think of it as robotics or did you think of it as almost constructing artificial beings? Like, is it the intelligent part that that captured your fascination or was it the whole thing, like even just the limbs?
+And just so for me, it would have in another world, I probably would have been more of a biomedical engineer, because what fascinated me was the bionic was the parts like the bionic parts, the limbs, those aspects of it.
+Are you especially drawn to humanoid or human like robots?
+I would say human like not humanoid, right. And when I say human, like, I think it is this aspect of that interaction, whether it is social and it is like a dog. Right. Like that is human.
+Like because they understand us that interacts with us at that very social level to, you know, humanoids are part of that, but only if they interact with us as if we are human.
+But just to linger on NASA for a little bit, what do you think? Maybe if you have other memories, but also what do you think is the future of robots in space? We mentioned how, but there is incredible robots and NASA's working on internal thinking about an hour as we venture out of human civilization ventures, out into space. What do you think the future of robots is there?
+Yeah, so, I mean, those are the near term. For example, they just announced the the rover that is going to the moon, which, you know, that is kind of exciting.
+But that is like near term.
+You know, my favorite, favorite, favorite series is Star Trek. Right.
+You know, I really hope and even Star Trek, like, if I calculate the years, I would not be alive, but I would really, really love to be in that world.
+Like, even if it is just at the beginning, like, you know, like a voyage, like adventure one.
+So basically living in space. Yeah. With what robots, what robots data, what role the data would have to be, even though that was not, you know, that was like later.
+But so data is a robot that has human like qualities. Right, without the emotion chip. Yeah. You do not like emotion.
+Well, data with the emotion chip was kind of a mess, right.
+It took a while for for that then to adapt.
+But and so why was that an issue? The issue is, is that. Emotions make us irrational agents. that is the problem. And yet he could think through things, even if it was based on an emotional scenario, right. Based on pros and cons, but as soon as you made him emotional, one of the metrics he used for evaluation was his own emotions, not people around him. Right. And so we do that as children.
+Right. So we are very egocentric. We are very egocentric. And so it is not just an early version of the emotion chip then. I have not watched much Star Trek.
+I except I have also met adults. Right. And so that is that is a developmental process. And I am sure there is a bunch of psychologists that could go through, like you can have a six year old adult who has the emotional maturity of a 10 year old. Right. And so there is various phases that people should go through in order to evolve, and sometimes you do not.
+So how much psychology do you think a topic that is rarely mentioned in robotics, but how much does psychology come to play when you are talking about a human robot interaction, when you have to have robots that actually interact with tons?
+So we like my group as well as I read a lot in the cognitive science literature as well as the psychology literature, because they understand a lot about human human relations and developmental milestones and things like that.
+And so we tend to look to see what what is been done out there.
+Sometimes what we will do is we will try to match that to see is that human human relationship the same as human robot? Sometimes it is and sometimes is different.
+And then when it is different, we have to we try to figure out, OK, why is it different in this scenario? But it is the same in the other scenario. Right.
+And so we try to do that quite a bit.
+We just see that for looking at the future of human robot interaction. We just see the psychology piece is the hardest.
+Like, if it is I mean, it is a funny notion for you, as I do not know if you consider. Yeah. I mean, one would ask, do you consider yourself a roboticist or psychologist?
+I consider myself a roboticist that plays the act of a psychologist.
+But if you were look at yourself sort of, you know, 20, 30 years from now, do you see yourself more and more wearing the psychology hat?
+Sort of another way to put it, as are the hard problems and human robot interaction is fundamentally psychology or is it still robotics, the perception, manipulation, planning and all that kind of stuff?
+it is actually neither. The hardest part is the adaptation in the interaction.
+So learning it is it is the interface is the learning.
+And so if I think of like I have become much more of a roboticist, a person than when I like originally when I was about the bionics, I was a I was electrical engineer. I was control theory.
+Right. Like and then I started realizing that my algorithms needed, like, human data. Right. And so that I was like, OK, what does this human thing, how do I incorporate human data?
+And then I realized that human perception had that there was a lot in terms of how we perceive the world. And so trying to figure out how do I model human perception for my.
+And so I became a person, human robot interaction person from being a control theory and realizing that humans actually offered quite a bit.
+And then when you do that, you become more of an artificial intelligence AI. And so I see myself evolving more in this A.I. world under the lens of robotics, having hardware, interacting with people. So you are a world class expert, researcher in robotics and yet others, you know, there is a few is it is a small but fierce community of people. But most of them do not take the journey into the age of HRR, into the human.
+So why did you break into the interaction with humans? It seems like a really hard problem.
+it is a hard problem and it is very risky. As an academic.
+Yes. And I I knew that when I started down that journey, that it was very risky as an academic in this world that was nuance.
+It was just developing.
+We did not even have a conference right at the time because it was the interesting problems. That was what drove me. It was the fact that I looked at what interests me in terms of the application space and the problems, and that pushed me into trying to figure out what people were and what humans were and how to adapt to them. If those problems were not so interesting, I would probably still be sending rovers to glaciers.
+Right. But the problems were interesting. And the other thing was that they were hard. Right.
+So it is I like having to go into a room and being like, I do not know what to do.
+And then going back and saying, OK, I am going to figure this out. I do not I am not driven. When I go, I am like, oh, there are no surprises. Like, I do not find that satisfying. If that was the case, I go someplace and make a lot more money. Right. I think I stay an academic because and choose to do this because I can go into a room like that is hard.
+Yeah, I think just from my perspective, maybe you can correct me on it, but if I just look at the feel the way I broadly, it seems that human robot interaction has the most one of the most number of open problems like people, especially relative to how many people are willing to acknowledge that there are this because most people are just afraid of the human so they do not even acknowledge how many open problems are.
+But this in terms of difficult problems to solve exciting spaces, it seems to be an incredible for that.
+It is. And it is exciting.
+You mentioned trust before. What role does trust from interacting with autopilot to in the medical context, what role does trust play in the human robot interaction?
+So some of the things I study in this domain is not just trust, but it really is over trust.
+How do you think about over trust? What is first of all, what is what is trust and what is overdress?
+Basically, the way I look at it is trust is not what you click on a survey trust. This is about your behavior. So if you interact with the technology. Based on the decision, are the actions of that technology as if you trust that decision, then you are trusting? Right. And I mean, even in my group, we have done surveys that, you know, on the thing. Do you trust robots? Of course not.
+Would you follow this robot in a burning building? Of course not. Right. And then you look at their actions and you are like, clearly your behavior does not match what you think, right. Or what you think you would like to think. Right.
+And so I am really concerned about the behavior, because that is really at the end of the day, when you are in the world, that is what will impact others around you, is not whether before you went onto the street, you clicked on like, I do not trust self-driving cars.
+You know, that from an outsider perspective, it is always frustrating to me when I read a lot, some insider and certain philosophical sense.
+The it is frustrating to me how often trust is used in surveys and how people say make claims of any kind of finding. They make somebody clicking an answer. You just trust is your bad behavior.
+Just you said a beautiful I mean, the action your own behavior is is what trust is. I mean that everything else is not even close. it is almost like absurd comedic poetry that you weave around your actual behavior.
+So some people can say they are they their trust. You know, I trust my wife, husband or not whatever. But the actions is what speaks volumes. Bug their car.
+Probably do not trust them. I trust them. I am just making sure. No, no, that is yeah. it is like even if you think about cars, I think it is a beautiful case. I came here at some point, I am sure on either Uber left, right.
+I remember when it first came out. I bet if they had had a survey, would you get in the car with a stranger and pay them?
+Yes.
+How many people do you think would have said, like, really, you know, even worse, would you get in the car with a stranger at 1:00 a.m. in the morning to have them drop you home as a single female? Yeah, like how many people would say that is stupid?
+Yeah. And now look at where we are.
+I mean, people put kids like. Right. Lights. Oh, yeah. My my child has to go to school and I yeah. I am going to put my kid in this car with a stranger.
+Yeah. I mean it is just fascinating how like what we think we think is not necessarily matching our behavior and certainly with robots, with autonomous vehicles and all the kinds of robots you work with, that is that is.
+Yeah, it is the way you answer it, especially if you have never interacted with that robot before and if you have not had the experience of being able to respond correctly on a service is impossible.
+What do you what role does trust play in the interaction, do you think?
+I guess a good to is a good to trust a robot.
+What is over trust mean was it is a good kind of how you feel about autopilot currently, which is like from a roboticist perspective, it is like, oh, you are so very cautious. Yeah.
+So this is still an open area of research. But basically what I would like in a perfect world is that people trust the technology when is working 100 percent and people will be hypersensitive and identify when it is not. But of course we are not there. that is that is the ideal world. And but we find is that people swink, right, they tend to swing, which means that if my first and like we have some papers like first impressions, then everything is everything.
+Right? If my first instance with technology, with robotics is positive, it mitigates any risk.
+It it correlates with, like best outcomes. It means that I am more likely to either not see it when it makes the mistakes or faults or I am more likely to forgive it.
+Mm hmm.
+And so this is a problem because technology's not 100 percent accurate, right? it is not 90 percent accurate, although it may be perfect.
+How do you get the first moment right? Do you think there is also an education about the capabilities and limitations of the system? Do you have a sense of how do you educate people correctly in that first interaction?
+Again, this is this is an open ended problem. So one of the study that actually has given me some hope that I was trying to figure out how to put it in robotics. So there was a research study that it showed for medical E-Systems giving information to radiologists about, you know, here you need to look at these areas on on on the x ray. What they found was that when the system provided one choice, there was this aspect of either no trust or over trust.
+Right. Like, I am not going I do not believe it at all.
+Or a yes, yes, yes, yes. And they would miss things right. Instead, when the system gave them multiple choices, like here are the three, even if it knew, like, you know, it had estimated that the top areas you need to look at was he, you know, some place on on the X-ray, if it gave like one plus others, the trust was maintained and the accuracy of the entire population increased.
+Right. So basically, it was a you are still trusting the system, but you are also putting in a little bit of like your human expertise, like you are a human decision processing into the equation. So it helps to mitigate that overthrust risk. Yeah.
+So there is a fascinating balance to strike. You have not figured out.
+Again, it is still exciting. Open area research. Exactly. So what are some exciting applications of human robot interaction? You started a company.
+Maybe you can talk about the the exciting efforts there. But in general, also, what other space can robots interact with humans and help?
+Yeah. So besides health care, because, you know, that is my bias lens, my other biased lenses, education.
+I think that well, one which we definitely we in the you.S., you know, we are doing OK with teachers, but there is a lot of school districts that do not have enough teachers. If you think about the teacher student ratio for at least public education, in some districts, it is crazy. it is like, how can you have learning in that classroom? Right.
+Because you just do not have the human capital. And so if you think about robotics bringing that into classrooms as well as the after school space where they offset some of this lack of resources in certain communities, I think that is a good place. And then turning on the other end is using these systems then for workforce retraining and dealing with some of the things that are going to come out later on of job loss, like thinking about robots and energy systems for retraining and workforce development.
+I think that is exciting areas that can be pushed even more and it would have a huge, huge impact.
+What would you say? Some of the open problems in education? Sort of.
+it is exciting for young kids and the older folks or folks of all ages who need to be retrained, who need to sort of open themselves up to a whole another area of work or what what are the problems to be solved there?
+How do you think robots can help?
+We we have the engagement aspect, right. So we can figure out the engagement.
+that is not what do you mean by engagement? So identifying whether a person is focused is like that.
+We can figure out. What we can figure out and and there is some positive results in this, is that personalized adaptation based on any concepts, right? So imagine I think about I have an agent and I am working with a a kid learning, I do not know, algebra two.
+Can that same agent then switch and teach some type of new coding skill to a displaced mechanic? Like what does that actually look like?
+Right. Like hardware might be the same. Content is different to different target demographics of engagement. Like, how do you do that?
+How important do you think personalization is in human robot interaction and not just a mechanic or student, but like literally to the individual human being?
+I think personalization is really important, but a caveat is that. I think we would be OK if we can personalize to the group, right?
+And so if I can label you as along some certain dimensions, then even though it may not be you specifically, I can put you in this group. So the sample size, this is how they best learn. This is how they best engage.
+Even at that level, it is really important and it is because I mean, it is one of the reasons why educating in large classrooms is so hard, right? You teach to, you know, the median, but there is these, you know, individuals that are, you know, struggling. And then you have highly intelligent individuals. And those are the ones that are usually, you know, kind of left out. So highly intelligent.
+Individuals may be disruptive and those who are struggling might be disruptive because they are both bored.
+And if you narrow the definition of the group or the size of the group enough, you will be able to address their individual individual needs. But really across the group most important group needs. Right. Right.
+And that is kind of what a lot of successful recommender systems do, Spotify and so on. So sad to believe.
+But as a music listener, probably some sort of large group is very, very sadly predictable, have been labeled, I have been labeled and successfully so because they are able to recommend stuff.
+Yeah, but applying that to education, education, there is no reason why it can not be done. Do you have a hope for our education system?
+I have more hope for workforce development and that is because I am seeing investments. Even if you look at VC investments in education, the majority of it has lately been going to workforce retraining. Right. And so I think that government investments is increasing. there is like a claim and some of it is based on fear, like AIG is going to come and take over all these jobs.
+What are we going to do with all these nonpaying taxes that are not coming to us by our citizens? And so I think I am more hopeful for that. Not so hopeful for early education, because it is this it is still a who is going to pay for it. And you will not see the results for like 16 to 18 years.
+it is hard for people to wrap their heads around that. But on the retraining part, what are your thoughts? there is a candidate, Andrew Yang, running for president and saying that sort of AI automation robots and universal basic income, universal basic income in order to support us as we kind of automation takes people's jobs and allows us to explore and find other means like, um.
+Concern of a society transforming effects of automation and robots and so on.
+I do I do know that A.I. robotics will displace workers like we do know that, but there'll be other workers that will be defined new jobs. What I worry about is that is not what I worry about.
+Like, will all the jobs go away? What I worry about is the type of jobs that will come out, like people who graduate from Georgia Tech will be OK.
+Right.
+We give them the skills they will adopt even if their current job goes away. I do worry about those that do not have that quality of an education. Right. Will they have the ability, the background to adapt to those new jobs that I do not know that I worry about, which will create even more polarization in our society internationally and everywhere?
+I worry about that. I also worry about not having equal access to all these wonderful things that I can do and robotics can do.
+I worry about that?
+You know, people like people like me from Georgia Tech, from Samedi will be OK. Right. But that is such a small part of the population that we need to think much more globally of having access to the beautiful things, whether it is in health care and education, iron and politics.
+Right. I worry about that.
+And that is part of the thing that you are talking about as people that build the technology had to be thinking about ethics, have to be thinking about access and all those things, and not just a small, small subset. Let me ask some philosophical, slightly romantic questions. All right. So listen to this.
+Here he goes again.
+OK, do you think do you think one day we will build in our system that we, a person can fall in love with and it would love them back like in a movie her, for example. Oh, yeah.
+Although she she kind of did not fall in love with him or she fell in love with like a million other people, something like that.
+So you are the jealous type. I see. So we humans are the jealous. Yes.
+So I do believe that we can design systems where people would fall in love with their robot, with their A.I. partner.
+That I do believe, because it is actually and I do not I do not like to use the word manipulate, but as we see, there are certain individuals that can be manipulated if you understand the cognitive science about it.
+Right. Right. So, I mean, if you could think of all close relationship and love in general as a kind of mutual manipulation that dance, the human dance, I mean, manipulation is a negative connotation.
+And I do not like to use that word particularly.
+I guess another way to phrase is you are getting at is it could be algorithm ATI's or something. It could be the relationship building part CAMBIA.
+I mean, just think about it there. We have and I do not use dating sites, but from what I heard. There are some individuals that have been dating that have never saw each other, right. In fact, there is a show, I think, that tries to weed out fake people, like there is a show that comes out right.
+Because, like, people start faking, like, what is the difference of that person on the other end, being an agent. Right. And having a communication. Are you building a relationship remotely like there is no reason why that can not happen in terms of human robot interaction?
+So what role you have kind of mentioned would data emotion being can be problematic if not implemented? Well, I suppose what role does emotion, some other human like things, the imperfect things come into play here for good human robot interaction and something like love?
+Yeah. So in this case and you had asked, can I agent love a human back? I think they can emulate love back. Right. And so what does that actually mean? It just means that if you think about their programming, they might put the other person's needs in front of theirs in certain situations. You look at think about it as a return on investment, like was my return on investment as part of that equation, that person's happiness, you know, has some type of algorithm waiting to it.
+And the reason why is because I care about them.
+that is the only reason. Right. But if I care about them and I show that, then my final objective function is length of time of the engagement. Right.
+So you can think of how to do this actually quite easily.
+And so but that is not love. Well, so that is the thing. It I think it emulates love because we do not have a classical definition of love.
+Right. But and we do not have the ability to look into each other's minds, to see the algorithm.
+And I mean, I guess what I am getting at is, is it possible that especially if that is learned, especially if there is some mystery and blackbox nature to the system, how is that?
+You know, how is it any different, how is any different in terms of sort of if the system says I am conscious, I am afraid of death, and it does indicate that it loves you? Another way to sort of phrase, I would be curious to see what you think. Do you think there will be a time when robots should have rights?
+you have kind of phrase the robot in a very roboticist way and just a really good way of saying, OK, well, there is an objective function.
+And I could see how you can create a compelling human robot interaction experience that makes you believe that the robot cares for your needs and even something like loves you.
+But what if the robot says, please do not turn me off? What if the robot starts making you feel like there is an entity of being a soul there? Right. Do you think there will be a future?
+Hopefully you will not laugh too much at this, but the words they do ask for rights. So I can see a future if we do not address it in the near term where these agents, as they adapt and learn, could say, hey, this should be something that is fundamental.
+I hopefully think that we would address it before it gets to that point.
+Do you think so that you think there is a bad future? Is a what? Is that a negative thing where they ask we are being discriminated against.
+I guess it depends on what role have they attained at that point, right.
+And so if I think about now, careful what you say, because the robots 50 years from now, I will be listening to this and you will be on TV saying this is what roboticists used to believe.
+I right. And so this is my and as I said, I have a bias lens in my robot. Friends will understand that.
+But so if you think about it and I actually put this in kind of the as a roboticists, you do not necessarily think of robots as human with human rights, but you could think of them either in the category of property or you can think of them in the category of animals.
+Right. And so both of those have different types of of rights. So animals have their own rights as a living being. But, you know, they can not vote. They can not. Right. They they can be euthanized. But as humans, if we abuse them, we go to jail like. Right. So they do have some rights that protect them, but do not give them the rights of, like, citizenship.
+And then if you think about property, property, the rights are associated with the person. Right. So if someone vandalizes your property or steals your property like there are some rights but is associated with the person who owns that, if you think about it back in the day and if you remember, we talked about how society has changed.
+Women were property, right? They were not thought of as having rights.
+They were thought of as property of like they are assaulting a woman meant assaulting the property of somebody else.
+Exactly. And so what I envision is, is that we will establish some type of norm at some point, but that it might evolve.
+Right. Like if you look at women's rights now, like there are still some countries that do not have and the rest of the world is like, why?
+That makes no sense. Right. And so I do see a world where we do establish some type of grounding. It might be based on property rights and might be based on animal rights.
+And if it evolves that way, I think we will have this conversation at that time, because that is the way our society traditionally has evolved.
+Beautifully put. Just out of curiosity, Anchee Djibo, meaningful robotics with a robot. Curious how it works. We think robotics, we are all these amazing robotics companies led created by incredible roboticists and they all went out of business recently.
+Why do you think they did not last longer? Why is it so hard to run a robotics company, especially one like these, which are fundamentally HRR? Are H.R. I human robot interaction robots?
+Yeah, each one has a story. Only one of them I do not understand. And that was Anqi. that is actually the only one I do not understand. I do not understand it either. it is there.
+No I mean I look like from the outside, you know, I have looked at their sheets, I have looked like the data that is. Oh you mean like business wise. Yeah.
+Gotcha. Yeah. And like I look at all, I look at that data and I am like they seem to have like product market fit. So that is the only one I do not understand. The rest of it was product marketing.
+what is product market fit just just out of the car. You think about it. Yeah.
+So although we think robotics was getting there. Right. But I think it is just the timing. It just the clock just timed out. I think if they had been given a couple of more years, they would have been OK.
+But the other ones are still fairly early by the time they got into the market.
+And so product market fit is I have a product that I want to sell at a certain price. Are there enough people out there, the market that are willing to buy the product at that market price for me to be a functional, viable, profit bearing company? Right.
+So product market fit, if it cost you a thousand dollars and everyone wants it and only is willing to pay a dollar, you have no product market fit, even if you could sell it for, you know, it is enough for a dollar because you can not.
+How hard is it for robots? Sort of. Maybe if you look at iRobot, the company that makes Roomba vacuum cleaner, can you comment on did they find the right product market fit or are people willing to pay for robots?
+it is also another kind of question about iRobot in their story. Right. Like when they first they had enough of a of a run.
+Right, when they first started, they were not doing vacuum cleaners, right, they were a military, they were contracts, primarily government contracts, designing robots. Yeah, I mean, that is what they were. that is how they started. Right.
+And they still do a lot of incredible work there.
+But, yeah, that was the initial thing that gave them the funding to then try to the vacuum cleaner is what I have been told was not like their first rendezvous in terms of designing a product. Right. And so they they were able to survive until they got to the point that they found a product price market.
+Right. And even with if you look at the the Roomba, the price point now is different than when it was first released. Right. It was an early adopter price, but they found enough people who were willing to to fund it. And I mean, you know, I forgot what their loss profile was for the first couple of, you know, years, but they became profitable in sufficient time that they did not have to close their doors.
+So they found the right. there is still there is still people willing to pay a large amount of money or a thousand dollars for for vacuum cleaner. Unfortunately for them, now that they have proved everything out, figured it all out now.
+Yeah. And so that is that is the next thing. Right. The competition.
+And they have quite a number, even internationally, like there are some some products out there.
+You can go to Europe and be like, oh, I did not even know this one existed. So so this is the thing, though, like with any market.
+I would say this is not a bad time, although, you know, as a roboticist, it is kind of depressing. But I actually think about things like with the I would say that all of the companies that are now in the top five or six, they were not the first to the stage. Right. Like Google was not the first search engine. Sorry, AltaVista. Right. Facebook was not the first. Sorry, MySpace. Right. Like, think about it.
+They were not the first players.
+Those first players, like, they are not in the top five, 10 of Fortune 500 companies. Right.
+They proved they started to prove out the market. They started to get people interested. They started the buzz, but they did not make it to that next level.
+But the second batch. Right. The second batch, I think, might make it to the next level.
+When do you think the the Facebook of the Facebook of robotics?
+Sorry, I take that phrase back because people deeply for some reason or I know why, but it is, I think, exaggerated distrust Facebook because of the privacy concerns and so on. And with robotics, one of the things you have to make sure is all the things we have talked about is to be transparent and have people deeply trust you to let a robot into their lives, into the home.
+What do you think the second batch of robots, is it five, 10 years, 20 years that will have robots in our homes and robots in our hearts?
+So if I think about it because I try to follow the the VXI kind of space in terms of robotic investments, and right now I do not know if they are going to be successful. I do not know if this is the second batch.
+But there is only one batch that is focused on like the first batch, right, and then those all these self-driving Xs. Right. And so I do not know if they are a first batch of something or if, like, I do not know quite where they fit in.
+But there is a number of companies, the co robot, I call them robots that are still getting VC investments.
+They some of them have some of the flavor of like rethink robotics. Some of them have some of the flavor of like curry. what is a core robot?
+So basically a robot in human working in the same space. So some of the companies are focused on manufacturing. So having a robot and human working together in a factory, some of these robots are robots and humans working in the home, working in clinics like there is different versions of these companies in terms of their products. But they are all so we think robotics would be like one of the first at least well known companies focus on this space. So I do not know if this if this is a second batch or if this is.
+Still part of the first batch that I do not know, and then you have all these other companies in this self-driving, you know, space and I do not know if that is a first batch or, again, a second batch. Yeah.
+So there is a lot of mystery about this now. Of course, it is hard to say that this is the second batch until it, you know, proves outright, correct? Yeah. We need a unicorn. Yeah, exactly.
+The what do you think? People are so afraid. At least in popular culture of legged robots like those worked in Boston Dynamics or just robotics in general. If you were to psychoanalyze that fear, what do you make of it?
+And should they be afraid so?
+So should people be afraid? I do not think people should be afraid, but with a caveat.
+I do not think people should be afraid, given that most of us in this world understand that we need to change something. Right.
+So given that now, if things do not change, be very afraid.
+What which is the dimension of change that is needed.
+So changing a thinking about the ramifications, thinking about like the ethics, thinking about like the conversation is going on. Right. it is not is no longer a we are going to deploy it and forget that, you know, this is a car that can kill pedestrians that are walking across the street. Right. If we are not in that state where, a, we are putting these roads out, there are people out there. Yes, a car could be a weapon like people are now.
+Solutions are not there yet.
+But people are thinking about this as we need to be ethically responsible as we send these systems out, robotics, medical, self-driving and military and military and military, just not as often talked about.
+But it is really worth probably these robots will have a significant impact as well.
+Correct. Correct, right. Making sure that they can think rationally, even having the conversations who should pull the trigger. Right.
+But overall, you are saying if we start to think more and more as a community about these ethical issues, people should not be afraid.
+Yeah, I do not think people should be afraid. I think that the return on investment, the the impact, positive impact will outweigh any of the potentially negative impacts.
+Do you have worries of existential threats of robots or AI that some people kind of talk about and romanticize about in the next decade, the next few decades?
+No, I do not. Singularity will be an example. So my concept is, is that so remember, robots A.I. is designed by people.
+Yes, it has our values. And I always correlate this with a parent and a child. So think about it as a parent, would we want we want our kids to have a better life than us. We want them to expand. We want them to experience the world. And then as we grow older, our kids think and know they are smarter and better and more intelligent and have better opportunities. And they may even stop listening to us. Yeah, they do not go out and then kill us.
+Right. Like, think about it is because we it is instilled in them values. We instilled in them this whole aspect of community. And yes, even though you are maybe smarter and more have more money and that all it is still about this love caring relationship. And so that is what I believe. So even if, like, you know, we have created the singularity and some archaic system back in like 1980, that suddenly evolves. The fact is, it might say I am smarter, I am sentient.
+These humans are really stupid, but I think it will be like, yeah, but I just can not destroy them. Yeah.
+For sentimental value, it is still just for to come back for Thanksgiving dinner every once in a while. Exactly. This so beautifully put. If you have also said that The Matrix may be one of your more favorite A.I. related movies, can you elaborate why?
+Yeah, it is one of my favorite movies and it is because it represents kind of all the things I think about. So there is a symbiotic relationship between robots and humans, right?
+that is symbiotic relationship is that they do not destroy us. They enslave us. Right. But think about it.
+Even though they enslaved us, they needed us to be happy, right, and in order to be happy, they had to create this cruelty world that they then had to live in.
+Right. that is the whole premise.
+But then there were humans that had a choice, right?
+Like you had a choice to stay in this horrific, horrific world where it was your fantasy life with all of the anomalies, perfection, but not accurate.
+Or you can choose to be on your own and like have maybe no food for a couple of days. But you were totally autonomous. And so I think of that as and that is why. So it is not necessarily us being enslaved, but I think about us having the symbiotic relationship robots. And I even if they become sentient, they are still part of our society and they will suffer just as much as we do.
+And then there will be some kind of equilibrium that we will have to find some sort of symbiotic relationship.
+And then you have the ethicists, the robotics folks that would like know this has got to stop. I will take the other people in order to make a difference.
+So if you could hang out for a day with the robot real from science fiction movies, books safely and get to pick his or her their brain, who would you pick? Not to say it is data there, I was going to say Rosy, but I do not I am not really interested in her brain.
+I am interested in data, brain data pre or post emotion chip pre. But do not you think it would be a more interesting conversation post emotion chip?
+Yeah, it would be drama. And I you know, I am human. I deal with drama all the time. Yeah. But the reason why I want to pick Data's brain is because I, I could have a conversation with him and ask, for example, how can we fix this ethics problem. Right. And he could go through like the rational thinking and through that he could also help me think through it as well. And so that is there is like these questions, fundamental questions, I think I can ask him that he would help me also learn from.
+And that fascinates me.
+I do not think there is a better place to end it. Thank you so much for talking to us. An honor. Thank you. Thank you. This is fun.
+Thanks for listening to this conversation and thank you to our presenting sponsor cash app, download it, use Cold Legs podcast, you will get ten dollars and ten dollars will go to First, a STEM education nonprofit that inspires hundreds of thousands of young minds to become future leaders and innovators. If you enjoy this podcast. Subscribe on YouTube. Give it five stars, an Apple podcast. Follow on Spotify, support on Patra or simply connect with me on Twitter. And now let me leave you with some words of wisdom from Arthur C.
+Clarke. Whether we are based on carbon or on silicon makes no fundamental difference, we should be treated with appropriate respect. Thank you for listening and hope to see you next time.

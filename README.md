@@ -1,11 +1,11 @@
 # Knowledge-Extraction-from-Podcasts
 
-**Note**: Please refer Project_Description.pdf and demo_version0.1.mp4 for details.  
+**Note**: Please refer Project_Description.pdf and Project_Demo.mp4 for details.  
 
 **Implementation Summary**:  
-• Developed end-to-end data pipeline to extract, transform and index segments by speaker in Lex Fridman podcasts for creating a knowledge repository in Elasticsearch, accessible through a flask application interface  
-• Implemented modules for audio segmentation, speech-to-text, text summarization, NER and knowledge graph visualization tasks by leveraging libraries such as pydub, CMUSphinx, deepspeech, spacy, PySpark and d3.js  
-• Setup the data model for raw and processed data to answer user queries, and visualize the knowledge graph  
+• Developed end-to-end data pipeline to extract, transform and load speaker segments in Lex Fridman podcasts, for creating a knowledge repository in Elasticsearch, accessible through a flask application interface  
+• Implemented modules for audio segmentation, speaker diarization, speech-to-text, NER and entities graph visualization, by leveraging libraries such as pydub, CMUSphinx, deepspeech, spacy and d3.js  
+• Setup the data model for raw and processed data to answer user queries, and visualize the entities graph  
 
 **Dataset**: [Lex Fridman Podcast](https://www.youtube.com/watch?v=S_AFc_BXht4&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4)
 
@@ -15,7 +15,6 @@ Elasticsearch(>=7.9.1)
 MongoDB (>=3.6)  
 Maven (>=3.3.9)  
 Python (3+)  
-PySpark (3.0.0+) 
 
 **Deployment on localhost**:  
 1) Launch Elasticsearch service.  
@@ -63,6 +62,8 @@ python3 data_ingestion_layer/transform/data_segmentation_by_speakers.py
 
 python3 data_ingestion_layer/load/mongo_raw_data_load.py
 
+python3 data_ingestion_layer/load/mongo_transcribe_segments.py
+
 python3 data_ingestion_layer/load/es_index_segments.py
 
 python3 data_ingestion_layer/load/es_index_metadata_and_speakers.py
@@ -76,9 +77,9 @@ mongo
 ```  
 5) Run Analytical Layer.  
 ```
-spark-submit --packages "org.mongodb.spark:mongo-spark-connector_2.12:3.0.0" analytical_layer/setup_knowledge_graph.py
+python3 analytical_layer/setup_entities_graph.py
 
-python3 analytical_layer/index_knowledge_graph.py
+python3 analytical_layer/index_entities_graph.py
 curl -XGET "localhost:9200/_cat/indices"
 ```  
 5) Run Data Serving Layer.  
@@ -86,4 +87,4 @@ curl -XGET "localhost:9200/_cat/indices"
 cd data_serving_layer
 python3 podcast_explorer_app.py
 ```  
-6) Application is deployed at ```http://localhost:8080```.
+6) Application is deployed at ```http://localhost:5000```.

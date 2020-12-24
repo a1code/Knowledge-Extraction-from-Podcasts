@@ -1,0 +1,620 @@
+The following is a conversation with George Hotz. he is the founder of Karmi Machine Learning based vehicle automation company. He is most certainly an outspoken personality in the field of AI and technology in general. He first gained recognition for being the first person to carry on like an iPhone. Since then, he is done quite a few interesting things at the intersection of hardware and software. This is the Artificial Intelligence Podcast. If you enjoy, subscribe on YouTube, give it five stars on iTunes, supported on Patreon or simply connect with me on Twitter.
+Allex Friedman spelled F.R. Idi Amin, and I would like to give a special thank you to Jennifer from Canada for her support of the podcast. And Patrón. Merci beaucoup, Jennifer. she is been a friend and an engineering colleague for many years since I was in grad school. Your support means a lot and inspires me to keep this series going. And now here is my conversation with George Hotz.
+Do you think we are living in a simulation? Yes, but it may be unfalsifiable. What do you mean by unfalsifiable? So if the simulation is designed in such a way that they did like a formal proof to show that no information can get in and out, and if their hardware is designed for the anything in the simulation to always keep the hardware and spec, it may be impossible to prove whether we are in a simulation or not.
+So they have designed it, such as the closed system. You can not get outside the system.
+Well, maybe it is one of three worlds where either in a simulation which can be exploited, we are in a simulation which not only can not be exploited, but like the same thing is true about VMS, a really well-designed VM. You can not even detect if you are in a VM or not. that is brilliant.
+So we are it is. Yeah. So the simulation is running on a virtual machine, but now in reality, all VMS have way to the fact.
+that is the point. I mean, is it you have done quite a bit of hacking yourself and so you should know that really any complicated system will have ways in and out. So this is not necessarily true going forward. I spent my time away from Kharma. I learned Cok Dependently typed like it is a language for writing math proofs. And if you write code that compiles in a language like that, it is correct by definition, the typed check Checketts correct.
+So it is possible that the simulation is written in a language like this, in which case. Yeah, but that can not be sufficiently expressive of language like that, we can it can be. Yeah, OK. Well so all right.
+So the simulation does not have to be complete if it has a scheduled end date. Looks like it does actually with entropy.
+I mean, I do not think that a simulation, as that results in something as complicated as the universe, would have a form of proof of correctness.
+Right. As is possible.
+Of course, we have no idea how good they are tooling us and we have no idea how complicated the universe computer really is. It may be quite simple. it is just very large, right?
+it is very it is definitely very large, but the fundamental rules might be super simple.
+Yeah. Conaway's come to life kind of stuff. Right.
+So if you could hack. So imagine the simulation that is hackable, if you could hack it. What would you change about? How would you approach hacking a simulation? The reason I gave that talk, I by the way, I am not familiar with the talk here, I just read that you talked about escaping the simulation or something like that. So maybe you can tell me a little bit about the theme and the message there, too.
+It was not a very practical talk about how to actually escape a simulation. It was more about a way of restructuring an us versus them narrative if.
+We continue on the path we are going with technology.
+I think we are in big trouble like as a species and not just as a species, but even as me as an individual member of the species.
+So if we could change rhetoric to be more like to think upwards. I like to think about that we are in a simulation and how we could get out already, we would be on the right path. What you actually do once you do that, while I assume I would have acquired way more intelligence in the process of doing that. So I will just ask that.
+So the thinking upwards, what kind of ideas, what kind of breakthrough ideas do you think thinking in that way could inspire?
+And what did you say, upwards, upwards into space? Are you thinking sort of exploration in all forms? This space narrative that held for the modernist generation does not hold as well for the postmodern generation. what is the space in there? we are talking about the same space, that dimensional space, like going in literally like a building like Elon Musk, like we are going to build rockets, we are going to go to Mars, we are going to colonize the universe.
+And the narrative you are referring, I was born in the Soviet Union. you are referring to the race to space, the race to space explorer. That was a great modernist narrative. Yeah. It does not seem to hold the same weight in today's culture. I am hoping for good postmodern narratives that replace it. So think let us think so. You work a lot with A.I. So there is one formulation of that narrative that could be also I do not know how much you do in VR and they are.
+Yeah, that is another. I know less about it, but every time I play with it and our research is fascinating. The virtual world. Are you are you interested in the virtual world? I would like to move to a virtual reality. In terms of your work, I would like to physically move there. The apartment I can rent in the cloud is way better than the apartment I can rent in the real world.
+Well, it is all relative, is not it? Because others will have very nice apartments, too. So you will be inferior in the virtual world.
+that is not how I view the world, right? I do not view the world. I mean, it is a very like like almost zero sum ish way to view the world.
+Say, like, my great apartment is not great because my neighbor has gotten to know my great apartment is great because, like, look at this dishwasher, man. Yeah. You just touch the dish and it is washed.
+Right. And that is great in and of itself. If I had the only apartment or if everybody had the apartment, I do not care.
+So you have fundamental gratitude. The world first learned of Jowhar George Hotz in August 2007, maybe before then, but certainly in August 2007, when you were the first person to unlock on unlock an iPhone, how did you get into hacking? What was the first system you discovered vulnerabilities for and broke into? So. That was really kind of the first thing I had I had a book in in 2006 called Gray Hat Hacking, and I guess I realized that if you acquired these sort of powers, you could control the world.
+But I did not really know that much about computers back then.
+I started with electronics. The first iPhone hack was physical card, where you had to open it up and pull an address line high. And it was because I did not really know about software exploitation. I learned that all in the next few years and I got very good at it. But back then I knew about, like, how memory chips are connected to processors and stuff.
+You knew about software and programming is did not did not know. I will really see you in your view of the world.
+And computers was physical was was hardware.
+Actually, if you read the code that I released with that in August two thousand seven, it is atrocious what language was in a, C, C and in a broken sort of state machine C, I did not know how to program math.
+So how did you learn to program? What was your journey?
+Because I mean, we will talk about it. you have livestream, some of your programming, this chaotic, beautiful mess.
+How did you arrive at that? Years and years of practice? I interned at Google after the summer after the iPhone unlock, and I did a contract for them where I built hardware for for a street view and I wrote a software library to interact with it. And it was terrible code. And for the first time, I got feedback from people who I respected saying no, like do not write code like this. Now, of course, just getting that feedback is not enough.
+The way that I really. Got good was I wanted to write this thing like that could emulate and then visualize like arm binaries because I wanted to hack the iPhone better and I did not like that. I could not, like, see what I could not single step through the processor because I debugger on there, especially for the low level things like the bootloader. So I tried to build this tool to do it.
+And I built the tool once, and it was terrible, I built the tool second time. It was terrible. I built to a third time. By the time I was at Facebook, it was kind of OK. And then I built the tool a fourth time when I was a Google intern again in twenty fourteen. And that was the first time I was like, this is finally usable. How do you pronounce this character? So it is essentially the most efficient way to visualize the change of state of the computer as the program is running.
+that is what you mean by debugger? Yeah, it is a timeless debugger.
+So you can rewind just as easily as going forward. Think about if you are using GDB, you have to put a watch on a variable if you want to see if that variable changes and you can just click on that variable and then it shows every single time when that variable was changed or accessed. Think about it like get for your computers that run like there is like a deep log of of the state of the computer as the program runs and you can rewind wise and that maybe it is maybe you can educate me.
+Why is not that kind of debugging used more often or because the ruling is bad?
+Well, two things. One, if you are trying to debug chrome, Chrome is a two hundred megabyte binary that runs slowly on desktops. So that is going to be really hard to use for that. But it is really good to use for like Cardiff's and for ROMs and for small parts of code. So it is hard if you are trying to debug like massive systems.
+Was the CTF and what is the Buuren about? RAM is the first code that executes the minute you give power to your iPhone. And CTF, where these competitions that I played capture the flag to capture the flag, was going to ask you about that. What are those look at I watched a couple of videos on YouTube. Those are fascinating.
+What have you learned about maybe at the high level vulnerability of systems from these competitions? The like I feel like like in the heyday of ETFs, you had all of the best security people in the world challenging each other and coming up with new toy exploitable things over here and then everybody, OK, who can break it?
+And when you break it, you get like there is like a file in the server called Flag and then there is a program running, listening on a socket that is vulnerable. You write and exploit, you get a she will and then you can flag and then you type the flag into like a Web based scoreboard and you get points.
+So the goal is essentially to find exploit in a system that allows you to run she will to run arbitrary code on that system.
+that is one of the categories. that is like the ponytail category. Um, yeah.
+Furnival's like, you know, you put on the program. it is a program. Yeah.
+Uh, yeah. You know, I apologize. I am going to I am going to say this because I am Russian, but maybe you can help educate me some video game like Misspelt Own way back in the day.
+Yeah.
+And there is just I wonder if there is a definition and I have to go to Urban Dictionary for it.
+Um, OK, so what was the hardest, by the way. But was it what decade are we talking about.
+I think like I mean, maybe I am biased because it is the era that that I played, but like twenty eleven to twenty fifteen. Because the modern scene is similar to the modern competitive programming scene. You have people who like to drells, you have people who practice.
+And then once you have done that, you have turned it less into a game of generic computer skill and more into a game of OK, you memory, you drill on these five categories. And then before that it was not it did not have like as much attention as it had. I do not know. They were like I won thirty thousand dollars once in Korea for one of these competitions. Oh, crap. They were. They were.
+So that means I mean, money is money, but that means those those probably good people there. Exactly. Yeah. Are the challenges human constructed or are they grounded in some real flaws in real systems.
+Usually they are human constructed but they are usually inspired by real flaws. What kind of systems are imagined is really focused on mobile? Like what has vulnerabilities these days is it does primarily mobile systems like Android? Oh, everything does.
+So yeah, of course the price is kind of gone up because less and less people can find them. And what is happened in security is now if you want to like jailbreak an iPhone, you do not need one exploit anymore. You need nine. Nine chained together. What? Yeah. Wow. OK, so that is really what is the what is the benefit of speaking higher level philosophically about hacking?
+I mean, it sounds from everything I have seen about you, you just love the challenge and you do not want to do anything.
+You do not want to bring that exploit out into the world and doing the actual let it run wild. You just want to solve it and then you go on to the next thing.
+Oh, yeah. I mean, doing criminal stuff is not really worth it. And I will actually use the same argument for why I do not do defense, for why I do not do crime. If you want to defend a system, say the system has 10 holes, right, if you find nine of those holes as a defender, you still lose because the attacker gets in through the last one. If you are an attacker, you only have to find one out of the ten.
+But if you are a criminal, if you log on with a VPN nine out of the 10 times at one time, you forget you are done. Because you are caught, because you only have to mess up once to be caught as a criminal. Yeah, that is why I am not a criminal.
+But OK, let me because I was having a discussion with somebody just at a high level about nuclear weapons, actually why we are having blown ourselves up yet.
+And my feeling is all the smart people in the world, if you look at the distribution of smart people, smart people are generally good.
+And then so other person is talking to Sean Carroll, the physicist, and he was saying, no good and bad people are evenly distributed amongst everybody.
+My sense was good hackers are in general good people and they do not want to mess with the world. what is your sense?
+I am not even sure about that.
+Like. Have a nice life, crime would not get me anything, but if you are good and you have these skills, you probably have a nice life to write, like you can use it for other things.
+But is there an ethical is there some there a little voice in your head that says of, well, yeah, if you could hack something where you could hurt people.
+And you could earn a lot of money doing it, though not hurt physically perhaps, but disrupt your life in some kind of way. It is in their little voice that says, what?
+Two things. One, I do not really care about money like the money would not be an incentive. The thrill might be it itself.
+But when I was 19, I read Crime and Punishment, and that was another that was another great one that talked me out of ever really doing crime, because it is like that is going to be me.
+I would get away with it, but it just went through my head.
+And even if I got away with it and then you do crime for long enough, you will never get away with it. that is right. And that is a good reason to be good.
+I would not say I am good. I just I am not bad.
+you are a talented programmer and a hacker in a good, positive sense of the word word. you have played around found vulnerabilities in various systems. What have you learned broadly about the design of systems and so on from that from that whole process?
+You. Learn to not take things for what people say they are, but you look at things for what they actually are. Hmm, yeah, I understand that is what you tell me it is, but what does it do?
+And you have nice visualization tools to really know what it is really doing.
+Oh, I wish I am a better programmer now than I was in twenty fourteen. I said, Kyra, that was the first tool that I wrote that was usable. I would not say the code was great. I still would not say my code is great.
+So how was your evolution as a programmer except practice. You went, you started to see which one did you pick up Python. Because you are pretty big in Python now. Yeah, in, uh, in college, uh, I went to Carnegie Mellon when I was twenty two. I went back. I am like, I, I am going to take all your hardest courses, but we will see how I do. Right. Like did I miss anything by not having a real undergraduate education.
+Took operating systems compilers I and they are like uh freshman weeder math course. Um and spending some of those, some of those classes you mentioned.
+Pretty tough actually. They were great at least of the 2012 circa twenty twelve operating systems and compilers were two of the best class I have ever taken my life. Because you write an operating system and you write a compiler.
+I wrote my operating system in C and I wrote my compiler in Haskell, but, well, somehow I picked up Python that semester as well. I started using it for the ETFs. Actually, that is when I really started to get into ETFs. And after all, it is a race against the clock. So I can not write things and say, oh, there is a clock component.
+So you really want to use the programming language. You can be fastest in forty eight hours poneys. Many of these challenges you can pound. You got a hundred points. A challenge, whatever team gets the most.
+You were both the Facebook and Google for that. Yeah.
+Or the project zero actually at Google for five months where you develop Cura. Well as Project zero about in general. What I am just curious about the security efforts in these companies.
+Well, Product Zero started the same time I went there.
+What year are their 2015. 2015. That was right at the beginning of project. it is small.
+it is Google's offensive security team. I will try to give I will try to give the best public face an explanation that I can. So the idea is basically these vulnerabilities exist in the world. Nation states have them. Some high powered bad actors have them. Sometime. People will find these vulnerabilities and submit them in bug bounties to the companies, but a lot of the companies do not really care, do not fix the bug. They did not hurt for there to be a vulnerability.
+Subprojects is like we are going to do a different we are going to announce a vulnerability and we are going to give them 90 days to fix it. And then whether they fix it or not, we are going to drop the drop the zero day.
+Oh, wow. we are going to drop the weapon. that is so cool.
+That is so cool. I love the deadlines that give them real deadlines. Yeah.
+And I think it is done a lot for moving the industry forward.
+I watched your coding sessions on the streamed online. You called things up the basic projects usually from scratch.
+I would say sort of as a programmer myself, just watching you, that you type really fast and your brain works in both brilliant and chaotic ways. I do not know if that is always true, but certainly for the live streams. So it is interesting to me because I am more a much slower and systematic and careful and you just move, I mean, probably in order of magnitude faster. So I am curious, is there a method your madness is it is just who you are.
+there is pros and cons, there is pros and cons to my programming style and I am aware of them.
+Like if you ask me to like like get something up and working quickly with, like an API, that kind of undocumented, I will do this super fast because I will throw things at it until it works.
+If you ask me to take a vector and rotate it 90 degrees and then flip it over the X Y plane, I will spam program for two hours and will not get it because it is something that you could do with a sheet of paper thing through design and then just you really just throw stuff at the wall and you get so good at it that it usually works.
+I should become better at the other kind as well.
+Sometimes I will do things methodically.
+it is nowhere near as entertaining on the twitch streams. I do exaggerated a bit on the twitch games as well. The twitch streams. I mean, what do you want to see a game or. I want to see action per APM for programming.
+Yes. I recommend people go to I think I watched, I watched probably several hours if you like. I have actually left you programming in the background while I was programming because you made me you it was it was like watching a really good gamer. it is like energizes you because you are like moving so fast and so it is awesome. it is inspiring. And it is only made me jealous that, like. Because my own program is inadequate in terms of speed. Oh, I was like so I am twice as frantic on the live streams as I am when I code without them.
+Oh, it is super entertaining.
+So I was not even paying attention to what you were coding, which is great.
+it is just watching you switch windows and vem I guess is the most driven screen I have developed the workload Facebook and talk about how do you learn new programming tools, ideas, techniques these days. what is your like methodology for learning new things. So I wrote for Commer.
+The distributed file systems out in the world are extremely complex, like if you want to install something like like like Sayef Saffy's, I think the like open infrastructure to shapefile system or there is like newer ones like seaweed fast.
+But these are all like ten thousand plus line projects.
+I think some of them are even hundred thousand line and just configuring them as a nightmare.
+So I wrote, I wrote one, it is two hundred lines and it is, it uses like engine volume servers and has a little master server that I go to.
+And the way I go this if I would say that I am proud per line of any code I wrote, maybe there is some exploits that I think are beautiful. And then this, this is two hundred lines. And just the way that I thought about it I think was very good.
+And the reason it is very good is because that was the fourth version of it that I wrote and I had three versions that I threw away. You mentioned you said go. I got to go. Yeah. And go. So that a functional language I forget what goes go is Google's language, right?
+it is not functional. it is some it is like in a way it is C++, but easier.
+it is it is strongly typed. It has a nice ecosystem around it. When I first looked at it, I was like, this is like Python.
+But it takes twice as long to do anything. Yeah. Now that I hope the pilot is migrating to C, but it still has large python components. I now understand why Python does not work for large code bases and why you want something like.
+Oh, interesting. So why, why does not Python work for so even most speaking for myself, at least like we do a lot of stuff, basically demo level work with autonomous vehicles and most of the work is Python. What is in Python work for logical basis because well, lack of type checking is a big errors creep in.
+Yeah. And like you do not know, the compiler can tell you like nothing. Right. So everything is either, you know, like, like syntax errors. Fine. But if you misspell a variable in Python, the compiler will catch that there is like Linder's that can catch it some of the time. there is no type's this is really the biggest downside and then we will put it on slow, but that is not related to it. Well, maybe it is kind of related to its lack of.
+So what is what is in your toolbox these days is a python. What else do I need to move to something else, my adventure into dependently type languages? I love these languages. They just have like syntax from the 80s.
+What do you think about JavaScript ESX?
+Like the modern typescript JavaScript is? The whole ecosystem is unbelievably confusing. NPM updates a package from zero to two to zero to five and that breaks your Babille linta, which translates your S5 at six, which does not run on.
+So why do I have to compile my JavaScript again, though?
+It may be the future, though, if you think about I mean, I have embraced JavaScript recently just because just like I have continually embraced HP, it seems that these worst possible languages live on for the long as the cockroaches never die.
+Yeah, well, it is in the browser and it is fast. it is fast. Yeah, it is in the browser and compute might become the browser. it is unclear what the role of the browser is in terms of distributed computation in the future. So. JavaScript is definitely here to stay. Yeah, it is interesting if autonomous vehicles will run and JavaScript one day, I mean, you have to consider these possibilities, all our debug tools or JavaScript, which actually just opensource them with a tool explorer, which you can annotate.
+you are just engagement's and we talk about it, which let us you analyze the traffic from the car.
+So basically, any time you are visualizing something about the log, using the web is the best UI tool kit by far.
+So and then what you are coding in JavaScript, we have a guy.
+he is got to react nice. let us get into it. So let us talk autonomous vehicles. You founded Cormie. let us at a high level. How did you get into the world of vehicle automation? Chaos is just for people who do not know. Tell the story of coming here.
+So I was working at this startup and a friend approached me and he is like, dude. I do not know where this is going, but the coolest applied I problem today is self-driving cars. Well, absolutely. Do you want to meet with Elon Musk? And he is looking for somebody to build a vision system for auto. This is when they were still an app, one they were still using Mobileye. Elon back then was looking for a replacement. And he brought me in and we talked about a contract where I would deliver something that meets Mobileye level performance.
+I would get paid 12 million dollars if I could deliver tomorrow and I would lose one million dollars for every month I did not deliver. Yeah. So I was like, OK, this is great deal. This is super exciting challenge. You know what, even if it takes me 10 months, I get two million dollars, it is good. Maybe I can finish up in five, maybe I do not finish at all and I get paid nothing and I will work for 12 months for free.
+So maybe just take a pause on that. I am also curious about this because I have been working on robotics for a long time and I am curious to see a person like you just step in and sort of somewhat naive, but brilliant. Right. So that is that is the best place to be because you basically full steam take on a problem. How confident how from that time? Because you know a lot more now at that time. How hard do you think it is to solve all of the autonomous driving?
+I remember I suggested to Elon in the meeting on putting a GPU behind each camera to keep the compute local. This is an incredibly stupid idea. I leave the meeting 10 minutes later and I am like, I could spend a little bit of time thinking about this problem or I will just send all your cameras to one big GPU.
+you are much better off doing that. Oh, sorry. You said behind every camera you have a small chip.
+I was like, oh, I will put the first few layers of my comp there.
+Oh, look what I say. That that is possible. it is possible, but it is a bad idea.
+it is not obviously a bad idea, obviously, but whether it is actually a bad idea or not, I left that meeting with Elon, like beating myself up.
+I am like, why do I say something stupid? Yeah, you have. Like, you have not thought through every aspect. Yeah. he is very sharp too. Like usually in life I get away with saying stupid things and then kind of course. Oh right right away he called me out about it. And like usually in life I get away with saying stupid things and then like people will, you know, people a lot of times people do not even notice and I will correct it and bring the conversation back.
+But with Elon, it was like, no, like, OK, well, that is not at all why the contract fell through. I was much more prepared the second time I met him.
+Yeah, but in general, how hard did you think it is, like 12 months is. Oh, is a tough timeline.
+Oh, I just thought I would clone Mobli IQ three. I did not think I would solve level five self driving or anything.
+So the goal there was to do lane keeping good good lane keeping.
+I saw my friend showed me the outputs for Mobli and the output from Mobile. I was just basically two lanes at a position of a lead car like I can, I can gather data set and train this net in in weeks.
+And I did well first time I tried the implementation of Mobileye in the test, I was really surprised how good it is. it is quite incredible because I thought it is just because I have done a lot of computer vision I thought would be a lot harder to create a system that that is stable. So I was personally surprised.
+You know, I have to admit it because I was kind of skeptical before trying it, because I thought it would go in and out a lot more, would get disengaged a lot more, and it is pretty robust.
+So what how how how hard is the problem when you when you tackled it?
+So I think App one was great. Like Elon talked about disengagement on the four or five. Down in L.A. with like landmarks are kind of faded and the Mobileye system would drop out like I had something up and working that I would say was like the same quality in three months. Same quality, but how do you know, you say stuff like that, yeah, but you can not and I love it, but well, the question is you can not. you are kind of going by feel because you are going.
+Absolutely, absolutely. Like like I would take I had I borrowed my friend's Tesla. I would take AP one out for a drive and then I would take my sister out for a drive and seems reasonably like the same.
+So the four or five, how hard is it to create something that could actually be a product that is deployed? I mean, I have read an article or Elon responded, said something about you saying that to build the autopilot is is more complicated than a single George HODs, a level job. How hard is that job to create something that would work across the globe? What are the global is the challenge. But Elon followed that up by saying it is going to take two years and a company of 10 people.
+Yeah. And here I am four years later with a company of 12 people. And I think we still have another two to go do years. Yeah. So what do you think what do you think about how does this progressing with autopilot be two of three? I think we have kept pace with them pretty well.
+I think navigating autopilot is terrible. We had some demo features internally of the same stuff and we would test it and I am like, I am not shipping this even as like open source software to people.
+What do you think is terrible?
+Consumer Reports does a great job of describing it. Like when it makes a lane change, it does it worse than a human.
+You should not ship things like autopilot open pilot. They lahn keep better than a human right. If you turn it on for a stretch of highway like an hour long, it is never going to touch a Lenglen. Human will touch probably leyline twice. You just inspired me, I do not know if you are grounded in data on that. I read your paper. OK, well, no, but that is interesting. I wonder actually how often we touch lines in general. Like, a little bit, because it is the I could answer that question pretty easily with the commentators.
+Yeah, I am curious. I have never answered it. I do not know. I just too is like my personal.
+It feels it feels right. Well, that is interesting because every time you touch a link, that is a source of a little bit of stress and kind of Linkoping is removing that stress. that is ultimately the big the biggest value add, honestly, is just removing the stress of having to stay in line.
+And I think honestly, I do not think people fully realize, first of all, that that is a big value add, but also that that is all it is.
+And that not only I find it a huge value add, I drove down when we moved to San Diego. I drove down in our Enterprise Rent-A-Car and I missed it. So I missed having the system so much. it is so much more tiring to drive without it. it is it is that lane centering.
+that is the key feature.
+Yeah. And in a way, it is the only feature that actually adds value to people's lives on autonomous vehicles today, wammo does not add value to people's lives. it is a more expensive, slower, slower Uber. Maybe someday it will be this big cliff where it adds value. But I do not usually do this fast.
+I have not talked to because this is good. Because I have not I have intuitively. But I think we are making it explicit now. I, I actually believe. That really good line keeping. Is a reason to buy a car, will be a reason to buy a car as a huge value add, I have never until we just started talking about it, have not really quite realized that that I have felt with Ilan's chase of level four is not the correct chase. It was because you should just say Tesla has the best, as if from a test perspective, say Tesla has the best lane, keeping calm, I should say, coming as the best lane keeping.
+And that is it. Yeah. Yeah, that is true. Do you think you have to do the longitudinal as well?
+You can not just keep you have to do X, but X is much more forgiving than it, especially in the highway.
+By the way, are you coming as Kemar only. Correct. Or do we use the radar.
+We from the car you are able to get the OK we can do a camera only now it is gotten to the point but we leave the radar. There is like a it is fusion now.
+OK, so maybe talk through some of the system specs on the hardware or what, what was the hardware side of where you are providing what is the capabilities and the software side with open pilot and so on.
+So open pilot. As the box that we sell, that it runs on, it is a phone in a plastic case, it is nothing special. We sell it without the software. So you are like you buy the phone. It is just easy. it will be easy set up, but it is sold with no software. Open pilot right now is about to be zero point six when it gets to one point. So I think we will be ready for consumer product. we are not going to add any new features.
+we are just going to make the lane keeping really, really good. So what do we have right now?
+it is a Snapdragon 820. Say Sony IMX to ninety eight forward facing camera driver monitoring camera, a selfie cam on the phone and uh. I can transceiver a little thing called pandas, and they talk over USB to the phone and then they have three canvases that they talk to the car. One of those campuses is the right, our campus. One of them is the main car campus, and the other one is the proxy cammer campus. We leave the existing camera in place so we do not turn Abbi off.
+Right now, we still turn it off if you are using our longitudinal. But we are going to fix that before 1.0.
+You got it. that is cool. So and as can both ways. So how are you able to control vehicles?
+So we proxy the vehicles that we work with already have a lane keeping assist system. So Lane keeping assist can mean a huge variety of things.
+It can mean it will apply a small talk to the wheel after you have already crossed a lane line by a foot, which is the system and the older Toyotas versus like I think Tesla still calls it Lane keeping assist where it will keep you perfectly in the center of the lane on the highway you can control like you with the joystick, the car, these so these cars already have the capability of drive by.
+So is it is it trivial to convert a car that it operates with?
+It is able to control the steering or a new car or a car that we so we have support now for four or five different makes of cars. What are what are the cars? Mostly Hondas and Toyotas. We support almost every Honda and Toyota made this year. And then a bunch of GM's bunch of Subaru's just have to be like a Prius.
+It can be Corolla as well. Out of the twenty twenty is the best car with open pilot. It just came out there. The actuator has less lag than the older Corolla. I think I start watching a video with your I mean, the way you make videos is awesome.
+Literally at the dealership streaming my friend video stream for an hour. Yeah.
+And basically, like, if stuff goes a little wrong, you just, like, just go with it. Yeah, I love it. what is real? that is real. that is that is that is so beautiful. And it is so in contrast to the way other companies would put together a video like that. Kind of. I like to do it like that. Good. I mean, if you become super rich one day is successful, I hope you keep it that way because I think that is actually what people love, that kind of genuine.
+Oh, it is all that has value to me. Yeah. Money has no if I sell out to make money, I sold out. It does not matter. What do I get ya.
+I only got and I think Tesla is actually has a small inkling of that as well with autonomy. They, they did reveal more than I mean of course this marketing communications you can tell, but it is more than most companies will reveal, which is I hope they go towards that direction.
+More other companies, GM, Ford, Tesla, Tesla is going to win level five. They really are.
+So let us talk about it.
+You think that you are focused on level two are currently currently we are going to be one to two years behind Tesla getting to level five.
+OK, we are right. we are entering a year. And I am just saying, once Tesla gets it, we are one to two years behind. I am not making any timeline on when Tesla. that is right. You did. that is brilliant. I am sorry. Tesla investors, if you think you are going to have an autonomous robot taxi fleet by the end of the year.
+Yes, I will bet against that.
+So what do you think about this? The most level, four companies. Are kind of just doing their usual safety driver, doing full time and kind of testing and then testing does basically trying to go from lane keeping to full autonomy. What do you think about that approach? How successful would it be?
+it is a ton better approach because Tesla is gathering data on a scale that none of them are. they are putting real users behind the guy behind the wheel, the cars. it is I think the only strategy that works, the incremental. Well, so there is a few components to Tesla that there is more than just the incremental suite we spoke with is the ones the software. So over the air software updates necessity. I mean, we have to have those two. Those are not.
+But those differentiate them from the automakers, know Lane keeping assist systems, have no cars or Linkoping system. Have that except Tesla. Yeah. And the other one is the data the other direction, which is the ability to query the data. I do not think they are actually collecting as much as people think, but the ability to turn on collection and turn it off.
+So I am both in the robotics world and the the psychology human factors world. Many people believe that level two autonomy is problematic because the human factor, like the more the task is automated, the more there is a vigilance decrement. You start to fall asleep, you start to become complacent, start texting more and so on. Do you worry about that? Because if we are talking about transition from Linkoping to full autonomy, if you are spending 80 percent of the time not supervising the machine, do you worry about what that means to the safety of the drivers?
+One, we do not consider it to be one point until we have one hundred percent driver monitoring you. You can cheat. Right now, our driver monitoring system is a few ways to cheat it. they are pretty obvious. we are working on making that better. Before we ship a consumer product that can drive cars, I want to make sure that I have driver monitoring that you can not cheat. what is like a successful driver modeling system look like it is cheap, is it?
+All of us? Keep your eyes on the road.
+Um, well, a few things. So that is what we went with at first for driver monitoring. I am checking. I am actually looking at where your head is looking, but cameras are not that high. Resolution eyes are a little bit hard to get ahead.
+Is this big? I mean, that is that is good.
+And actually, a lot of it just is psychology wise to have that monitor constantly there. It reminds you that you have to be paying attention. But we want to go further. We just hired someone full time to come on to do the driver monitoring. I want to detect phone in frame and I want to make sure you are not sleeping. How much does the camera see of the body? This one. Not enough. Not enough. The next one.
+Well, it is interesting, fish, because we have we are doing just data collection at real time. But Fisheye is a beautiful month.
+Being able to capture the body and the smartphone is really like the biggest problem.
+Also, I can show you one of the pictures from from our new system. Awesome, so you are basically saying the driver monitoring will be the answer to that?
+I think the other point that you raise in your papers is good as well. you are not asking a human to supervise a machine without giving them the they can take over at any time. Right now, our safety model, you can take over. We disengage on both the gas or the brake. We do not disengage in steering. I do not feel you have to, but we disengage on gas for brake. So it is very easy for you to take over and it is very easy for you to re-engage.
+That switching should be super cheap. The cars that require even autopilot requires a double press that is almost like that.
+And then then the cancel to cancel in autopilot.
+You either have to press cancel, which no one knows where that is. So they press the brake. But a lot of times you do not. You want to press the brake, you want fast gas. So you cancel gas for Wiggill the steering wheel, which is bad as well. Wow, that is brilliant.
+I have not heard anyone articulate that point, but this is all I think about the, um.
+Because I think I think actually Tesla has done a better job than most automakers at making that frictionless. But you just described that it could be even better.
+I love supergroups as an experience once it is engaged. Yeah. I do not know if you have used it, but getting the thing to try to engage.
+Yeah, I have used to have driven supercars a lot. So what is your thoughts on the super system?
+And you disengage super cruise and it falls back to X and Y cars like still accelerating. It feels weird.
+Otherwise when you actually have super cruising engaged on the highway, it is phenomenal. We bought that Cadillac, we just sold it, but we bought it just to like experience this. And I wanted everyone in the office to be like, this is what we are striving to build. GM pioneering with the drive for monitoring. You like their driver monitoring system.
+It has not bugs.
+If there is a sun shining back here, it will be blind you.
+But overall, mostly, yeah, that is so cool that, you know, all of this stuff that I do not often talk to people that because it is such a rare car, unfortunately, we bought one that we thought we lost like by twenty five k the deprecation Butterfield.
+So I thought I was very pleasantly surprised that our system was so innovative and really was not advertised much. was not talked about much. Yeah. And I was nervous that it would die, that they would disappear when they put it on the wrong car they should put it on the ballot and not some weird Cadillac that nobody bought.
+I think that is going to be they are saying at least is going to be into their entire fleet. So what do you think about it as long as we are on the driver monitoring? What do you think about Musk's claim that driver monitoring is not needed?
+Normally, I love his claims that one is stupid, that one is stupid. And, you know, he is not going to have his level five fleet by the end of the year. Hopefully he is like, OK, I was wrong. I am going to drive about it. Because when these systems get to the point that they are only messing up once every thousand miles, you absolutely need driver matter.
+So let me play because I agree with you. But let me play devil's advocate. One possibility is that without driver monitoring, people are able to monitor the self, regulate, monitor themselves. You know that your idea is upsetting all the people sleeping in Brussels.
+Yeah, well, I am a little skeptical of all the people sleeping in Teslas because.
+I have I have stopped paying attention to that kind of stuff because I want to see what there is too much glorified, it does not feel scientific to me. So I want to know, you know what? How many people are really sleeping in Testa's versus sleeping?
+As I was driving here, sleep deprived in a car with no automation, I was falling asleep. I agree that it is hype.
+it is just like, you know what?
+If you want to drive monitoring, I think I ran into my last autopilot experience was I rented a model three in March and drove it around the wheel. Thing is annoying and the reason the wheel thing is annoying. We use the wheel thing as well, but we do not disengage on wheel for Tesla. You have to touch the wheel just enough to trigger the torque sensor to tell it that you are there, but not enough as to disengage it, which do not use it for two things.
+do not disengage on wheel. You do not have to that whole experience. Wow, beautiful. Put the all those elements. Even if you do not have driver monitoring, that whole experience needs to be a better driver.
+Monitoring I think would make I mean, I think super cruise is a better experience once it is engaged over autopilot. I think Super Cruise is a transition to engagement and disengagement are significantly worse.
+there is a tricky thing because if I were to criticize super cruises, it is a little too crude. And I think like six seconds or something. If you look off road, they will start warning you it is some ridiculously long period of time. And just the way it I think it is basically it is a binary adapter. It yeah. It just needs to learn more about you and needs to communicate what it says about you more. I am done testing shows. What is this about the external world.
+It would be nice to Supercooled would tell us what it says about the internal world.
+it is even worse than that.
+You press the button to engage and it just says super cruise unavailable. Yeah. Y y yeah. That transparency's Yeah.
+Is good.
+we have renamed the driver monitoring packet to drive state to state. We have CA State packet which has the state of the car and driver state packet which is the driver. So what does it mean.
+There must be a blood alcohol content. Do you think that is possible with computer vision. Absolutely.
+it is to me it is an open question. I do not, I have not looked into it too much actually quite seriously looked at the literature. it is not obvious to me that from the eyes and so on, you can tell you might need stuff in the car as well.
+Yeah, you might need how they are controlling the car. Right. And that is fundamentally at the end of the day, what you care about. But I think especially when people are really drunk, they are not controlling the car nearly as smoothly as they would look at them walking right there. The car is like an extension of the body. So I think you could totally detect. And if you could fix people who are drunk, distracted, asleep, if you fix those three.
+Yeah, that is that is huge. So what are the current limitations of open pilot? What are the main problems that still need to be solved?
+Um, so we are hopefully fixing a few of them in 06.
+we are not as good as autopilot at stop cars. So if you are coming up to a red light at like fifty five. So it is the right our stop car problem which is responsible to our pilot accidents, it is hard to differentiate a stopped car from a like signpost and static object. So you have to fuse, you have to do this visually.
+there is no way from the radar data to tell the difference. Maybe you can make a map, but I do not really believe in mapping at all anymore.
+So what, you do not believe in mapping now?
+So you basically the open solution is saying react to the environment just like human beings.
+And then eventually when you want to do navigate on autopilot, I will train the net to look at ways of on ways in the background that are using GPS.
+So we use it to countries with very carefully ground truth of paths.
+And we have a stack which can recover relative to 10 centimeters over one minute. And then we use that to ground truth exactly where the car went in that local part of the environment. But it is all local.
+How are you testing in general just for yourself, like experiments, stuff right where you were you located? San Diego. San Diego, yeah. OK, what so you basically drive around there and collect some data and watch on wave simulator now and we have our simulators really cool. Our simulator is not it is not like a unity based simulator. Our simulator let us us load in real estate.
+We mean we can load in a drive and simulate what the system would have done on the historical data. Oh, nice. Interesting. So right now, we are only using it for testing, but as soon as we start using it for training, that is it. that is it for testing. what is your feeling about the real world versus a simulation like simulation for training if this moves to training?
+So we have to distinguish two types of simulators. Right. there is a simulator that like is completely fake. I could get my car to drive around and I feel that this kind of simulator is useless. you are never there.
+there is so many. My analogy here is like, OK, fine, you are not solving the computer vision problem, but you are solving the computer graphics problem. Right.
+And you do not think you can get very far by creating ultra realistic graphics now because you can create ultra realistic graphics of the road now, create ultra realistic behavioral models of the other cars.
+Oh, well, I will just use my self driving. No, you will not. You need real you need actual human behavior because that is what you are trying to learn. The driving does not have a spec. The definition of driving is what humans do when they drive whatever way MO does.
+I do not think it is driving right.
+Well, I think actually you way more and others, if there is any use for reinforcement learning, I have seen it used quite well. I study pedestrians a lot too, is try to train models from real data of how pedestrians move and try to use reinforcement learning models to make pedestrians moving human like ways.
+By that point, you have already gone so many layers. You detected a pedestrian. Did you did you hand code the feature vector of their state?
+Did you guys learn anything from computer vision before deep learning? Well, OK.
+Know, I feel like this is a perception to you. Is is the sticking point is, I mean what is what is the hardest part of the stack here?
+There is no real human understandable feature vector separating perception and planning. that is the best way I can.
+I can put that there is no it is all together and it is it is a joint problem.
+So you can take localization, localization and planning. There is a human understandable feature vector between these two things. I mean, OK, so I have like three degrees position, three degrees orientation and those derivatives, maybe those second derivatives. Right. that is human understandable.
+that is physical the between perception and planning. So like wammo has a perception stack and then a planner. And one of the things my mother's right is they have a simulator that can separate those two.
+They can like replay their perception data and test their system, which is what I am talking about, about like the two different kinds of simulators. there is the kind that can work on real data and it kind of can not work on real data.
+Now, the problem is that I do not think you can handle code a feature vector. Right. Like like you have some list of like here is my list of cars on the scenes. here is my list of pedestrians in the scene.
+This is not what humans are doing. What are humans doing global. Some some are saying that is too difficult to handle, Junior. I am saying that there is no state vector given a perfect I could give you the best team of engineers in the world to build a perception system and the best team to build a planner. All you have to do is define the state factor that separates those two.
+I am missing the state vector that separates those two. What do you mean?
+So what is the output of your perception system? I will put it the system, it is OK. Well, there is several ways to do it with one. One is this, one is localization, the other driveable area, driveable space travel space. And then there is the different objects in the scene and different objects in the scene over time, maybe to give you input and then try to start modeling the trajectories of those objects.
+Sure. that is it. I can give you a concrete example of something you missed. Was that so say there is a bush in the scene.
+Humans understand that when they see this Bush that there may or may not be a car behind that Bush driveable area. And a list of objects does not include that. Humans are doing this constantly at the simplest intersections. So now you have to talk about occluded area, right? Right. But even that, what do you mean by occluded? OK, so I can not see it. Well, if it is the other side of a house, I do not care what is the likelihood that there is a car in that occluded area.
+Right.
+And if you say, OK, we will add that I can come up with 10 more examples that you can not add.
+Certainly included area would be something that simulator would have because it is simulating the entire you know, the occlusion is part of it or part of a vision stack, which is that what I am saying is if you have a hand engineered, if your perception system output can be written in a spec document, it is incomplete.
+Yeah.
+I mean, certainly it is it is hard to argue with that because in the end, that is going to be true.
+Yes. And I will tell you what, the output of our perception system is that it is a thousand at a thousand twenty four dimensional vector.
+Oh, you do not know that.
+it is the thousand twenty four dimensions of who knows what because it is operating on real data.
+And that is the perception. that is the perception stake. Right. Think about think about an auto encoder for faces. Right.
+If you have an auto encoder faces and you say it has 256 dimensions of middle and I am taking a face over here and projecting to a face over here. Yeah. Can you hand label 256 of those dimensions? Well, no, but it does not generate automatically.
+But I but even if you tried to do it by hand, could you come up with a spec for your and between your encoder and your decoder.
+No, no. Because that is it was in design. But there are no but if you could design it, if you could design a face, reconstruct her system, could you come up with a spec. No, but I think we are missing here a little bit.
+I think the the you are just being very poetic about expressing a fundamental problem of simulator's that they are going to be missing so much that the feature vector will just look fundamentally different from in the simulated world than the real world.
+I am not making a claim about simulator's, I am making a claim about the spec division between perception and planning and planning, even in your system, just in general, just in general, if you are trying to build a car that drives, if you are trying to hand code the output of your perception system, like saying like here is a list of all the cars in the scene, here is a list of all the people.
+here is a list of excluded areas. here is a vector of drivable areas.
+it is insufficient. And if you start to believe that you realize that what we monkeys are doing is impossible, currently what we are doing is the perception problem is converting the scene into a chessboard and then you reason some basic reasoning around that chessboard.
+And you are saying that really there is a lot missing there.
+First of all, why are we talking about this? Because is not this a full autonomy? Is this something you think about?
+Oh, I want to win self-driving cars. Seriously, it is your definition of when includes levels of four, five, level five.
+I do not think Level four is a real thing.
+I want to build I want to build the alpha goal of driving.
+So so alpha go is really. And to end. Yeah. Is yeah.
+it is end to end. And do you think this whole problem is that also kind of what you are getting at with the perception and the planning, is that this whole problem, the right way to do it is really to learn the entire thing.
+I will argue that not only is it the right way, it is the only way that is going to exceed human performance.
+Well, it is certainly true for everyone who tried to handcar go things, built human inferior things. And then someone came along and wrote some ten thousand line thing that does not know anything about go that beat everybody is ten thousand points true in that sense.
+The the open question then that maybe I can ask you is driving is much harder than go. The open question is how much harder.
+So how.
+Because I think the mosque approach here with planning and perception is similar to what you are describing, which is really turning into not some kind of modular thing, but really do formulators the learning problem and solve the learning problem of scale.
+So how many years have put one is how many years would it take to solve this problem or just how hard is this fixing problem?
+Well, the cool thing is. I think there is a lot of value that we can deliver along the way. I think that you can build. Lane keeping assist, actually, plus adaptive cruise control, plus, OK, looking at ways extends to like all of driving. Yeah, most of the driving, right. Oh, your adaptive cruise control treats red lights like cars.
+OK, so let us jump around with you mentioned that you did not like navigating autopilot. Yeah. What advice. How would you make it better do you think is a feature that if it is done really well, it is a good feature?
+I think that it is too reliant on like hand coded hacks for like how does navigate an autopilot do a lane change? It actually does the same lane change every time and it feels mechanical. Humans do differently changes. Humans sometimes will do a slow one, sometimes do a fast one, navigate in autopilot.
+At least every time I used it, it would be identical language.
+How do you learn? I mean, this is a fundamental thing actually. Is the braking in an accelerating something that is still a Tesla probably does better than most cars, but it still does not do a great job of creating a comfortable natural experience and navigate on autopilot.
+Just lane changes is an extension of that. So how do you learn to do natural lane change?
+So we have it and I can talk about how it works. So I feel that we have the solution for lateral. We do not yet have the solution for longitudinal. there is a few reasons. Longitudinal is harder than lateral.
+The lane change component, the way that we train on it very simply is like our model has an input for whether it is doing a lane change or not. And then when we train the end to end model, we handleable all the line changes because you have to. I struggled a long time about not wanting to do that, but I think you have to because all of the training data for the training data, we actually we have an automatic ground truth which automatically labels all the lane changes.
+Was that possible to automatically enter and attack the lane?
+I see when it crosses it right. And I do not have to get that that high percent accuracy, but it is like ninety five nothing.
+OK, now I set the bit when it is doing the lane change in the end to end learning and then I set it to zero when it is not doing lane change. So now if I wanted to do a lane change it is time I just put the bit to a one and I will do it.
+Yeah but so if you look at the space of, you know, some percentage, not one hundred percent that we make as humans is not a pleasant experience because we missed some part of it up. Yeah, it is nerve racking to change. If the look at the seizure does accelerate, how do we label the ones that are natural and feel good? You know, that is the ultimate criticism.
+The current navigation autopilot just does not feel good.
+Well, the current navigation autopilot is a hand coded policy written by an engineer in a room who probably went out and tested it a few times on the 280, probably a more a better version of that.
+But yes, that is how we would have written it to come. Yeah, baby. Tesla, Tesla, they tested it and there might have been two engineers.
+let us do it.
+Yeah, no, but so if you learn the lane change, if you learn how to do a lane change from data, just like just like you have a label that says lane change and then you put it in when you want to do the lane change, it will automatically do the lane change that is appropriate for the situation now to get at the problem of some humans do bad lane changes.
+We have not worked too much on this problem yet. it is not that much of a problem in practice. My theory is that all good drivers are good in the same way and all bad drivers are bad in different ways.
+And we have seen some data to back this up while beautifully put. So you just basically, if that is true hypothesis, then the task is to discover the good drivers, the good drivers stand out because they are in one cluster and the bad drivers are scattered all over the place.
+And you are Nettleton's the cluster.
+Yeah, that is so you just learn from the good drivers and they are easy to cluster.
+We learn from all of them and then that automatically learns the policy that is like the majority, but will eventually probably have to fail.
+So if that is true, I hope it is true because the counter theory is there is many clusters, maybe arbitrarily many clusters of good drivers, because if there is one cluster of good drivers, you can at least discover a set of policies. You can learn a set of policies which would be good universally. Yeah, uh, that would be a nice that would be nice if it is true.
+And you are saying that there is some evidence that, uh, let us say lane changes can be clustered into four clusters or there is a finite level?
+I would argue that all four of those are good clusters.
+All the things that are random are noise and probably bad. And which one of the four you pick or maybe it is ten or maybe it is 20, you can learn that it is context dependent.
+It depends on the scene. And the hope is it is not too dependent on the driver. Yeah, the hope is that it all washes out. The hope is that there is that the distribution stopped by. The hope is that it is a nice gathering.
+So what advice would you give to Tesla? How to fix, how to improve navigating autopilot, that the lessons you have learned from Cumia?
+The only real advice I would give to Tesla is please put driver monitoring in your cars with respect to improving.
+You can not do that anymore. I tried to interrupt, but, you know, there is a practical nature of many of hundreds of thousands of cars being produced that do not have a good driver facing camera.
+The model three has a selfie cam. Is it not good enough? Did they not have priorities for night?
+that is a good question. But I do know that the fisheye and its relatively low resolution. So it is really not that it was not it was not designed for drama.
+You can hope that you can kind of scrape up and have something from it.
+Yeah, but why did not they put it in today, put it into that today?
+Every time I have heard Carpathia talk about the problem and talking about like Software 2.0 and how the machine learning is gobbling up everything, I think this is absolutely the right strategy. I think that he did not write and have a get on autopilot. I think somebody else did and kind of hacked in on top of that stuff. I think would Carpathia says, wait a second, why did we hanko this land change policy with all these magic numbers?
+we are going to learn it from data. they will fix it.
+They already know what to do that. Well, that is that is Andre's job is to turn everything into a learning problem and collect a huge amount of data.
+The reality is, though, not every problem can be turned into a learning problem in the short term. In the end, everything will be a learning problem.
+The reality is, if you want to build elfy vehicles today, that will likely involve no learning.
+And that is the reality is. So at which point does learning start? Is the crutched statement that later is a crutch? At which point will learning get up to part of human performance? it is all over human performance and image, not classification and driving is the question.
+Still, it is a question. I will say this. I am I am here to play for 10 years. I am not here to try to I am here play for 10 years and make money along the way. I am not here to try to promise people that I am going to have my L5 taxi network up and working in two years.
+Do you think that was a mistake? Yes.
+What do you think was the motivation behind saying that other companies are also promising Elfy vehicles with very different approaches in twenty twenty twenty twenty one, twenty twenty two.
+If anybody would like to bet me that those things do not pan out, I will, I will bet even money. Even money. I will bet you as much as you want.
+So are you worried about what is going to happen? Because you and I are in full agreement on that. I was going to happen when. Twenty twenty two, twenty one come around and nobody has fleets of autonomous vehicles.
+Now you can look at the history if you go back five years ago they were all promised by twenty, eighteen and twenty seventeen.
+But they were not that strong of promises.
+I mean Ford really declared I think not many have declared as as definitively as they have now these dates.
+Well, OK, so let us separate L4 and L5. Do I think that it is possible for wammo to continue to kind of like hack on their system until it gets to level four in Chandler, Arizona?
+Yes. No safety driver. Chandler, Arizona. Yeah.
+By which year are we talking about? Oh, I even think that is possible by like twenty, twenty, twenty, twenty one.
+But level four, Chandler, Arizona, not level five, New York City, level four, meaning some very defined streets.
+It was not really a very defined street. And then practically these streets are pretty empty. If most of the streets are covered in way, most women can kind of change the definition of what driving is.
+Right. If your self driving network is the majority of cars in an area, they only need to be safe with respect to each other and all the humans will need to learn to adapt to them. Now, go drive in downtown New York.
+Well, yeah, that is I mean, already you can talk about autonomy and like like on farms already works great because you can really just follow the gas line.
+So what does success look like for me?
+I what what are the milestones like where you can sit back with some champagne and say we did boys and girls?
+Um, well, it is never over.
+Yeah, but you will be able to drink champagne every show. What is good.
+What are some wins. A big milestone that we are hoping for are by mid next year is profitability of the company and. we are going to have to revisit the idea of selling a consumer product, but it is not going to be like the common one when we do it, it is going to be perfect. Open pilot has gotten so much better in the last two years.
+we are going to have a few a few feature. we are going have one hundred percent driver monitoring. we are going to disable no safety features in the car. Actually, I think we really call what we are doing right now. I project this week is we are analyzing the data set and looking for all the triggers from the manufacturer systems with better data set on that than the manufacturers. How much? Just how many? Just Toyota have 10 million miles of real world driving to know how many times they are AEB triggered.
+So let me give you because you asked. Right, financial advice. Yeah, because I work with a lot of automakers and one possible source of money for you, which I will be excited to see you take on, is basically selling the data. So which is something that most people and not selling in a way we are here here automaker. But creating we have done this actually a remedy not for money purposes, but you could do it for significant money purposes and make the world a better place by creating a consortia where automakers would pay in and then they get to have free access to the data.
+And I think a lot of people are really hungry for that. And we pay a significant amount of money for it. here is the problem with that. I like this idea all in theory, be very easy for me to give them access to my servers. And we already have all open source tools to access this data in a great format.
+We have a great pipeline, but they are going to put me in the room with some business development guy.
+Mm hmm. And I am going to have to talk to this guy, and he is not going to know most of the words I am saying. I do not want to tolerate that. OK, Mick Jagger.
+Yeah, no, no, no, no. But I think I agree with you. I am the same way. But you just tell them the terms and there is no discussion needed. If I could if I could just tell them the terms.
+Yeah. And then like. All right, who wants access to my data? I will sell it to you for, uh, let us say you want I want a subscription.
+Also the four hundred came up and one hundred came out. Came out. I will give you access to their subscription. Yeah. Yeah. I think that is kind of came up with that number off the top of my head. If somebody sends me like a three line email where it is like we would like to pay one hundred a month to get access to your data, we would agree to like reasonable privacy terms of the people who are in the data that I would be happy to do it.
+But that is not going to be the email. The email is going to be, hey, do you have some time in the next month where we can sit down and we can? I do not have time for that. we are moving too fast.
+Yeah, you could politely respond to that email by not saying I do not have any time for your bullshit. You say, oh, well, unfortunately, these are the terms. And so this is what we try to we we brought the cost down for you in order to minimize the friction, the communication. here is the whatever it is, one, two million dollars a year. And you have X. And it is not like I get that email from, like, OK, am I going to reach out, I am going to hire a business development person is going to reach out to the automakers.
+No way. Yeah, OK, I got you.
+If they reached into me, I am not going to ignore the email. I will come back with something. Yeah. If you are willing to pay for access to the data, I am happy to to set that up. that is worth my engineering time.
+But actually, quite insightful view. you are right. Probably because many of the automakers are quite a bit old school. Yeah. There will be need to reach out and they want it, but they will need to be some some communication. Right.
+Mobileye circa twenty fifteen had the lowest R&D spend of any chip maker. Like Perper, and you look at all the people who work for them and it is all business development people, because the car companies are impossible to work with.
+Yeah, so you are you have no patience for that. And you are you are legit. Android, huh? I have something to do.
+Right. Like like it is not like it is not like I do not like I do not mean to be a dick and say like I do not have patience for that, but it is like that stuff does not help us with our goal of winning self-driving cars.
+If I want money in the short term, if I showed off like the actual like the learning tech that we have, it is it is somewhat sad.
+Like it is years and years ahead of everybody else's. Not maybe not hassles. I think Tesla has similar stuff to us actually. Yeah. I think Tesla similar stuff. But when you compare it to like what the Toyota Research Institute has, you are not even close to what we have no comment.
+So but I also can not I have to take your comments. I intuitively believe you, but I have to take it with a grain of salt because, I mean, you are an inspiration because you basically do not care about a lot of things that other companies care about. You do not try to bullshit in a sense like make up stuff. So to drive a valuation, you are very, very real and you are trying to solve the problem. And I admire that a lot.
+What I do not necessarily fully can not trust you on your respect is good. It is right. I can only but I also know how bad others are.
+And so I will say I will say two things about trust but verify. Right. I will say two things about that.
+One is try getting a twenty twenty Corolla and try on zero point six. When it comes out next month. I think already you will look at this and you will be like them.
+This is already really good.
+And then I could be doing that all with hand labellers and all with, with like, like the same approach that like Mobileye uses.
+When we release a model that no longer has the lanes in it, that only outputs a path.
+Then think about how we did that machine learning and then right away, when you see and that is going to be an open pilot, that is going to be an open pilot before one point out, when you see that model, you will know that everything I am saying is true because how else did I get that model? Good. One of things to you about the simulator, right?
+This super exciting. that is super exciting.
+And, um, but like, you know, I listen to your talk with Kyle and Kyle is originally building the the aftermarket system.
+And he gave up on it because of technical challenges. Yeah.
+Because of the fact that he is going to have to support 20 to 50 cars. We support forty five. Because what is he going to do when the manufacturer ABS system triggers? We have alerts and warnings to deal with all of that and all the cars. And how is he going to formally verify it? Well, I got 10 million miles of data is probably better. it is probably better verified than the spec.
+Yeah, I am glad you are here. Talking to me, this is I remember this day, yes, it is interesting if you look at calls from from Cruise, I am sure they have a large number of business development folks.
+And you work with he is working in GM. You could work with AGOA. I worked on Ford. it is interesting because chances are that you fail business wise, like bankrupt or pretty high. Yeah. And and yet it is the underwear model is you are actually taking on the problem. that is really inspiring. I mean.
+Well, I, I have a long term way for me to make money, too. And one of the nice things when you really take on the problem, which is my hope for auto pilot, for example, is things you do not expect ways to make money or create value that you do not expect will pop up.
+Oh, I have known how to do it since kind of twenty. Seventeen is the first time I said it. But which part to not do how to do it.
+Part our long term plan is to be a car insurance company.
+Insurance. Yeah I love it. Yeah. Yeah. I make driving twice as safe.
+Not only that, I have the best data set. You know who statistically is the safest drivers and oh we see you, we see you driving on safely.
+we are not going to insure you and that that causes a like bifurcation in the market because the only people who can not get insurance are the bad drivers. Geico can insure them. Their premiums are crazy.
+Higher premiums are crazy low when car insurance take over that whole market. OK, so if we win. If we win.
+But that is I am saying like, how do you turn karma into a ten billion dollar company? it is that. that is right. So you, Elon Musk, who else who else is thinking like this and working like this, in your view? Who are the competitors? Are there people seriously? I do not think anyone that I am aware of is seriously taking on Lane, keeping, you know, like to because a huge business that turns eventually to full autonomy that then creates.
+Yeah, like that creates other businesses on top of it and so on, thinks insurance, thinks all kinds of ideas like that. Do you know who anyone else thinks like this?
+Not really. that is interesting, I mean, my sense is everybody turns to that in like four or five years like Ford wants, the autonomy does not fall through.
+But at this time, Ilan's, the IOC, by the way, he paved the way for the IOC. I would not be doing commentary today if it was not for those conversations with Elon and if it were not for him saying, like I think he said, like, well, obviously we are not going to use Leider.
+We use cameras, humans use cameras. So what do you think about that?
+How important is Lydda? Everybody else is using Whydah. What are your thoughts on his provocative statement? That is a crutch.
+So sometimes he will say dumb things like the driver monitoring thing, but sometimes will say absolutely completely, 100 percent, obviously true things.
+Yeah, of course, lighter's a crutch. it is not even a good crutch. you are not even using it to using it for localization. Yeah. Which is good in the first place if you have to localize your car to centimeters in order to drive. Like, yeah, they are not driving currently, not doing much machine learning, I thought applied our data, meaning like to help you in the task of general task of perception.
+The main goal of those lighters on those cars, I think is actually localization more than perception, or at least that is what they use them for. Yeah, that is true. If you want to localize to centimeters, you can not use GPS. The fastest GPS in the world can not do it, especially if you are under tree cover and stuff you can do pretty easily.
+They really they are not taking on I mean, in some research, they are they are using it for perception, but and they are certainly not. Which said they are not using it. Well, with vision.
+They do use it for perception.
+I am not saying they do not use it for perception, but the thing that they have vision based and radar based perception systems as well, you could remove the lighter and and and keep around a lot of the dynamic object perception. You want to get centimeter accurate localization. Good luck doing that with anything else. So what should cruise wammo do?
+What would be your advice to them now?
+I mean, when I was actually there, I mean, they are doing their serious wimoweh out of the ballroom.
+Quite so serious about the long game.
+If everybody fell five is a lot is requires 50 years, I think we will be the only one left standing at the end with the given the financial backing that they have their Buku Google Books.
+I will say nice things about both women and girls.
+let us do it. Nice is good. WAMMO is by far the furthest, along with technology, where has a three to five year lead on all the competitors. If that if the wammo looking stack works, hmm, maybe three year lead, if the wammo looking stack works, they have a three year lead.
+Now I argue that wammo has spent too much money to recap a lot to try to gain back their losses in those three years. Also, self-driving cars have no network effect like that.
+Yeah, Uber has a network effect. You have a market, you have drivers and you have riders, self-driving cars. You have capital and you have riders. there is no network effect. If I want to blanket a new city in self-driving cars, I by the off the shelf Chinese knockoff self-driving cars and I buy enough of from the city. I can not do that with drivers. And that is why Uber has a first mover advantage that no self-driving car company.
+Well, can you disentangle that a little bit, Uber? you are not talking about Uber, the autonomous vehicle. No. You talk about the Uber car.
+OK, yeah, I am I open for business in Austin, Texas. Listen, I need to attract both sides of the market. I need to both get drivers on my platform and riders on my platform. And I need to keep them both sufficiently happy. Right. Riders are not going to use it if it takes more than five minutes for an Uber to show up. Drivers are not going to use it if they have to sit around all day and there is no riders.
+So you have to carefully balance of market and whatever. You have to carefully balance a market. there is a great first mover advantage because there is a switching cost for everybody, right? The drivers and the riders would have to switch at the same time.
+let us even say that let us say Luber shows up and Luber somehow agrees to do things that are at a bigger you know, we are just going to we have done it more efficiently.
+Right. Luber is only takes five percent of a cart instead of the ten percent that Uber takes. No one is going to switch because the switching cost is higher than that five percent. So you actually can in markets like that, you have a first mover advantage.
+Yeah, autonomous vehicles of the level five variety have no first mover advantage.
+If the technology becomes commodities to say I want to go to a new city, look at the scooters, it is going to look a lot more like scooters.
+Every person with a checkbook can blanket a city and scooters.
+And that is why you have ten different scooter companies. Which one is going to win? it is a race to the bottom.
+it is terrible market to begin because there is no market for scooters and scooters do not get a say in whether they want to be bought, deployed to a city or not.
+Right. So the yeah, we are going to entice the scooters with subsidies and deals.
+And so whenever you have to invest that capital, it does not it does not come back and they can not be.
+Your main criticism of the way my approach.
+Oh, I am saying even if it does technically work, even if it does technically work, that is a problem. Yeah, I do not know. If I were to say I would I would say you are already there. I have not even thought about that.
+But I would say the biggest challenge is the technical approach, the way most cruises and not just the technical approach, but of creating value.
+I still do not understand how you beat Uber, the the human driven cars in terms of financially.
+It does not it does not make sense to me that people want to want to get an autonomous vehicle. I do not understand how you make money in the long term. Yes. Like real long term. But it just feels like there is too much capital investment needed.
+Oh, and they are going to be worse than Uber is because they are going to they are going to stop for every little thing everywhere.
+I say nice thing about Cruise, that was my nice thing about 103 years ago. It was a nice oh that is three years technically ahead of everybody there. Tech Stack is great.
+My nice thing about Cruise is GM buying them was a great move for GM for one billion dollars.
+GM bought an insurance policy against Waymouth.
+They put Cruise is three years behind wammo.
+That means Google will get a monopoly on the technology for at most three years and the technology works.
+So you might not even be right about the three years might be less, maybe less. Cruise actually might not be that far behind. I do not know how much wammo has waffled around or how much of it actually is just that long tail. Yeah, OK.
+that is the best you could say in terms of nice things. It that is more of a nice thing for GM, that, that is the smart insurance policy. it is a smart insurance policy.
+I mean I think that is how I can not see crews working out any other for crews to leapfrog.
+Obama would really surprise me. Yeah, so let us talk about the underlying assumptions of everything. we are not going to leapfrog Tassell. Tesla would have to seriously mess up for us because you are OK, so the way you leapfrog, right, is you come up with an idea or you take a direction, perhaps secretly, that the other people are not taking.
+And so Cruz Wimoweh, even an Aurora Aurora Zuks, is the same stack as well.
+they are all the same code base even, and they are all the same DARPA Urban Challenge Code Base.
+So the question is, do you think there is a room for brilliance and innovation that will change everything like say, OK, so I will give you examples. It could be if a revolution in mapping, for example, that allow you to map things, do H.T. maps of the whole world, all weather conditions somehow really well or.
+Revolution in simulation to wear the all the what you said before becomes incorrect.
+That kind of thing I wrote for Breakthrough Innovation. What I said before about how they actually get the whole thing, well, I will say this about we divide driving into three problems and I actually have not solved the third yet, but I have no idea how to do it. So there is the static. The static driving problem is assuming you are the only car on the road and this problem can be solved. One hundred percent with mapping and localization.
+This is why farms work the way they do. If all you have to deal with is the static problem and you can statically schedule your machine, right.
+it is the same as like statically scheduling processes. You can statically schedule your tractors to never hit each other on their paths because they know the speed they go at. So. So that is the static driving problem.
+Maps only helps you with the static driving problem. Yeah.
+The question about static driving, you have just made it sound like it is really easy sometimes you are lazy.
+How easy. How well, because the whole drifting out of lane when when Tesla drifts out of lane is failing on the fundamental static driving problem.
+Tesla is drifting out of lane. The static driving problem is not easy for the world.
+The static driving problem is easy for one route, one route and one weather condition with one state of lane markings and like no deterioration, no cracks in the road.
+I am assuming you have a perfect localizer. So that solves for the weather condition and the the landmarking connection. that is the problem is how could you how you can build a perfect legalizers are not that hard to build.
+OK, come on now with with with lighter. Lighter. Yeah. Would lighter ok.
+Yeah. But you use lighter like use lighter, build a perfect localizer.
+Building a perfect localizer without Lydda it is going to be, it is going to be hard. You can get 10 centimeters of that lighter, you can get one centimeter with lighter.
+Maybe concerned about the one or 10 centimeters. I am conservative every once in a while you just way off. Yeah.
+So this is why you have to carefully make sure you are always tracking your position. You want to use our camera fusion, but you can get the reliability of that system up to.
+One hundred thousand miles, and then you write some fallback condition where it is not that bad if you are way off, right? I think that you can get it to the point. it is like as old that your you are never in a case where you are way off and you do not know it. Yeah.
+OK, so this is brilliant. So that is the static static we can, especially with light. Ah. And good HD maps. You can solve that problem.
+Easy now is the static static. So very typical for you to say something. I got it. it is not as challenging as the other ones.
+OK, well it is OK. Maybe it is obvious how to solve it. The third one is the hardest. So where do we get a lot of people do not even think about the third one and even to see it as different from the second one. So the second one is dynamic.
+The second one is like, say there is an obvious examples, like a car stopped at a red light. Right.
+You can not have that car in your map because you do not know whether that car is going to be there or not.
+So you have to detect that car in real time and then you have to do the appropriate action. Right.
+Also, that car is not a fixed object. That car may move and you have to predict with that car will do.
+Right. So this is the dynamic problem. Yeah, so you have to deal with this, this involves, again, like you are going to need models of other people's behavior. Do you are you including in that I do not know what happens on the third one, but are you including in that your influence and that is the third one?
+OK, that is the best. We call it the counterfactual. Yeah, I would rather that. I just talk to Judea Pearl, who is obsessed with counterfactuals, in fact. Oh, yeah. Yeah.
+Um, so the static and the dynamic are our approach right now for lateral will scale completely to the static and dynamic, the counterfactual. The only way I have to do it yet, the thing that I want to do once we have all these cars is I want to do a reinforcement learning on the world.
+I am always going to turn the exploiter up to Max. I am not going to have them explore. But the only real way to get at the counterfactual is to do reinforcement learning because the other agents are humans.
+So that is fascinating that you break it down like that. I agree completely.
+I have spent my whole life thinking about this beautiful D'Urso and part of it because you are slightly insane because, um, not my life.
+Just the last four years. No, no. You have, uh, some some none zero percent of your brain has a madman, and that is a really good feature.
+But the there is a safety component to it that I think when there is served counterfactuals and so on, that would just freak people out. How do you even start to think about it in general? I mean, you have you have had some friction with Nizza and so on. I am frankly exhausted by safety engineers. The the prioritization on safety over innovation to a degree where kills, in my view, kills safety in the long term.
+So the counterfactual thing, they just just actually exploring this world of how to interact with dynamic objects and so on. How do you think about safety?
+You can do reinforcement learning without ever exploring. And I said that like so you can think about your own, like, reinforcement learning. it is usually called like a temperature parameter and your temperature parameter is how often you deviate from the max. I could always set that to zero and still learn. And I feel that you would always want that set to zero on your actual system. Gotcha.
+But the problem is you first do not know very much and so you are going to make mistakes. So the learning, the explosion happens like that.
+Yeah, but OK. So the consequences of a mistake. Yeah. Open pilot and autopilot are making mistakes left and right.
+Yeah we have, we have, we have seven hundred daily active users, a thousand weekly active users.
+Open pilot makes tens of thousands of mistakes a week. These mistakes have zero consequences. These mistakes are. Oh it it. I wanted to take this exit and it went straight. So I am just going to carefully touch the are humans, catch the humans, catch them. And the human disengagement is labeling that reinforcement learning as a completely consequence free way.
+So driver monitoring is the way you ensure they keep. Yes, they keep paying attention. How is your messaging say I gave you a billion dollars, you would be scaling it now?
+Oh, if I could, I could not go out with any amount of money. I would raise money if I if I had way to scale you. you are not. I do not know. I do not know how to do it. Oh. Like, I guess I could sell it to more people but I want to make the system better. Better. But I do not know.
+But what is the messaging here. I got a chance to talk to you on and and he he basically said that the human factor does not matter. You know, the human does not matter because the system will perform. There will be sort of a sorry to use the term, but like a singularity, like a point where it gets just much better. And so the human it will not really matter. But it seems like that human catching the system when it gets into trouble is like the thing which will make something like reinforcement learning work.
+So how do you how do you think messaging for Tesla, for you should change for the industry in general should change?
+I think my messaging is pretty clear, at least like our messaging was not that clear in the beginning. And I do kind of fault myself for that. We are proud right now to be a level two system. We are proud to be level two. If we talk about level four, it is not what the current hardware. it is not going to be just a magical upgrade. it is going to be new hardware. it is going to be very carefully thought out. Right now, we are proud to be level two and we have a rigorous safety model.
+I mean, not like like, OK, rigourous. Who knows what that means? But we at least have a safety model and we make it explicit. it is in Safety Darmody and Open Pilot.
+And it says, seriously though, it is the same damn deal as brothers. So Android so.
+Well, this is this is this is the safety model.
+And I like to have conversations like if like, you know, sometimes people will come to you and they are like, your system's not safe. OK, have you read my safety docs?
+Would you like to have an intelligent conversation about this? And the answer is always no. They just like scream about it runs Python.
+OK, so you are saying that that because pythons, not real time python not being real time never causes disengagement, disengagement are caused by the model is QM, but safety says the following.
+First and foremost, the driver must be paying attention at all times.
+I do not. I do.
+I still consider the software to be Alpha software until we can actually enforce that statement. But I feel it is very well communicated to our users to more things.
+One is the user must be able to easily take control of the vehicle at all times. So if you step on the gas or brake with open pilot, it gives full manual control back to the user or press. The one step to the car will never react so quickly. We define so quickly to be about one second that you can not react in time, and we do this by enforcing talk limits, breaking limits and acceleration limits.
+So we have some like artwork on its way lower than. This is another potential.
+If I could tweak autopilot, I would lower the talk limit.
+I would add driver monitoring because autopilot can jerk the wheel hard. Yeah, I can not.
+it is we we limit and all this code is open source readable and I believe now it is on Mizrachi compliant.
+what is that mean.
+On Misere is like the automotive coding standard.
+At first I you know, I have come to respect, I have been reading like this lately and I have come to respect them. they are actually written by very smart people. Yeah.
+they are brilliant people actually have a lot of experience that are sometimes a little too cautious. But in this case it pays off.
+Misery's written by like computer scientists. And you can tell by the language they use, you can tell by the language they use. They talk about like weather, certain conditions in Misrata, citable or undecidable.
+You mean like the halting problem and. Yes. All right. you have earned my respect. I will read carefully what you have to say. And we want to make our code compliant with that. All right.
+So you proud level too. Beautiful. So you are the founder and CEO of Akamai, then? You were the head of research. What the heck are you now? what is your connection to come on the president?
+But I am one of those like unelected, unelected presidents of like like a small dictatorship country, not one of those like elected president.
+Oh, so you like Putin when he was like the. Yeah, I got you. This is so there is what is the governance structure? what is the what is the future of Crimea? I find it I mean, as a business, do you are you just focused on getting things right now, making some small amount of money in the meantime?
+And then when it works, it works and you scale our burn rate is about two hundred a month and our revenue is about one hundred came up.
+So we need to forex our revenue, but we have not tried very hard at that yet.
+And the revenue is basically selling stuff online. We sell stuff, shoptalk, commentary. Is there other. Well, so you you will have to figure out that is our that is our only reality.
+But to me that is like respectable revenues. We make it by selling products to consumers.
+we are honest and transparent about what they are most actually level for companies. Right. Because you could easily start blowing up like smoke, like overselling the hype and feeding into getting some fundraiser's, oh, you are the guy. you are a genius because you hacked iPhone. Oh, I hate that. I hate the way I can trade my social capital for more money. I did it once.
+I almost I regret it for doing the first time. Well, on a small tangent, what is your you seem to not like fame and yet you are also drawn to fame was of you were on you. Where are you on that currently. Have you had some introspection, some soul searching.
+Yeah, I actually I have come to a pretty stable position on that. Like after the first time I realized that I do not want attention from the masses.
+I want attention from people who I respect. Who do you respect, I can give a list of people. So are these like Elon Musk type characters?
+Yeah. Or actually, you know what, I will make it more broad than that, I will not make it about a person. I respect skill. I respect people who have skills.
+Right.
+And I would like to, like, be so famous, but be like known among more people who have, like, real skills.
+Who in cars do do you think have skill?
+And I do respect all that has skill. A lot of people away might have skill and I respect them.
+I respect them as engineers.
+Like I can think I mean, I think about all the times in my life where I have been like dead set on approaches and they turn out to be wrong. Yeah. So, I mean, this might I might be wrong. I accept that. I accept that there is a decent chance that I am wrong.
+And actually, I mean, having talked to Chris Urmson, Sterling Anderson, those guys, I mean, I deeply respect Chris. I just admire the guy. Uh, he is legit.
+And you drive a car through the desert when everybody thinks it is impossible that that is legit.
+And then I also really respect the people who I like writing the infrastructure of the world, like Linus Torvalds and the Chris years. They were doing the real work.
+I do not doing the real work.
+The dogs that Chris Ladd and you realize, especially when they are humble, it is like you realize, oh, you guys, we are just using your.
+Oh, yeah. The all the hard work, the here. it is incredible. What do you think, Mr. Anthony Dyleski? Uh, what do you he is he is another mad genius sharp guy.
+Oh yeah. What do you think he might long term become a competitor.
+Oh, Tacoma. Well, so I think that he has the other right approach. I think that right now there is two right approaches. One is what we are doing and one is what he is doing.
+Can you describe I think it is called pronto. He started using. Do you know what the approach is? Actually do not know.
+Embark is also doing the same sort of thing. The idea is almost that you want to.
+So if you are I can not partner with Honda and Toyota.
+Honda and Toyota are like four hundred thousand person companies. it is not even a company at that point. I do not think of it like I do not personify it. I think of it like an object.
+But as a trucker drives for a fleet, maybe that has like some truckers are independent. Some truckers drive for fleets with one hundred trucks. There are tons of independent trucking companies out there. Start a trucking company and drive your costs down or figure out how to drive down the cost of trucking.
+Another company that I really respect is not I respect their business model. Noro sells a driver monitoring camera and they sell it to fleet owners. If I. that is right.
+If I owned a fleet of cars and I could pay forty bucks a month to monitor my employees, this is going to like reduces accidents.
+Eighteen percent. Yeah. it is so like that in the space that is like the business model that I like most respect because they are creating value today.
+Yeah.
+Which is, that is a huge one is how do we create value today with some of the lane keeping things huge. And it sounds like you are creeping in or full steam ahead on the drive of monitoring to which I think actually where the short term value, if you can get it right, I still I am not a huge fan of the statement that everything is tough, driving, martyring. I agree with that completely. But that statement usually misses the point that to get the experience of it right is not trivial.
+Oh, no, not at all. In fact, like so right now we have I think the time out depends on speed of the car.
+But we want to depend on like the scene state. If you are on like an empty highway, it is very different if you do not pay attention and if, like, you are like coming up to a traffic light and long term, it should probably learn from from the driver because that is the do I watch a lot of video.
+we have built a smartphone detector just to analyze how people are using smartphones and people are using it very differently as this is it is a texting styles.
+there is watched nearly enough of the videos, like I got millions of miles of people driving cars in this moment.
+I spend a large fraction of my time just watching videos because it is never fails to to learn like it. Never. I have never failed from a video watching session to learn something I did not know before that I usually like when I eat lunch, I will sit, especially when the weather's good and just watch pedestrians with an eye to understand, like from a computer vision. I just to see, can this model can you predict what are the decisions made? And there is so many things that we do not understand.
+This is what I mean by the state vector. Yeah.
+it is I am trying to always think like I am understanding in my human brain. How do we convert that into how how hard is the learning problem here, I guess is the fundamental question. So something that. From a hacking perspective, this is always comes up, especially with folks. Well, first, the most popular question is the trolley problem, right? So that is not of a serious problem. There are some ethical questions, I think, that arise.
+Maybe you want to. Do you think there is any ethical, serious ethical questions?
+We have we have a solution to the problem that come alive.
+Well, so there is actually an alert in our code ethical dilemma detected. it is not triggered yet. We do not we do not know how yet to detect the ethical dilemmas, but we are a level two system, so we are going to disengage and leave that decision to the human.
+you are such a troll. No, but the trolley problem deserves to be told. Yeah. that is a beautiful answer, actually.
+I know I gave it to someone who was like sometimes people ask, like you asked about the trolley problem. Like, you can have a kind of discussion about it.
+Like when you get someone who is, like, really, like, earnest about it, because it is the kind of thing where if you ask a bunch of people in an office whether we should use a sequel stack or no sequel stack, if they are not that technical, they have no opinion. But if you ask them what color they want to paint the office, everyone has an opinion on that.
+And that is why the trolley problem is I mean, that is a beautiful answer. Yeah. we are able to detect the problem and we are able to pass it on to the human.
+Well, I have never, never heard anyone say this is a nice escape route, OK, but crowd level to a pro level to love it.
+So the other thing that people, you know, have some concern about with A.I. in general is hacking.
+So how hard is it, do you think, to hack an autonomous vehicle either through physical access or through the more sort of popular and all these adversarial examples on the sensors, the adversarial examples?
+One, you want to see some adversarial examples that affect humans, right?
+Oh, well, there used to be a stop sign here, but I put a black bag over the stop sign and then people ran it adversarial. Yeah, right.
+Like like like there is tons of human adversarial examples to the question in general about, like security.
+If you saw something just came out today and like there are always such hype headlines about like how to navigate on autopilot was fooled by a spoof to take an exit. Right. At least that is all they could do was take an exit.
+If your car is relying on GPS in order to have a safe driving policy, you are doing something wrong if you are lying. And this is why Vedova is such a terrible idea. Vedova now relies on both parties getting communication right.
+This is not even so I think of safety. Security is like a special case of safety, right?
+Safety is like we put a little piece of caution tape around the hole so that people will not walk into it by accident. Security is I put a ten foot fence around the hole so you actually physically cannot climb into it with barbed wire on the top and stuff. Right.
+So, like, if you are designing systems that are like unreliable, they are definitely not secure.
+Your car should always do something safe using its local sensors and then the local sensors should be hard wired.
+And then could somebody hack into your canvas and turn your steering wheel and your brakes? Yes, but they could do it before I do so.
+let us think out of the box and some things. So do you think the operation has a role in any of this remotely stepping in and controlling the cars?
+No, I think that if safety if the safety operation by design requires a constant link to the cars, I think it does not work. So that is the same argument used for VTI, the TV.
+Well, there is a lot of non safety critical stuff you can do with Betawi. I like the way I like to. I weigh more than V.V. because VTI is already like I already have Internet in the car. Right. there is a lot of great stuff you can do with Vita.
+I, um, like for example. You can. Well I already have. It weighs is very high. Weighs can route me around traffic jams. that is a great example of it. Mm hmm.
+OK, the car automatically talks to that same service like it is improving the experience, but it is not a fundamental fallback for safety. No.
+If any of your if any of your if any of your things that require wireless communication are more than, um, like have an asshole rating, you should not you previously said that life is work.
+Yeah. And you do not do anything to relax. So how do you think about hard work.
+Well what is it, what do you think it takes to accomplish great things? And there is a lot of people saying that there needs to be some balance. You know, you need to in order to accomplish great things, you need to take some time off to reflect and so on now and then. Some people are just insanely working, burning the candle at both ends. How do you think about that?
+I think I was trolling in the Saraj interview when I said that off camera right before I spoke a little bit.
+we would like it out. But this is a joke, right? Like, I do nothing to relax. Look where I am about a party, right?
+Yeah. Yeah, that is true.
+Of so of course, I do not what I say that life is work though. I mean that like I think that what gives my life meaning is work. I do not mean that every minute of the day you should be working. I actually think this is not the best way to maximize results. I think that if you are working twelve hours a day, you should be working smarter, not harder.
+Well, so it gives work, gives you meaning for some people, other social meaning as personal relationships like family and so on. you have also in that interview with Soroush or just the trolling mentioned that one of the things you look forward to in the future is a girlfriend. Yes. So that is a topic that I am very much fascinated by, not necessarily girlfriends, but just forming a deep connection with that. What kind of system do you imagine when you say I girlfriend, whether you were trolling or not?
+Know that one? I am very serious about and I am serious about that. On both a shallow level and a deep level, I think that VR brothels are coming soon and are going to be really cool.
+it is not cheating if it is a robot.
+I see the slogan already on, but there is a I do not know if you have watched it. Just watch the Black Mary episode. I watched the lights on. Yeah, yeah, yeah.
+Oh the the the actually two one or the no where there is two friends were having sex with each other in. Oh in the Viagra in the game. Yeah. it is just two guys but yeah. One of them was, was a female. Yeah. Yeah.
+it is just another mind blowing concept that in VR you do not have to be the form you can be to animals having sex. Sex is weird.
+I mean honestly the software maps the nerve endings. Yeah.
+Yeah. They, they sweep a lot of the fascinating, really difficult technical challenges under the rug. Like assuming it is possible to do the mapping of the nerve endings, then I wish I saw that the way they did it with the little like STEM unit on the head, that that would be amazing.
+So on and on a shallow level, like you could set up like almost a brothel with, like real dolls and Oculus quests. Right, right. Some good software, I think it would be a cool novelty experience.
+But on a deeper, like, emotional level, I mean.
+Yeah, I would really like to to fall in love with the machine.
+Do you see yourself having a long term relationship of the kind monogamous relationship that we have now with a robot, with a system even not even just the robot?
+So I think about maybe my ideal future. When I was 15, I read as you could cast these early writings on the singularity and like that I is going to surpass human intelligence massively.
+He made some Moore's Law based predictions that I mostly agree with. And then I really struggled for the next couple of years of my life, like, why should I even bother to learn anything?
+it is all going to be meaningless when the machines show up, right?
+Maybe. Maybe what?
+I was that young. I was still a little bit more pure and really, like, clung to that. And then I am like, well, the machines are not here yet. And I seem to be pretty good at this stuff. let us let us try my best, you know, like, what is the worst that happens? But the best possible future I see is me sort of merging with the machine and the way that I personify this is not a long term monogamous relationship with the machine.
+Oh, you do not think there is room for another human in your life if you really, truly merge with the machine?
+I mean, I see merging. I see like, the best interface to my brain is like the same relationship in place to merge with an AI.
+Right. What does that merging feel like?
+I have seen I have seen couples who have been together for a long time and like I almost think of them as one person, like couples who spend all their time together.
+And that is fascinating.
+you are actually putting what does that merging actually looks like? it is not just a nice channel like a lot of people imagine. it is just an efficient link, search link to Wikipedia or something. I do not believe in that. But it is more you are saying that there is the same kind of the same kind of relationship you have with other human relationships. that is what merging looks like. that is that is pretty.
+I do not believe that link is possible. I think that that link so you are like, oh, I am going to download Wikipedia right to my brain. Yeah.
+My reading speed is not limited by my eyes, by reading speed is limited by my inner processing LoopNet and to like bootstrap that sounds kind of unclear how to do it and horrifying.
+But if I am with somebody and I will use a somebody who is making a super sophisticated model of me and then running simulations on that model, I am not going to get to the question what the simulations are, conscious or not.
+I do not really want to know what it is doing.
+Um, but using those simulations to play out hypothetical futures for me, deciding what things to say to me, to guide me along a path, and that is how I envision it.
+So on that path to a high of superhuman level intelligence, you have mentioned that you believe in the singularity, that singularity is coming again. Could be trolling, could be not, could be part of all trolling has truth in it.
+I do not know what that means anymore. What does the singularity.
+Yeah. So that is that is really the question. How many years do you think before the singularity, what form do you think it will take. Does that mean fundamental shifts in capabilities of A.I.? Does it mean some other kind of ideas?
+Um, uh, maybe it is just my roots, but so I can buy a human being's worth of compute for like a million bucks today. it is about one deep poverty. Three I want like I think they claim one hundred paida flops. that is being generous. I think humans are actually more like twenty. So that is like five humans. that is pretty good. Google needs to sell their TPS.
+Um, but I could buy I could, I could use, I could buy a stack of like I buy ten ETFs, build a data center full of them and for a million bucks I can get a human worth of compute.
+But when you look at the total number of flops in the world, when you look at human flops, which goes up very, very slowly with the population and machine flops, which goes up exponentially, but it is still nowhere near.
+I think that is the key thing to talk about when the singularity happened, when most flops in the world are silicon and not biological, that is kind of the crossing point. Like they are now the dominant species on the planet.
+And just looking at how technology is progressing, what do you think that could possibly happen? it is going to happen in your lifetime? Oh, yeah, definitely in my lifetime. I have done the math.
+I like twenty, thirty eight because it is the Unix timestamp all over.
+Yeah, beautifully put. So you have, um, you have said that the meaning of life is to win if you look five years into the future. What does winning look like?
+So. there is a lot of I can go into like technical depth to what I mean by that to win. It may not mean I was criticized for that in the comments.
+Like, does not this guy want to, like, save the penguins in Antarctica or like, you know, listen to what I am saying.
+I am not talking about like I have a yacht or something.
+Yeah, I am an agent. I am put into this world and I do not really know what my purpose is. But if you are a reinforcement, if you are if you are an intelligent agent and you are put into a world, what is the ideal thing to do?
+Well, the ideal thing mathematically, you go back to like Schmidt over theories about this is to build a compressive model of the world, to build a maximally compressive, to explore the world such that your exploration function maximizes the derivative of compression of the past. Who has a paper about this? And like I took that kind of is like a personal goal function.
+So what I mean to win, I mean, like maybe maybe this is religious, but like I think that in the future I might be given a real purpose or I may decide this purpose myself. And then at that point, now I know what the game is and I know how to win. I think right now I am still just trying to figure out what the game is.
+But once I know so you have you have imperfect information. You have a lot of uncertainty about the reward function and you discovering it exactly what the purpose is. that is that is a better way to put it. So the purpose is to maximize it while you have it. A lot of uncertainty around it and you are both reducing the uncertainty and maximizing at the same time. And so that is at the technical level.
+What is the if you believe in the universal prior, what is the universal reward function?
+that is the better way to put it. So that when it is interesting, I think I speak for everyone in saying that I wonder what that reward function is for you. And I look forward to seeing that in five years and 10 years.
+I think a lot of people, including myself, are cheering you on, man. So I am happy you exist and I wish you the best of luck. Thanks for talking to them. Thank you. This is a lot of fun.

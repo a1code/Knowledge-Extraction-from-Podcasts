@@ -7,6 +7,10 @@ from datetime import datetime, timezone
 from pymongo import MongoClient
 
 
+# download no more than these many podcasts
+LIMIT = 80
+
+
 def get_db():
 	client = MongoClient()
 	db = client.podcast
@@ -31,25 +35,27 @@ def main():
 	processed_podcasts = get_processed_podcasts()
 
 	# playlist to download the podcasts from
-	playlist_link = "https://www.youtube.com/watch?v=LAyZ8IYfGxQ&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4"
+	playlist_link = "https://www.youtube.com/watch?v=c9AbECvRt20&list=PLrAXtmErZgOdP_8GztsuKi9nrraNbKKp4"
 	playlist = Playlist(playlist_link)
+	
 	# this fixes the empty playlist.videos list
 	playlist._video_regex = re.compile(r"\"url\":\"(/watch\?v=[\w-]*)")
 	print('Total number of podcasts in the playlist: ', str(len(playlist.video_urls)))
 
-	limit = 0 # counter used to limit number of files to be downloaded, may be removed later
+	limit = 0 # counter used to limit number of files to be downloaded
 	for video in playlist.videos:
+		if(limit == LIMIT):
+			break
+			
 		# ignore podcasts that are already loaded to the raw data archive
 		if(video.video_id in processed_podcasts):
+			limit = limit + 1
 			continue
 
 		# ignore podcasts without segment information by timestamps
 		if(video.description == ""):
+			limit = limit + 1
 			continue
-
-		# download no more than these many podcasts at a time, may be removed later
-		if(limit == 7):
-			break
 
 		# extract metadata for this podcast
 		metadata = {}

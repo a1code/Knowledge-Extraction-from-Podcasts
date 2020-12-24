@@ -1,0 +1,226 @@
+The following is a conversation with Pamela McCormick, she is an author who has written on the history and the philosophical significance of artificial intelligence. Her books include Machines Who Think in nineteen seventy nine The Fifth Generation in 1983, with Ed Feigenbaum, who is considered to be the father of expert systems, the edge of chaos, the features of women and many more books. I came across her work in an unusual way by stumbling in a quote from machines who think that is something like artificial intelligence began with the ancient wish to forge the gods.
+That was a beautiful way to draw a connecting line between our societal relationship with ARE from the grounded day to day science, math and engineering, to popular stories in science fiction and myths of automatons that go back four centuries. Through her literary work, she has spent a lot of time with the seminal figures of artificial intelligence, including the founding fathers of AI from the 1956 Dartmouth summer workshop where the field was launched. I reached out to Pamela for conversation in hopes of getting a sense of what those early days were like and how their dreams continue to reverberate for the work of our community today.
+I often do not know where the conversation may take us, but I jump in and see. Having no constraints, rules or goals is a wonderful way to discover new ideas. This is the Artificial Intelligence podcast if you enjoy it. Subscribe on YouTube. Give it five stars on iTunes, supported on Patrón or simply connect with me on Twitter. Allex Friedman spelled Frid Man. And now here is my conversation with Pamela McCormick.
+In 1979, your book, Machines to Think. In it, you interview some of the early pioneers and explore the idea that I was born not out of maybe math and computer science, but out of myth and legend. So tell me, if you could, the story of how you first arrived at the book, The Journey of. Oh, beginning to write it. I had been a novelist.
+I would published two novels, and I was sitting under the portal at Stanford one day in the house we were renting for the summer and I thought I should write a novel about these weird people. And I know. And then I thought, uh, do not write a novel, write a history simple. Just go around, you know, interview them, splice it together.
+Voila. Instant book. Ha ha ha. It was much harder than that, but nobody else was doing it. And so I thought, oh, this is a great opportunity. And there were. People who were John McCarthy, for example, thought it was a nutty idea, there were much, you know, the field had not evolved yet, so on, and he had some mathematical thing he thought I should write instead. And I said, no, John, I am not a woman in search of a project.
+I am this is what I want to do. I hope you will cooperate. And he said, Oh, Mutter, mutter, well, OK, it is your your time.
+And was the pitch for the I mean such a young field at that point. How do you write a personal history of a field that so young.
+I said this is wonderful. The founders of the field are alive and kicking and able to talk about what they are doing, that they sound or feel like founders at the time.
+That they know that they have been found, that they have found something. Oh, yeah, they knew what they were doing was very important, very what they what I now see in retrospect is that they were at the height of their research careers. And it is humbling to me that they took time out from all the things that they had to do as a consequence of being there and to talk to this woman who said, I think I am going to write a book.
+You know, it was amazing, just amazing. Hoo hoo.
+Who stands out to you? Maybe looking 63 years ago, the Dartmouth conference, the voice of Marvin Minsky was there. McCarthy was there, Claude Shannon, Allen Newell, Herb Simon, some of the folks you mentioned. Right. Um, then there is other characters right there.
+One of your co-authors at Boston, at Dartmouth. He was not there. But I mean, he was there, I think an undergraduate there. And and, of course, Joe Traub, I mean, all of these are players and that adopt them. But in that era. Right, it is Simu and so on. So who are the characters? If you could paint a picture that stand out to you from memory, those people you have interviewed and maybe not people that were just in the in the the atmosphere, in the atmosphere, uh, of course, the four founding fathers were extraordinary guys.
+They really were. Who are the founding fathers? Alan Newell, Herbert Simon, Marvin Minsky, John McCarthy, they were the four who were not only at the Dartmouth conference, but Newlon, Simon arrived there with a working program called The Logic Theorist. Everybody else had great ideas about how they might do it, but.
+They were not going to do it yet. And you mentioned Joe Treb, my husband, I was immersed in EHI before I met Joe. Because I had been Ed Feigenbaum assistant at Stanford, and before that I had worked on a book by edited by Feigenbaum and Julian Feldman called Computers and thought it was the first textbook of readings of A.I. and they only did it because they were trying to teach to people at Berkeley and there was nothing, you know, you would have to send them to this journal, in that journal.
+This was not the Internet where you could go look at an article. So I was fascinated from the get go by.
+I was an English major, you know, what did I know?
+And yet I was fascinated. And that is why you saw that historical that literary background, which I think is very much a part of the continuum of A.I. that I grew out of, that same impulse that you had, that traditional what what was what drew you to I. How did you even think of it back back then, what what was the possibilities, the dreams? What was interesting to you?
+Uh, the idea of intelligence outside the human cranium. This was a phenomenal idea.
+And even when I finished machines who think I did not know if they were going to succeed, I in fact, the final chapter is very wishy washy, frankly.
+Uh, I will succeed. The field did. Yeah. Yeah.
+So was there the idea that I began with the wish to forge the gods, so the the spiritual component that we crave to create this other thing greater than ourselves for those guys?
+I do not think so. Newell and Simon were cognitive psychologists, what they wanted was to simulate aspects of human intelligence and they found they could do it on the computer.
+Minsky just thought it was a really cool thing to do. Likewise, McCarthy. McCarthy had got the idea in 1949 when when he was a Caltech student and he listened to somebody lecture. it is in my book. I forget who it was. And he thought, oh, that would be fun to do.
+How do we do that? And he took a very mathematical approach. Minsky was hybrid and Newlon Simon were very much cognitive psychology. How can we simulate various things about about human cognition?
+What happened over the many years is, of course, our definition of intelligence expanded tremendously.
+I mean, these days, biologists are comfortable talking about the intelligence of sell, the intelligence of the brain, not just the human brain, but the intelligence of any kind of brain cephalopods.
+I mean, an octopus is really intelligent by any measure.
+We would not have thought of that in the 60s, even the 70s. So all these things have worked in.
+And I did hear one behavioral primatologist, Frans Duvall, say A.I. taught us the questions to ask. Yeah, this is what happens, right?
+it is when you try to build it is when you start to actually ask questions. It puts a mirror to ourselves. Yeah, right. So you were there in the middle of it seems like not many people were asking the questions that you were just trying to look at this field the way you were.
+I was so low. I when I went to get funding for this because I needed somebody to transcribe the interviews and I needed travel expenses I went to. Every thing you could think of, the NSF, the DARPA, um, there was an Air Force place that doled out money and each of them said, well, that was that was very interesting. that is a very interesting idea. But we will think about it.
+And the National Science Foundation actually said to me in plain English, hey, you are only a writer, you are not an historian of science. And I said, yeah, that is true. But, you know, the historians of science will be crawling all over this field. I am writing for the general audience.
+So I thought and they still would not budge. I finally got a private grant without knowing who it was from from Ed Fratkin at MIT. He said he was a wealthy man and he liked what he called crackpot ideas, and he considered this a crackpot idea. it is a crackpot idea and he was willing to support it. I am ever grateful.
+Let me say that, you know, some would say that a history of science approach to A.I. or even just the history or anything like the book that you have written has not been written since.
+I do not know, maybe I am not familiar, but it is certainly not many. If we think about bigger than just these couple of decades, few decades, what what are the roots? Of I oh, they go back so far. Yes, of course, there is all the legendary stuff, the Golem and. The early robots of the 20th century, but they go back much further than that, if you read Homer. Homer has robots in the Iliad and a classical scholar was pointing out to me just a few months ago.
+Well, you said you just read The Odyssey. The Odyssey is full of robots. It is. I said, yeah. How do you think Odysseus, this ship gets from one place to another? It does not have the crew people to do that. The crew men. Yeah, it is magic is robots. Oh, I thought. How interesting.
+So we have had this notion of A.I. for a long time.
+And then toward the end of the 19th century, the beginning of the 20th century, there were scientists who actually tried to make this happen some way or another, not successfully.
+They did not have the technology for it.
+And of course, Babbage, in the 18th, 50s and 60s, he saw that what he was building was capable of intelligent behavior.
+And he when he ran out of funding, the British government finally said, that is enough.
+He and Lady Lovelace decided, oh, well, why do not we make you know, why do not we play the ponies with this?
+So he had other ideas for raising money to prove we actually reached back once again.
+I think people do not actually really know that robots do appear and ideas of robots. You talk about the Hellenic and the Bragg points of view. Oh, yes. Can you tell me about this?
+I defined it this way. The Hellenic point of view is robots are great.
+You know, they are party help. They help this guy have just as God have estos in his forge. I presume he made them to help him and so on and so forth. And they welcome the whole idea of robots. They break view has to do with.
+I think it is the second commandment, thou shalt not make any graven image. In other words, you better not start imitating humans because that is just forbidden. it is the second commandment and.
+A lot of the reaction to artificial intelligence has been a sense that this is this is somehow wicked, this is somehow blasphemous. We should not be going there now. You can say, yeah, but they are going to be some downsides, and I say, yes, there are, but blasphemy is not one of them.
+You know, there is a kind of fear that feels to be almost primal. Is there a religious roots to that? Because so much of our society has religious roots. And so there is a feeling of, like you said, blasphemy of creating the other of creating something. You know, it does not have to be artificial intelligence, it is creating life in general. it is the Frankenstein idea.
+it is the annotated Frankenstein on my coffee table. it is a tremendous novel. It really is just beautifully perceptive.
+Uh, yes, we we do fear this and we have good reason to fear it. But because it can get out of hand, maybe you can speak to that fear the psychology, if you thought about it. You know, there is a practical set of fears, concerns in the short term you can think of if we actually think about artificial intelligence systems, you can think about bias of discrimination in algorithms. You can think about there is social networks, have algorithms that recommend the content you see there by these algorithms, control the behavior of the masses.
+There are these concerns, but to me, it feels like the fear that people have is deeper than that. So have you thought about the psychology of it? I think in a superficial way, I have there is this notion that if we. Produce a machine that can think it will outthink us and therefore replace us. I guess that is that is a primal fear for almost almost kind of a kind of mortality. So around the time you said you work with, uh, at Stanford with Ed Feigenbaum.
+Mm hmm.
+So let us look at that one person throughout history, clearly a key person, one of the many in the history of A.I. How has he changed in general around him? How Stanford changed in the last how many years are we talking about here? Oh, since that. Sixty five, six. Sixty five. So maybe there is something about him that could be bigger.
+But because he was a key person in expert systems, for example, how is that, how are these folks who you have interviewed?
+In the 70s, 79. Changed through the decades. In any case, I know him well, we are dear friends, we see each other every month or so.
+He told me that when machines to think first came out, he really thought all the front matter was kind of baloney and.
+Ten years later, he said, no, I see what you are getting at. Yes, this is an impulse that has been this has been a human impulse for thousands of years to create something outside the human cranium that has intelligence.
+I think it is very hard when you are down at the algorithmic level and you are just trying to make something work, which is hard enough to step back and think of the big picture.
+It reminds me of when I was in Santa Fe. I knew a lot of archeologists, which was a hobby of mine and.
+I would say, yeah, yeah, well, you can look at the shards and say, oh, this came from this tribe and this came from this trade route and so on. But what about the big picture? And a very distinguished archaeologist said to me, they do not think that way.
+You know, they are trying to match the Shard to the to where it came from. that is, you know, where did this corn the remainder of this corn come from? Was it grown here? Was it grown elsewhere?
+And I think this is part of the I or any scientific field. you are so busy doing the the hard work.
+And it is hard work that you do not step back and say, oh, well, now let us talk about the you know, the general meaning of all this.
+Yes. So none of the even Minsky McCarthy, they.
+Oh, those guys did. Yeah.
+The Founding Fathers did early on or pretty early on, but in a different way from how I looked at it.
+The two cognitive psychologists, Newell and Simon, they wanted to imagine reforming cognitive psychology so that we would really, really understand the brain.
+Yes. Minsky was more speculative. And John McCarthy saw it as. I think I am doing doing him right by this, he really saw it as a great boon for human beings to have this technology and that was reason enough to do it.
+And he had wonderful, wonderful fables about how if you do the mathematics, you will see that these things are really good for human beings. And if you had a technological objection, he had an answer, a technological answer. But here is how we could get over that and then blah, blah, blah, blah. And one of his favorite things was what he called the literary problem, which, of course, he presented to me several times.
+That is everything in literature. There are conventions and literature. One of the conventions is that you have a villain and a hero.
+And the hero in most literature is human and the villain in most literature is a machine. And he said, oh, that is just not the way it is going to be, but that is the way we are used to it. So when we tell stories about A.I., it is always with this paradigm. My thought. Yeah, he is right. You know, looking back at the classics, are you are certainly the machines trying to overthrow the humans.
+Frankenstein is different. Frankenstein is. A creature he never he never has a name, Frankenstein, of course, is the guy who created him, the human Dr. Frankenstein.
+This creature wants to be loved, wants to be accepted. And it is only when Frankenstein. Turns his head, in fact, runs the other way, and the creature is without love. That he becomes the monster that he later becomes. So who is the villain in Frankenstein? it is unclear right now. It is unclear.
+Yeah, it is really the people who drive him by driving him away. Right. They bring out the worst.
+that is right. They give him no human solace and he is driven away. you are right.
+He becomes at one point the friend of a blind man, and they he serves this blind man and they become very friendly.
+But when the sighted people of the blind man's family come in, I know you have got a monster here.
+So it is it is very didactic in its way. And what I did not know is that Mary Shelley and Percy Shelley were great readers of the literature surrounding abolition in the United States, the abolition of slavery, and they picked that up wholesale.
+You know, you are making monsters of these people because you will not give them the respect and love that they deserve.
+Do you have if we get philosophical for a second.
+Do you worry that once we create machines that are a little bit more intelligent, let us look at Roomba vacuum cleaner, that that this darker part of human nature where we abuse the other, the the somebody who is different will come out.
+I do not worry about it.
+I could imagine it happening. But I think that what I has to offer the human race will be so attractive that people will be won over.
+So you have looked deep into these people have deep conversations. And it is interesting to get a sense of stories of the way they were thinking and the way was changed.
+The way your own thinking about race changed, as you mentioned, McCarthy, is what about the years at CMU, Carnegie Mellon with Joe and was sure.
+With a Joe. Was not in I he was in algorithmic complexity, was there always a line between A.I. and computer science, for example, is A.I. its own place of outcasts?
+It was that the feeling there was a kind of outcast period for A.I., for instance, in 1974, the new field was hardly. Ten years old, the new field of computer science was asked by the National Science Foundation, I believe, but it may have been the National Academies, I can not remember to, you know, tell us tell are your fellow scientists where computer science is and what it means.
+And they wanted to leave out A.I. and they only agreed to put it in because Don Knuth said, hey, this is important. You can not just leave that out. Really, Don. Don Canu. Yes. I talked to teachers out of all the people. Yes.
+But you see, and I person could not have made that argument. You would not have been believed. But Knuth was believed. Yes.
+So your job worked on the real stuff.
+Joe was working on algorithmic complexity, but he would say in plain English again and again, the smartest people I know are in. I really.
+Oh, yes. No question. Anyway, Joe loved these guys. What happened was that. I guess it was as I started to write machines who think Herb Simon and I became very close friends, he would walk past our house on Northumberland Street every day after work. And I would just be putting my cover on my typewriter and I would lean out the door and say, Herb, would you like a sherry? And Herb almost always would like a sherry.
+So he would stop in and we would talk for an hour, two hours. My journal says we talked this afternoon for three hours.
+What was on his mind at the time?
+If in terms of the side of things we did not talk too much about, I would talked about other things in life. We both loved literature. And Herb had read Proust in the original French twice, all the way through. Yeah, I can not. I read it in English, in translation. So we talked about literature. We talked about languages. We talked about music because he loved music. We talked about art because he was he was actually enough of a painter that he had to give it up because he was afraid it was interfering with his research and so on.
+So, no, it was really just chat chat, but it was very warm.
+So one summer I said to her, you know, my students have all the really interesting conversations I was teaching at the University of Pittsburgh. Then in the English department, you know, they get to talk about the meaning of life and that kind of thing. And what do I have? I have university meetings where we talk about the photocopying budget and, you know, whether the course on romantic poetry should be one semester or two. So Herb laughed.
+He said, yes, I know what you mean, he said, but, you know, you could do something about that dot. That was his wife. And I used to have a salon at the University of Chicago every Sunday night, and we would. Have essentially an open house, and people knew it was not a small talk, it was really for some topic of. Depth, he said, but my advice would be that you choose the topic ahead of time.
+Fine, I said so the following.
+We we exchanged mail over the summer that was US post in those days because you did not have personal email. Right.
+And we I decided I would organize it and there would be eight of us, Alan Newell and his wife, Herb Simon and his wife, Dorothea. There was a novelist in town, a man named Mark Harris, he had just just arrived and his wife, Josephine Mark was most famous then for a novel called Bang the Drum So Slowly, which was about baseball and Joe and me. So eight people and we met monthly and we we just sank our teeth into really hard topics and it was great fun.
+How have your own views around artificial intelligence changed in through the process of writing machines who think and afterwards the ripple effects?
+I was a little skeptical that this whole thing would work out. It did not matter to me. It was so audacious, the whole thing being I generally and in some ways.
+It has not worked out the way I expected so far, that is to say, there is this wonderful lot of apps thanks to deep learning and so on, but those are algorithmic. Yeah. And. In the part of a symbolic processing, there is very little yet, yes, and that is the field that lies waiting for industrious, industrious graduate students.
+Maybe you can tell me some figures that popped up in your life in the 80s with expert systems where there was the symbolic A.I. possibilities of what you know, that what most people think of as A.I., if you dream of the possibilities, is really expert system. And those hit a few walls and those challenges there. And I think, yes, they will reemerge again with some new breakthroughs and so on. But what did that feel like? Both the possibility and the winter that followed the slow down.
+And, you know, this whole thing about A.I. winter is to me, a crock.
+So winter's because I look at the basic research that was being done in the 80s, which is supposed to be like God, it was really important. It was laying down things that nobody had thought about before, but it was basic research. You could not monetize it, right.
+Hence the winter.
+And so, you know, research, scientific research goes in fits and starts that. is not this nice, smooth. Oh, this follows this follows this. No, you know, it just does not work that way.
+The interesting thing, the way winters happen, it is never the fault of the researchers.
+it is the it is the the some source of hype overpromising. Well, no, let me take that back.
+Sometimes it is the fault of the researchers. Sometimes certain researchers might overpromise the possibilities. They themselves believe that we are just a few years away, sort of just recently talk to Elon Musk and he believes he will have an autonomous vehicle, will have autonomous vehicles in a year. And he believes that a year, a year with mass deployment of time.
+For the record, this is 2019. Right now he is talking 2020 to do the impossible.
+You really have to believe it.
+And I think what is going to happen when you believe it, because there is a lot of really brilliant people around him, is some good stuff will come out of it. Some unexpected, brilliant breakthroughs will come out of it when you really believe that when you work that hard, but I believe that and I believe autonomous vehicles will come. I just do not believe it will be in a year.
+I wish. But nevertheless, there is a thousand vehicles is a good example. there is a feeling many companies have promised by 2021, by 2020 to Ford, GM and basically every single automotive company has promised they will have autonomous vehicles. So that kind of overpromise is what leads to the winter because we will come to those dates that will not be autonomous vehicles and there'll be a feeling. Well, wait a minute, if we took your word at that time, that means we just spent billions of dollars, had made no money.
+And there is a counter response to where everybody gives up on that sort of intellectually. And at every level, the hope just dies and all that is left is a few basic researchers. So you are uncomfortable with some aspects of this idea? Well, it is the difference between science and commerce. So you think science prevails, science goes on the way it does, what science can really be killed by not getting proper funding or timely funding? I think Great Britain was a perfect example of that.
+The Lighthill report in, you know, remember the year essentially said there is no use Great Britain putting any money into this. it is it is going nowhere and. This was all about social factions in Great Britain, Ed Murrow hated Cambridge and Cambridge hated Manchester. And, you know, somebody else can write that story, but it really did have a hard effect on research there.
+Now they have come roaring back with deep mind. Yeah, but that is one guy and his visionaries around him.
+But just to push on that, it is kind of interesting. You have this dislike of the idea of an I winter. The words that where is that coming from? Where were you? Oh, because I just do not think it is true. There was a particular periods of time. there is a romantic notion, certainly.
+Yeah, well, you know, I admire science perhaps more than I admire commerce.
+Commerce is fine.
+Hey, you know, we all got to live, but, uh.
+Science. As a much longer view than commerce and continues almost regardless not.
+It can not continue totally regardless, but it almost regardless of what is salable and what is not, what is most noticeable and what is not, so the winter is just something that happens on the commerce side and the science.
+So it seems just that is a beautifully optimistic, inspiring must agree with you. I think if we look at the key people at work and I they work in key scientists and most disciplines, they continue working out of the love for science. No matter you can always scrape up some funding to stay alive and they continue working. Delijani. But there certainly is a huge amount of funding now and there is a concern and the eyesight and deep learning, there is a concern that we might, with overpromising, hit another slowdown in funding, which does affect the number of students, you know, that kind of thing.
+Yeah, I know it does. So the kind of ideas, the machines you think did you continue that curiosity through the decades that followed? Yes, I did.
+And what what was your view, historical view of how a community of all the conversations about the work has persisted the same way from its birth?
+No, of course not. it is just as we were just talking, the symbolic I really kind of dried up and it all became algorithmic. And I remember a young a student telling me what he was doing, and I had been away from the field long enough. I would gotten involved with complexity at the Santa Fe Institute.
+I thought algorithms. Yeah, they are in the service of. But they are not the main event. No, they became the main event that surprised me.
+And we all know the downside of this. We all know that if you are using an algorithm to make decisions based on a gazillion human decisions baked into it are all the mistakes that humans make, the bigotries, the short-sightedness, so on and so on.
+So you mentioned Santa Fe Institute and you say you have written the novel Edge of Chaos, but it is inspired by the ideas of complexity were a lot of which have been extensively explored at the Santa Fe Institute.
+Right. it is a I mean, it is another fascinating topic, just sort of emergent complexity from chaos. Nobody knows how it happens, really, but it seems to where all the interesting stuff does happen. Right.
+So how the first novel, which is complexity in general in the work at Santa Fe, fit into the bigger puzzle of the history of A.I. or maybe even your personal journey through that one of the last projects I did.
+Concerning AIG in particular, was looking at the work of Harold Cohen, the painter, and Harold was deeply involved with AIG.
+He was a painter first. And and what his project, Ahran, which was a lifelong project, did, was reflect his own cognitive processes.
+OK, Harold and I even though I wrote a book about it, we had a lot of friction between us and. I went, I thought, this is it, you know, the book died. It was published and fell into a ditch.
+Uh, this is it. I am finished. it is time for me to do something different by chance. This was a sabbatical year from my husband, and we spent two months at the Santa Fe Institute and two months at Caltech and then the spring semester in Munich, Germany. OK, those two months at. The Santa Fe Institute were so restorative for me and I began to the institute was very small then it was in some kind of office complex on old Santa Fe Trail.
+Everybody kept their door open so you could crack your head on a problem. And if you finally did not get it, you could walk in to see Stuart Kauffman or any number of people and say, I do not get this.
+Can you explain?
+And one of the people that I was talking to about complex adaptive systems was Murray Gelman.
+And I told Murray what Harold Cohen had done, I said, you know, this sounds to me like a complex adaptive system.
+And he said, Yeah, it is. Well, what do you know?
+Harald's Erin had all these kissin cousins all over the world in science and in economics and so on and so forth.
+I was so relieved. I thought, OK, your instincts are OK. you are doing the right thing. I did not have the vocabulary. And that was one of the things that the Santa Fe Institute gave me. If I could have rewritten that book, no, we had to just come out.
+I could not rewrite it. I would have had a vocabulary to explain what Aaron was doing. OK, so I got really interested in what was going on at the institute.
+The people were again, bright and funny and willing to explain anything to this amateur. George Cowan, who was then the head of the institute, said he thought it might be a nice idea if I wrote a book about the institute and I thought about it and I had my eye on some other project, God knows what. And I said, I am sorry, George, I would really love to do it, but, you know, just not going to work for me at this moment.
+I said, oh, what about I think it would make an interesting book. Well, he was right and I was wrong. I wish I would done it.
+But that is interesting. I had not thought about that, that that was a road not taken that I wish I would taken. Well, you know, this just done that.
+And that point is quite brave for you as an as a as a writer, as well as sort of coming from a world of literature, the literary thinking and historical thing.
+I mean, just from that world and bravely talking to quite, I assume, large egos and in in a I or in complexity and so on. How did you do it?
+Like, where did you I mean, I suppose they could be intimidated of you as well, because it is two different worlds.
+I mean, I never picked up that anybody was intimidated by me, but how are you brave enough? Where did you find the guts to just dumb, dumb luck?
+I mean, this is an interesting rock to turn over.
+I am going to write a book about it. And, you know, people have enough patience with writers if they think they are going to end up in a book that they let you flail around and so on as well. But they also look, if the writer has there is like if there is a sparkle in their eye, if they get it.
+Yeah, sure.
+When were you at the Santa Fe Institute?
+At the time I am talking about is nineteen ninety. Yeah. Nineteen ninety, ninety one ninety two. But we then because Joe was an external faculty member, were in Santa Fe every summer, we bought a house there and I did not have that much to do with the institute anymore. I was writing my novels, I was doing whatever I was doing.
+But I loved the institute and I loved. The again, the audacity of the ideas that really appeals to me.
+I think that the there is this feeling much like in great, great institutes of neuroscience, for example, that it is there, they are in it for the long game of understanding something fundamental about reality in nature. And that is really exciting. So we start to look a little bit more recently. How, you know, is really popular today. How is this world you mentioned algorithmic, but in general is the spirit of the people, the kind of conversations you hear through the grapevine and so on, is that different than the routes that you remember?
+You know, the same kind of excitement, the same kind of this is really going to make a difference in the world.
+And it will it has, you know, a lot of the folks, especially young, 20 years old or something, they think we have just found something special here. we are going to change the world tomorrow on a time scale.
+Do you have a sense of what of the time scale at which breakthroughs in A.I. happen?
+I really do not, because look at deep learning, that was a Geoffrey Hinton came up with the algorithm in 86, but it took all these years for the technology to be good enough to actually be applicable.
+So, no, I can not predict that at all. I can not I would not even try.
+Well, let me ask you to not to try to predict, but to speak to the you know, I am sure in the 60s as it continues now, there is people that think, let us call it we can call it this fun war, the singularity. When there is a phase shift, there is some profound feeling where we are all really surprised by what is able to be achieved. I am sure those dreams are there. I remember reading quotes in the 60s in those 15 years.
+How have your own views, maybe if you look back about the timeline of a singularity changed. Well, I am not a big fan of the singularity as.
+Ray Kurzweil has presented it, how would you define the Ray Kurzweil sort of how well, how do you think of singularity in those?
+And if I understand Kurt's view, it is sort of there is going to be this moment when machines are smarter than humans and, you know, game game over. However, the game over is I mean, do they put us on a reservation?
+Do they et cetera, et cetera. And. First of all, machines are smarter than humans in some ways all over the place, and they have been since adding machines were invented.
+So it is not it is not going to come like some great Oedipal crossroads, you know, where they meet each other and our offspring. Oedipus says, your dad. Yeah. it is just not going to happen.
+Yes. it is already game over with calculators. Right.
+They already do much better at basic arithmetic than us. But, you know, there is a human like intelligence. And it is not the ones that destroy us. But, you know, somebody that you can have as a as a friend. Oh, you can have deep connections with that kind of passing the Turing test and beyond those kinds of ideas.
+Have you dreamt of those? Oh, yes, yes, yes.
+Those possibilities in a book I wrote with Ed Feigenbaum, there is a little story called The Geriatric Robot and. How I came up with the geriatric robot is a story in itself, but here is here is what the geriatric robot does. It does not just clean you up and feed you and wheel you out into the sun. it is great. Advantages, it lessens, it says, tell me again about the great coup of 73. Tell me again about how awful or how wonderful your grandchildren are and so on and so forth.
+And it is not hanging around to inherit your money. It is not hanging around because it can not get any other job.
+This is its job and so on and so forth.
+Well, I would love something like that.
+Yeah. I mean, for me, that deeply excites me. So I think there is a lot of us actually got to know it was a joke.
+I dreamed it up because I needed to talk to college students and I needed to give them some idea of what I might be. And they were rolling in the aisles as I elaborated and elaborated and elaborated when it went into the book.
+They took my hide off in the New York Review of Books, this is just what we have thought about these people in A.I., their inhuman. Oh, come on, get over it.
+do not you think that is a good thing for the world that I could potentially walk? I do, absolutely.
+And furthermore, I want you know, I am pushing 80 now. By the time I need help like that, I also want it to roll itself in a corner and shut the fuck up.
+Let me let me linger on that point, do you really, though? Yeah, I do. here is what you wanted to push back a little bit. A little. But I have watched my friends go through the whole issue around having help in the house and. Some of them have been very lucky and had fabulous help, and some of them have had people in the house who want to keep the television going on all day. So we want to talk on their phones all day.
+No. So basically, just roll this stuff in the corner.
+And unfortunately, us humans, when we are assistants, we we care. We still even when we are assisting others, we care about ourselves more, of course.
+And so you create more frustration and a robot assistant can really optimize the experience.
+You. I was just speaking to the point. You actually bring up a very, very, very good point. I was speaking to the fact that as humans are a little complicated, that we do not necessarily want a perfect servant. I do not maybe disagree with that, but there is a. I think there is a push and pull with humans and a little tension, a little mystery that, of course, that is really difficult to get right. But I do sense, especially in.
+Today with social media, the people are getting more and more lonely, even young folks and sometimes especially young folks, that loneliness, there is a longing for connection. And I can help alleviate some of that loneliness, some just somebody who listens. Like in person. That so we speak so, so, so, so to speak, so to speak. That, to me, is really exciting, but so if we look at that, that level of intelligence, which is exceptionally difficult to achieve actually as the singularity or whatever, that is the human level bar that people have dreamt of that to.
+Turing dreamt of it. He had a date timeline.
+Do you have how of your own timeline evolved and past? do not I do not even think about it. You do not even know just this.
+Field has been so full of surprises for me that you just take it in and see. Yeah, that is right.
+Yeah, it is I just can not maybe that is because I have been around the field long enough to think, you know, do not do not go that way. Herb Simon was terrible about making these predictions of when this and that would happen.
+And he was a sensible guy.
+Yeah. His quotes are often used, right, as a legend. Yeah, yeah. Do you have concerns about I the existential threats, as many people like Elon Musk and Sam Harris and others are thought? Oh, yeah, yeah. That takes up a half a chapter in my book. I call it the male gaze.
+Well, you hear me out. The male gaze is actually a term from film criticism. And I am blocking on the woman who dreamed this up.
+But she pointed out how most movies were made from the male point of view that. Women were objects, not subjects, they did not have any agency. So on and so forth.
+So when Elon and his pals Hawking and so on, I was going to eat our lunch and our dinner and our midnight snack, too.
+I thought, what? And I said to Ed Feigenbaum, Oh, this is the first guy first. These guys have always been the smartest guy on the block. And here comes something that might be smarter. Oh, let us stamp it out before it takes over. And Ed laughed.
+He said, I did not think about it that way, but I did. I did. And. It is the male gaze, you know, OK, suppose these things do have agency. Well, let us wait and see what happens.
+Can we imbue them with ethics? Can we imbue them with a sense of empathy? Or are they just going to be, uh, I know we have had centuries of guys like that.
+that is interesting that, um, the the ego. The male gaze is immediately threatened. And so you can not think in a patient calm way of of how the tech could evolve.
+And he is speaking of which here and then he six book The Future of Women. Oh, I think at the time. And now certainly now I mean, I am sorry, maybe at the time, but I am more cognizant of now is extremely relevant. You and Nancy Ramsey talk about four possible futures right now of women in science and tech. So if we look at the decades before and after the book was released, can you tell a history, sorry, of women in science and tech and how it has evolved?
+How have things changed? Where do we stand? Not enough. They have not changed enough in the.
+Way that women are ground down and computing is simply unbelievable, but what are the four possible futures for women in tech from the book?
+What you are really looking at are various aspects of the present. So for each of those, you could say, oh yeah, we do have backlash. Look at what is happening with abortion and so on and so forth. We have one step forward, one step back. The golden age of equality was the hardest chapter to write. And I used something from the Santa Fe Institute, which is the sandpile effect, that you drop sand very slowly onto a pile and it grows and it grows and it grows until suddenly it just breaks apart and.
+In a way, ME2 has done that. That was the last drop of sand that broke everything apart, that was a perfect example of the sandpile effect and that made me feel good.
+It did not change all of society, but it really woke a lot of people up.
+But are you in general optimistic about. Maybe after me, too, I mean, Mitch is about a very specific kind of thing, boy, solve that and solve everything, but are you in general optimistic about the future?
+Yes, I am a congenital optimist. I can not help it.
+What about A.I.? What are your thoughts?
+I went be I, I, of course I get asked, what do you worry about? And the one thing I worry about is the things that we can not anticipate.
+You know, there is going to be something out of left field that we will just say we were not prepared for that. I am generally optimistic when I first took up being interested in I.
+Like most people in the field, more intelligence was like more vertue, you know what could be bad, right? And.
+In a way, I still believe that, but I realize that my notion of intelligence has broadened. There are many kinds of intelligence and we need to employ machines with those many kinds.
+So you have now just finished or in the process of finishing your the book, you have been working on a memoir. What how have you changed? I know it is just writing for how we change the process. You look back what kind of stuff that you bring up to you that. Surprised you looking at the entirety of it all? The biggest thing, and it really was not a surprise, is how lucky I was oh my. To be.
+To have access to the beginning of a scientific field that is going to change the world. How did I look out?
+Yes, of course, my my view of things has widened a lot. If I can get back to one, the feminist part of our conversation without knowing it, it really was subconscious. I wanted A.I. to succeed because I was so tired of hearing that intelligence was inside the male cranium.
+And I thought if there was something out there that was not a male. Thinking and doing well, then that would put a lie to this whole notion of intelligence resides in the male cranium. I did not know that until one night Harold Cohen and I were. Having a glass of wine, maybe two, and he said, what drew you to AA? And I said, Oh, you know, smartest people I knew, great project, blah, blah, blah.
+And I said, and I wanted something besides male smarts.
+And it just bubbled up out of me like what was brilliant, actually.
+So I really humbles all of us and humbles the people that need to be humbled the most. Oh, let us hope.
+Oh, wow. That is so beautiful. Pamela, thank you so much for talking to us.
+Great pleasure. Thank you.
