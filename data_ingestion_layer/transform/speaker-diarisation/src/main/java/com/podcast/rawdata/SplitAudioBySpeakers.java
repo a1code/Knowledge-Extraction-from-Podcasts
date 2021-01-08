@@ -7,6 +7,7 @@ import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import edu.cmu.sphinx.speakerid.Segment;
 import edu.cmu.sphinx.speakerid.SpeakerCluster;
@@ -27,7 +28,14 @@ public class SplitAudioBySpeakers implements Runnable {
 
 	public void run() {
 		try {
-			String filePrefix = audioFile.getAbsolutePath().split("\\.")[0];
+			String[] filePrefixArr = audioFile.getAbsolutePath().split("\\.");
+			String[] filePrefixSplits = Arrays.copyOf(filePrefixArr, filePrefixArr.length - 1);
+			String filePrefix = "";
+			if (filePrefixSplits.length > 1) {
+				filePrefix = String.join(".", filePrefixSplits);
+			} else {
+				filePrefix = filePrefixSplits[0];
+			}
 			String filename = filePrefix.split("/")[filePrefix.split("/").length - 1];
 			String outPath = filePrefix + "#speakerSplits" + ".txt";
 
@@ -64,3 +72,4 @@ public class SplitAudioBySpeakers implements Runnable {
 		}
 	}
 }
+

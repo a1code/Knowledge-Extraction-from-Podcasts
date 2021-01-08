@@ -7,10 +7,6 @@ from datetime import datetime, timezone
 from pymongo import MongoClient
 
 
-# download no more than these many podcasts
-LIMIT = 80
-
-
 def get_db():
 	client = MongoClient()
 	db = client.podcast
@@ -44,7 +40,8 @@ def main():
 
 	limit = 0 # counter used to limit number of files to be downloaded
 	for video in playlist.videos:
-		if(limit == LIMIT):
+		# download no more than these many podcasts
+		if(limit == 80):
 			break
 			
 		# ignore podcasts that are already loaded to the raw data archive

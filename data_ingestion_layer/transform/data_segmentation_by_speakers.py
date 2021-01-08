@@ -54,7 +54,7 @@ def main():
 	# find all podcast directories
 	podcasts = [x[0] for x in os.walk(".") if "podcast_" in x[0]]
 	for podcast in podcasts:
-		print(podcast)
+		# print(podcast)
 		# find metadata file for this podcast
 		metadata_files[podcast] = [file for file in os.listdir(podcast) \
 		if file.endswith(".txt") and "speakerSplits" not in file][0]
@@ -63,7 +63,7 @@ def main():
 		speaker_split_files[podcast] = sorted([file for file in os.listdir(podcast) \
 			if file.endswith("speakerSplits.txt")],\
 			key=lambda x:\
-			int(x.split("#")[1][x.split("#")[1].find("(")+1 : x.split("#")[1].find(")")].split(" ")[0]))
+			int(x.split("#")[1][x.split("#")[1].rfind("(")+1 : x.split("#")[1].rfind(")")].split(" ")[0]))
 		
 	# iterate over each podcast
 	for key, value in metadata_files.items():
@@ -110,7 +110,7 @@ def main():
 
 					audio_chunk=audio[speaker_segment[0]*1000:speaker_segment[1]*1000] #pydub works in millisec
 					
-					# get speaker for this segment
+					# get speaker for this segment; tricky part, not too accurate currently, improve this later
 					if (min_speaker_code == -1) or (speaker_segment[2] < min_speaker_code):
 						min_speaker_code = speaker_segment[2]
 						speaker = speaker_iterator[0]

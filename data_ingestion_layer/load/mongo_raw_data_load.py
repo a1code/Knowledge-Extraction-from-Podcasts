@@ -64,7 +64,8 @@ def main():
 		# iterate over each audio segment for this podcast
 		for segment in audio_segments:
 			print("Processing file : ", segment)
-			segment_name = segment.split(".")[0]
+			segment_name_list = segment.split(".")[:-1]
+			segment_name = '.'.join(segment_name_list)
 			segment_properties = segment_name.split("#")
 
 			# read audio properties
