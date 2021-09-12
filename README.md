@@ -1,6 +1,6 @@
 # Knowledge-Extraction-from-Podcasts
 
-**Note**: Details of the project are in the ProjectDescription.pdf [here](https://github.com/a1code/Knowledge-Extraction-from-Podcasts/blob/main/Project_Description.pdf).  
+**Note**: Details of the project are in the ProjectDescription.pdf [here](https://github.com/a1code/Knowledge-Extraction-from-Podcasts/blob/main/Project_Description.pdf). The demo video for the application is available [here](https://drive.google.com/file/d/1cz4ffIWe3HGS1GbDxcz9mRPtzV1p4Jw4/view?usp=sharing).
 
 **Implementation Summary**:  
 • Developed end-to-end data pipeline to extract, transform and load speaker segments in Lex Fridman podcasts, for creating a knowledge repository in Elasticsearch, accessible through a flask application interface  
